@@ -1,0 +1,29 @@
+name: Vercel Trigger Deployment
+
+on:
+  push:
+    branches:
+      - main # Trigger only on commits to the main branch
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Configure git
+        run: |
+          git config user.name "kaenproperties"
+          git config user.email "kaenproperties@gmail.com"
+
+      - name: Create new commit with correct author
+        run: |
+          PREV_MESSAGE=$(git log -1 --pretty=%B)
+          git commit --allow-empty -m "$PREV_MESSAGE"
+
+      - name: Push changes
+        run: git push
