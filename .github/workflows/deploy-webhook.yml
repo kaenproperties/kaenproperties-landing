@@ -18,7 +18,7 @@ jobs:
       - name: Configure git
         run: |
           git config user.name "kaenproperties"
-          git config user.email "kaenproperties@gmail.com"
+          git config user.email "kason.kaenproperties@gmail.com"
 
       - name: Create new commit with correct author
         run: |
