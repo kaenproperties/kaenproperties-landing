@@ -53,28 +53,120 @@
 
 
 /* ===================================
-    General
+    General Modern Refresh
 ====================================== */
 
-body {font-family: 'Ubuntu', sans-serif; font-size: 16px;color: #4a4a4a;font-weight:300;line-height:1.6;width: 100%; overflow-x: hidden; -webkit-font-smoothing: antialiased;}
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {line-height: 1.2; font-weight: 700;font-family: 'UbuntuTitling', Arial, sans-serif; color: #2c3e50; letter-spacing: -0.5px;}
+:root {
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --dark: #1a1a1a;
+    --light: #f8f9fa;
+    --accent: #55A8FD;
+}
 
-/* Custom Modern Touch */
-section { padding: 100px 0; }
-.title h2 { position: relative; padding-bottom: 20px; margin-bottom: 30px; font-size: 3rem !important; }
-.title h2::after { content: ''; position: absolute; left: 0; bottom: 0; width: 60px; height: 4px; background: #55A8FD; border-radius: 2px; }
-.text-center .title h2::after { left: 50%; transform: translateX(-50%); }
+body {
+    font-family: 'Inter', 'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
 
-.btn { border-radius: 4px; padding: 12px 35px; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-.btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: 'UbuntuTitling', sans-serif;
+    font-weight: 700;
+    color: var(--dark);
+    letter-spacing: -1px;
+}
 
-.feature-box .feature-item { border: none; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-.feature-box .feature-item:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+/* Modern Header */
+header.header-with-top {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
 
-.navbar { box-shadow: 0 2px 20px rgba(0,0,0,0.05); }
-.nav-link { position: relative; }
-.nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: 0; left: 15px; background: #55A8FD; transition: width 0.3s; }
-.nav-link:hover::after { width: calc(100% - 30px); }
+.navbar {
+    padding: 1.5rem 0 !important;
+}
+
+.nav-link {
+    font-weight: 500 !important;
+    color: var(--dark) !important;
+    padding: 0.5rem 1.5rem !important;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: var(--accent) !important;
+}
+
+/* Hero Section */
+.home {
+    padding: 120px 0 60px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Card Improvements */
+.feature-box .feature-item {
+    background: #fff;
+    border-radius: 20px !important;
+    padding: 40px !important;
+    border: 1px solid rgba(0,0,0,0.05) !important;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.04) !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.feature-box .feature-item:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1) !important;
+}
+
+.feature-item i {
+    background: rgba(85, 168, 253, 0.1);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 25px !important;
+}
+
+/* Buttons */
+.btn-green {
+    background: var(--dark) !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 15px 40px !important;
+    font-size: 14px !important;
+    letter-spacing: 1px;
+    text-transform: uppercase !important;
+}
+
+.btn-green:hover {
+    background: var(--accent) !important;
+    transform: scale(1.05);
+}
+
+/* Section Title */
+.title h2 {
+    font-size: 3.5rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.title h2::after {
+    display: none;
+}
+
+/* Portfolio */
+.cbp-item {
+    border-radius: 15px;
+    overflow: hidden;
+}
 a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bullet, .owl-dot, .owl-prev, .owl-next {transition: ease-in-out 0.2s;-webkit-transition: ease-in-out 0.2s;-moz-transition: ease-in-out 0.2s;-ms-transition: ease-in-out 0.2s;-o-transition: ease-in-out 0.2s;}
 section,.section-padding {position: relative;overflow: hidden;}
 .section-top-margin{margin-top: 7.5rem;}
