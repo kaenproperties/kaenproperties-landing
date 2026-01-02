@@ -152,7 +152,8 @@
     <div class="flex items-center justify-between gap-4">
       <!-- Brand -->
       <a href="#" class="flex items-center gap-3 shrink-0">
-        <div class="h-10 w-10 rounded-xl bg-kaen-ink text-white grid place-items-center font-extrabold shadow-soft">K</div>
+        <img src="public/kaen-logo.png" alt="KAEN Properties" class="h-10 w-auto object-contain" />
+
         <div class="leading-tight">
           <div class="font-extrabold tracking-wide flex items-center gap-2">
             KAEN Properties
@@ -183,13 +184,6 @@
            style="background:#25D366"
            href="https://wa.me/601136111763?text=Hi%20KAEN%2C%20I%20want%20a%20quotation%20for%20my%20unit."
            target="_blank" rel="noreferrer">
-          <span class="mini">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M12 2.3A9.5 9.5 0 0 0 3.2 16l-.8 4.5 4.6-.8A9.5 9.5 0 1 0 12 2.3Z" fill="rgba(255,255,255,0.25)"/>
-              <path d="M12 4.2a7.7 7.7 0 0 0-6.7 11.5l-.5 2.6 2.7-.5A7.7 7.7 0 1 0 12 4.2Z" fill="#ffffff"/>
-              <path d="M16.6 14.4c-.2-.1-1.3-.6-1.5-.7-.2-.1-.4-.1-.6.1l-.5.7c-.1.2-.3.2-.5.1-.3-.1-1-.4-1.9-1.2-.7-.6-1.1-1.3-1.2-1.5-.1-.2 0-.4.1-.5l.4-.5c.1-.1.1-.3.2-.4 0-.1 0-.3 0-.4 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.8 2.3.9 2.5.1.2 1.6 2.6 4 3.6 2.3 1 2.3.7 2.7.7.4 0 1.3-.5 1.5-1 .2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z" fill="#25D366"/>
-            </svg>
-          </span>
           WhatsApp
         </a>
 
@@ -223,8 +217,7 @@
       <div class="grid gap-10 md:grid-cols-2 md:items-center">
 
         <div class="max-w-xl">
-          <div class="inline-flex items-center gap-3 rounded-full border border-kaen-line bg-white/80 px-6 py-2
-                      text-xs font-semibold text-kaen-muted whitespace-nowrap">
+          <div class="inline-flex items-center gap-3 rounded-full border border-kaen-line bg-white/80 px-6 py-2 text-xs font-semibold text-kaen-muted whitespace-nowrap">
             <span>Hands-off rental operations</span>
             <span class="h-1 w-1 rounded-full bg-kaen-gold"></span>
             <span>New Project → Renovation → Rental → Management</span>
@@ -232,8 +225,7 @@
 
           <h1 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.07]">
             Build rental income
-            <span class="text-kaen-blue"> <br>
-              Let us run the unit</span>
+            <span class="text-kaen-blue"> <br>Let us run the unit</span>
           </h1>
 
           <p class="mt-4 text-base md:text-lg text-kaen-muted leading-relaxed">
@@ -243,24 +235,17 @@
 
           <div class="mt-6 flex flex-wrap items-center gap-3">
             <a class="inline-flex items-center justify-center h-11 rounded-xl bg-kaen-blue px-5 text-sm font-semibold text-white hover:bg-kaen-blueHi shadow-soft whitespace-nowrap"
-               href="#quote">
-              Get Quotation
-            </a>
+               href="#quote">Get Quotation</a>
 
             <a class="inline-flex items-center justify-center gap-2 h-11 rounded-xl px-5 text-sm font-semibold text-white shadow-soft hover:opacity-95 whitespace-nowrap"
                style="background:#25D366"
                href="https://wa.me/601136111763?text=Hi%20KAEN%2C%20I%20want%20a%20quotation.%20Project%3A%20____%20Unit%20size%3A%20____%20Target%3A%20Whole%2FRooms%20Timeline%3A%20____%20Need%20management%3A%20Yes%2FNo"
-               target="_blank" rel="noreferrer">
-              WhatsApp Now
-            </a>
+               target="_blank" rel="noreferrer">WhatsApp Now</a>
 
             <a class="inline-flex items-center justify-center h-11 rounded-xl border border-kaen-line bg-white px-5 text-sm font-semibold text-kaen-ink hover:bg-kaen-soft whitespace-nowrap"
-               href="#one-stop">
-              See Flow
-            </a>
+               href="#one-stop">See Flow</a>
           </div>
 
-          <!-- Trust strip (makes it feel more "company", not template) -->
           <div class="mt-8 grid gap-3 sm:grid-cols-3">
             <div class="rounded-2xl border border-kaen-line bg-white p-4 shadow-soft">
               <div class="mt-1 text-sm font-extrabold">Hands-off Investors</div>
@@ -309,6 +294,12 @@
 
           <div class="absolute -top-10 -right-10 h-28 w-28 rounded-full bg-kaen-blue/10 blur-2xl"></div>
           <div class="absolute -bottom-10 -left-10 h-28 w-28 rounded-full bg-kaen-gold/18 blur-2xl"></div>
+
+          <img
+            src="public/kaen-logo.png"
+            alt=""
+            class="pointer-events-none absolute -right-24 -bottom-24 w-72 opacity-[0.05] hidden md:block"
+          />
         </div>
 
       </div>
@@ -378,9 +369,7 @@
                alt="New project" class="h-40 w-full object-cover" loading="lazy" />
           <div class="p-6">
             <div class="text-sm font-extrabold">New Project</div>
-            <p class="mt-2 text-sm text-kaen-muted">
-              For investors who want a practical shortlist — not marketing talk.
-            </p>
+            <p class="mt-2 text-sm text-kaen-muted">For investors who want a practical shortlist — not marketing talk.</p>
             <ul class="mt-4 space-y-2 text-sm list-disc list-inside text-kaen-muted">
               <li>Project & unit-type shortlisting</li>
               <li>Match strategy: whole unit / rooms</li>
@@ -394,15 +383,12 @@
                alt="Renovation" class="h-40 w-full object-cover" loading="lazy" />
           <div class="p-6">
             <div class="text-sm font-extrabold">Investment Renovation</div>
-            <p class="mt-2 text-sm text-kaen-muted">
-              Renovation designed for rentability: durable, practical, and photo-ready.
-            </p>
+            <p class="mt-2 text-sm text-kaen-muted">Renovation designed for rentability: durable, practical, and photo-ready.</p>
             <ul class="mt-4 space-y-2 text-sm list-disc list-inside text-kaen-muted">
               <li>Layout & furnishing strategy</li>
               <li>Budget clarity & timeline control</li>
               <li>QC + handover readiness</li>
             </ul>
-         
           </div>
         </div>
 
@@ -411,9 +397,7 @@
                alt="Rent out" class="h-40 w-full object-cover" loading="lazy" />
           <div class="p-6">
             <div class="text-sm font-extrabold">Rental + Management</div>
-            <p class="mt-2 text-sm text-kaen-muted">
-              In-house agents to rent out, and management to keep the unit stable.
-            </p>
+            <p class="mt-2 text-sm text-kaen-muted">In-house agents to rent out, and management to keep the unit stable.</p>
             <ul class="mt-4 space-y-2 text-sm list-disc list-inside text-kaen-muted">
               <li>Marketing, viewing, tenant screening</li>
               <li>Agreement + move-in coordination</li>
@@ -423,7 +407,6 @@
         </div>
       </div>
 
-      <!-- Extra services row (auction + subsale) -->
       <div class="mt-6 grid gap-4 md:grid-cols-2">
         <div class="rounded-3xl border border-kaen-line bg-white p-6 shadow-soft">
           <div class="font-extrabold">Auction Property</div>
@@ -440,8 +423,6 @@
       </div>
     </div>
   </section>
-
-  
 
   <!-- MANAGEMENT -->
   <section id="management" class="bg-kaen-soft border-y border-kaen-line">
@@ -504,12 +485,12 @@
   </section>
 
   <!-- TESTIMONIALS -->
-  <section class="bg-kaen-soft border-y border-kaen-line">
+  <section class="bg-white border-b border-kaen-line">
     <div class="mx-auto max-w-6xl px-4 py-14">
       <div class="max-w-2xl">
         <h2 class="text-2xl md:text-3xl font-extrabold">What owners say</h2>
         <p class="mt-2 text-kaen-muted leading-relaxed">
-          This section makes the site feel “real company”. Replace with your actual WhatsApp screenshots / owner feedback later.
+          Replace with your actual WhatsApp screenshots / owner feedback later.
         </p>
       </div>
 
@@ -525,7 +506,7 @@
           <div class="mt-4 text-xs text-kaen-muted">— Investor</div>
         </div>
         <div class="rounded-3xl border border-kaen-line bg-white p-6 shadow-soft">
-          <div class="text-sm font-extrabold">“Package was clear and practical.”</div>
+          <div class="text-sm font-extrabold">“Clear and practical.”</div>
           <p class="mt-2 text-sm text-kaen-muted">No need to compare many contractors. Just choose the route and execute.</p>
           <div class="mt-4 text-xs text-kaen-muted">— Landlord</div>
         </div>
@@ -534,34 +515,32 @@
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="bg-white">
+  <section id="faq" class="bg-kaen-soft border-y border-kaen-line">
     <div class="mx-auto max-w-6xl px-4 py-14">
       <div class="max-w-2xl">
         <h2 class="text-2xl md:text-3xl font-extrabold">FAQ (investor questions)</h2>
-        <p class="mt-2 text-kaen-muted leading-relaxed">
-          These are the questions serious investors ask. Clear answers = more trust.
-        </p>
+        <p class="mt-2 text-kaen-muted leading-relaxed">Clear answers = more trust.</p>
       </div>
 
       <div class="mt-8 grid gap-4 md:grid-cols-2">
         <div class="rounded-3xl border border-kaen-line bg-white p-6 shadow-soft">
           <div class="font-extrabold">Do I need renovation to rent out?</div>
           <p class="mt-2 text-sm text-kaen-muted">
-            Not always. But the right investment renovation can improve rentability, tenant quality, and reduce maintenance issues long term.
+            Not always. But the right investment renovation can improve rentability and reduce issues long term.
           </p>
         </div>
 
         <div class="rounded-3xl border border-kaen-line bg-white p-6 shadow-soft">
           <div class="font-extrabold">Whole unit vs rooms — how to choose?</div>
           <p class="mt-2 text-sm text-kaen-muted">
-            Depends on target tenant, location demand, your risk tolerance, and operation preference. We propose a route based on your unit and timeline.
+            Depends on demand, risk tolerance, and ops preference. We propose a route based on your unit and timeline.
           </p>
         </div>
 
         <div class="rounded-3xl border border-kaen-line bg-white p-6 shadow-soft">
           <div class="font-extrabold">How fast can you rent out?</div>
           <p class="mt-2 text-sm text-kaen-muted">
-            Speed depends on pricing, furnishing readiness, photos, and demand. We focus on “speed-to-rent workflow” to reduce vacancy.
+            Depends on pricing, furnishing readiness and demand. We focus on speed-to-rent workflow to reduce vacancy.
           </p>
         </div>
 
@@ -576,14 +555,14 @@
   </section>
 
   <!-- QUOTE + CONTACT -->
-  <section id="quote" class="bg-kaen-soft border-y border-kaen-line">
+  <section id="quote" class="bg-white">
     <div class="mx-auto max-w-6xl px-4 py-14">
       <div class="rounded-3xl border border-kaen-line bg-white shadow-lift overflow-hidden">
         <div class="grid gap-8 md:grid-cols-2 md:items-start">
           <div class="p-8">
             <h2 class="text-2xl md:text-3xl font-extrabold">Get a quotation</h2>
             <p class="mt-2 text-kaen-muted leading-relaxed">
-              Send your unit details — we’ll propose a practical route (whole unit / rooms) and the package plan.
+              Send your unit details — we’ll propose a practical route (whole unit / rooms) and the plan.
             </p>
 
             <div class="mt-6 rounded-2xl border border-kaen-line bg-kaen-soft p-5">
@@ -647,8 +626,9 @@
   <!-- FOOTER -->
   <footer class="border-t border-kaen-line bg-white">
     <div class="mx-auto max-w-6xl px-4 py-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm">
-      <div class="text-kaen-muted">
-        © 2022–<span id="year"></span> KAEN Properties. All rights reserved.
+      <div class="flex items-center gap-3 text-kaen-muted">
+        <img src="public/kaen-logo.png" alt="KAEN Properties" class="h-7 w-auto object-contain" />
+        <span>© 2022–<span id="year"></span> KAEN Properties. All rights reserved.</span>
       </div>
       <div class="flex flex-wrap gap-4 text-kaen-muted whitespace-nowrap">
         <a href="#one-stop" class="hover:text-kaen-ink">One-Stop</a>
@@ -669,8 +649,6 @@
       btn.addEventListener("click", () => {
         menu.classList.toggle("hidden");
       });
-
-      // auto close when click link
       menu.querySelectorAll("a").forEach(a => {
         a.addEventListener("click", () => menu.classList.add("hidden"));
       });
