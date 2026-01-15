@@ -16,43 +16,30 @@
           extend: {
             colors: {
               kaen: {
-                /* Dark theme base */
                 bg: "#0d1117",
-                bg2: "#0F1419",
-                surface: "#0f172a",
                 card: "#1a1f3a",
-                cardSoft: "rgba(26,31,58,0.55)",
-                line: "#2d3748",
-
-                /* Text */
                 ink: "#FFFFFF",
                 muted: "#b0b8c1",
+                line: "#2d3748",
 
-                /* Accent (sampled from your logo gold - less “yellow”, more premium) */
-                gold: "#E8D282",
-                goldHi: "#F0E19A",
-                goldSoft: "rgba(232,210,130,0.14)",
-                goldLine: "rgba(232,210,130,0.38)",
-
-                /* Keep existing blues but tuned for dark */
-                blue: "#3B82F6",
-                blueHi: "#60A5FA",
-                blueSoft: "rgba(59,130,246,0.12)"
+                /* Logo-like gold (less “too yellow”) */
+                gold: "#D5B873",
+                goldHi: "#E2C57F",
+                goldSoft: "rgba(213,184,115,0.12)",
+                goldLine: "rgba(213,184,115,0.45)",
               },
               brand: {
                 whatsapp: "#25D366",
                 xhs: "#FF2E4D",
-                facebook: "#1877F2"
-              }
+                facebook: "#1877F2",
+              },
             },
             boxShadow: {
-              soft: "0 10px 28px rgba(0,0,0,0.45)",
-              lift: "0 18px 50px rgba(0,0,0,0.55)",
-              glowGold: "0 0 0 1px rgba(232,210,130,0.35), 0 0 30px rgba(232,210,130,0.18)",
-              glowBlue: "0 0 0 1px rgba(59,130,246,0.30), 0 0 30px rgba(59,130,246,0.16)"
-            }
-          }
-        }
+              soft: "0 10px 30px rgba(0,0,0,0.35)",
+              lift: "0 18px 50px rgba(0,0,0,0.45)",
+            },
+          },
+        },
       };
     </script>
 
@@ -66,23 +53,35 @@
     <style>
       html,
       body {
-        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial,
+          sans-serif;
       }
       body {
-        overflow-x: hidden; /* 防止手机横向溢出 */
+        overflow-x: hidden;
       }
       img {
         max-width: 100%;
         height: auto;
       }
 
-      /* Dark hero overlay (subtle gold + blue) */
       .hero-bg {
-        background-image:
-          radial-gradient(circle at 18% 22%, rgba(232,210,130,0.12), transparent 44%),
-          radial-gradient(circle at 85% 25%, rgba(59,130,246,0.14), transparent 46%),
-          radial-gradient(circle at 60% 92%, rgba(232,210,130,0.10), transparent 50%),
-          linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.0) 45%);
+        background-image: radial-gradient(
+            circle at 15% 20%,
+            rgba(213, 184, 115, 0.1),
+            transparent 38%
+          ),
+          radial-gradient(
+            circle at 85% 25%,
+            rgba(213, 184, 115, 0.08),
+            transparent 42%
+          ),
+          radial-gradient(
+            circle at 60% 90%,
+            rgba(37, 99, 235, 0.1),
+            transparent 48%
+          ),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.03), transparent 40%),
+          linear-gradient(to bottom, rgba(13, 17, 23, 0.96), rgba(13, 17, 23, 1));
       }
 
       .iconbtn svg {
@@ -95,80 +94,55 @@
       }
 
       /* Buttons */
-      .dashed-border {
-        border-style: dashed !important;
-      }
       .btn-gold {
-        background: #E8D282;
+        background: #d5b873;
         color: #0d1117;
-        border: 2px dashed rgba(232,210,130,0.95);
+        border: 2px dashed rgba(213, 184, 115, 0.95);
         font-weight: 800;
         transition: all 0.3s ease;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
       }
       .btn-gold:hover {
-        background: #F0E19A;
-        box-shadow: 0 0 0 1px rgba(232,210,130,0.35), 0 0 30px rgba(232,210,130,0.22);
+        background: #e2c57f;
+        box-shadow: 0 0 0 1px rgba(213, 184, 115, 0.5),
+          0 18px 50px rgba(0, 0, 0, 0.55);
         transform: translateY(-1px);
       }
+
       .btn-gold-outline {
         background: transparent;
-        color: #E8D282;
-        border: 2px dashed rgba(232,210,130,0.95);
+        color: #d5b873;
+        border: 2px dashed rgba(213, 184, 115, 0.95);
         font-weight: 800;
         transition: all 0.3s ease;
       }
       .btn-gold-outline:hover {
-        background: rgba(232,210,130,0.10);
-        box-shadow: 0 0 0 1px rgba(232,210,130,0.35), 0 0 26px rgba(232,210,130,0.18);
+        background: rgba(213, 184, 115, 0.1);
+        box-shadow: 0 0 0 1px rgba(213, 184, 115, 0.35),
+          0 14px 40px rgba(0, 0, 0, 0.45);
         transform: translateY(-1px);
       }
 
       /* Cards */
-      .card-dark {
-        background: rgba(26,31,58,0.55);
+      .kaen-card {
+        background: rgba(26, 31, 58, 0.55);
         border: 1px solid #2d3748;
         transition: all 0.3s ease;
       }
-      .card-dark:hover {
-        border-color: rgba(232,210,130,0.85);
-        box-shadow: 0 0 0 1px rgba(232,210,130,0.25), 0 0 26px rgba(232,210,130,0.16);
+      .kaen-card:hover {
+        border-color: rgba(213, 184, 115, 0.85);
+        box-shadow: 0 0 0 1px rgba(213, 184, 115, 0.25),
+          0 18px 50px rgba(0, 0, 0, 0.55);
         transform: translateY(-1px);
       }
 
-      /* Gold glow helper */
-      .gold-glow:hover {
-        box-shadow: 0 0 0 1px rgba(232,210,130,0.35), 0 0 30px rgba(232,210,130,0.18);
-      }
-
-      /* Nav link hover */
-      .navlink {
-        transition: all 0.3s ease;
-      }
-      .navlink:hover {
-        color: #E8D282 !important;
-        background: rgba(232,210,130,0.10);
-      }
-
-      /* Make logo feel more “owned” */
-      .brand-wrap {
-        border: 1px solid rgba(232,210,130,0.25);
-        background: rgba(26,31,58,0.35);
-        box-shadow: 0 0 0 1px rgba(0,0,0,0.25);
-        transition: all 0.3s ease;
-      }
-      .brand-wrap:hover {
-        border-color: rgba(232,210,130,0.75);
-        box-shadow: 0 0 0 1px rgba(232,210,130,0.25), 0 0 26px rgba(232,210,130,0.14);
-      }
-
-      /* Small gold dot before section titles (visual only) */
-      .section-dot::before {
+      .sec-bullet::before {
         content: "●";
-        color: #E8D282;
+        color: #d5b873;
         margin-right: 10px;
-        font-size: 14px;
-        vertical-align: middle;
+        font-size: 12px;
+        position: relative;
+        top: -1px;
       }
     </style>
   </head>
@@ -187,7 +161,7 @@
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path
             d="M12 2.3A9.5 9.5 0 0 0 3.2 16l-.8 4.5 4.6-.8A9.5 9.5 0 1 0 12 2.3Z"
-            fill="rgba(255,255,255,0.18)"
+            fill="rgba(255,255,255,0.25)"
           />
           <path
             d="M12 4.2a7.7 7.7 0 0 0-6.7 11.5l-.5 2.6 2.7-.5A7.7 7.7 0 1 0 12 4.2Z"
@@ -203,11 +177,17 @@
     </a>
 
     <!-- TOP STRIP -->
-    <div class="w-full border-b border-kaen-line bg-kaen-bg/85 backdrop-blur">
-      <div class="mx-auto max-w-6xl px-4 py-2 flex items-center justify-between gap-3">
+    <div class="w-full border-b border-kaen-line bg-kaen-bg/75 backdrop-blur">
+      <div
+        class="mx-auto max-w-6xl px-4 py-2 flex items-center justify-between gap-3"
+      >
         <div class="flex items-center gap-2 text-sm text-kaen-muted min-w-0">
           <span class="hidden sm:inline">Hotline:</span>
-          <a class="font-semibold text-kaen-ink hover:underline shrink-0" href="tel:+601136111763">011-36111763</a>
+          <a
+            class="font-semibold text-kaen-ink hover:underline shrink-0"
+            href="tel:+601136111763"
+            >011-36111763</a
+          >
           <span class="text-kaen-line hidden sm:inline">•</span>
           <span class="hidden sm:inline">Kuala Lumpur</span>
           <span class="hidden sm:inline text-kaen-line">•</span>
@@ -217,13 +197,15 @@
         <div class="flex items-center gap-2 shrink-0">
           <!-- Xiaohongshu -->
           <a
-            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-kaen-bg/30 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-kaen-cardSoft transition"
+            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-white/5 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-white/10"
             href="https://xhslink.com/m/4HRKfUToTKR"
             target="_blank"
             rel="noreferrer"
             aria-label="Xiaohongshu"
           >
-            <span class="inline-flex items-center justify-center rounded-full bg-brand-xhs/10 p-1">
+            <span
+              class="inline-flex items-center justify-center rounded-full bg-brand-xhs/10 p-1"
+            >
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path
                   d="M7 8.5h3.2l-2.2 3.1 2.4 3.4H7.2L5.6 12.9 4 15h-2l2.6-3.4L2.2 8.5h2.2l1.2 2 1.4-2Zm9.8 0h2.2L16 12l3 4.0h-2.3l-1.8-2.6-1.8 2.6H11l3-4.0-2.9-3.5h2.2l1.7 2.2 1.8-2.2Z"
@@ -236,7 +218,7 @@
 
           <!-- Instagram -->
           <a
-            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-kaen-bg/30 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-kaen-cardSoft transition"
+            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-white/5 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-white/10"
             href="https://www.instagram.com/kaenproperties?igsh=MWEwaGtvZzdoZnloMA=="
             target="_blank"
             rel="noreferrer"
@@ -274,13 +256,15 @@
 
           <!-- Facebook -->
           <a
-            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-kaen-bg/30 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-kaen-cardSoft transition"
+            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-white/5 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-white/10"
             href="https://www.facebook.com/share/1FS6VBrKAe/"
             target="_blank"
             rel="noreferrer"
             aria-label="Facebook"
           >
-            <span class="inline-flex items-center justify-center rounded-full bg-brand-facebook/10 p-1">
+            <span
+              class="inline-flex items-center justify-center rounded-full bg-brand-facebook/10 p-1"
+            >
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path
                   d="M14 8.6V7.2c0-.7.4-1 1.1-1h1.3V4h-2c-2.2 0-3.4 1.3-3.4 3.3v1.3H9v2.5h2v8h3v-8h2.3l.4-2.5H14Z"
@@ -293,18 +277,19 @@
 
           <!-- TikTok -->
           <a
-            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-kaen-bg/30 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-kaen-cardSoft transition"
+            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-white/5 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-white/10"
             href="https://www.tiktok.com/@kaenproperties_official?_r=1&_t=ZS-92i3yxv6OoP"
             target="_blank"
             rel="noreferrer"
             aria-label="TikTok"
           >
-            <span class="inline-flex items-center justify-center rounded-full bg-white/5 p-1">
+            <span
+              class="inline-flex items-center justify-center rounded-full bg-white/5 p-1"
+            >
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path
                   d="M14.2 3h2.1c.2 1.6 1.1 3.1 2.6 4 .8.5 1.7.8 2.6.9v2.2c-1.9 0-3.6-.6-5.1-1.7v6.3c0 3.4-2.8 6.2-6.2 6.2S6 18.4 6 15s2.8-6.2 6.2-6.2c.4 0 .9.1 1.3.2v2.4c-.4-.2-.8-.3-1.3-.3-2.1 0-3.8 1.7-3.8 3.8 0 2.1 1.7 3.8 3.8 3.8s3.8-1.7 3.8-3.8V3Z"
                   fill="#ffffff"
-                  opacity="0.85"
                 />
               </svg>
             </span>
@@ -318,37 +303,47 @@
     <header class="mx-auto max-w-6xl px-4 py-4 sm:py-5">
       <div class="flex items-center justify-between gap-3">
         <!-- Brand -->
-        <a href="#" class="flex items-center gap-3 min-w-0 rounded-2xl px-3 py-2 brand-wrap">
-          <!-- ✅ logo 放大 + 更显眼 -->
+        <a href="#" class="flex items-center gap-4 min-w-0">
+          <!-- LOGO 3X BIGGER -->
           <img
             src="public/kaen-logo.png"
             alt="KAEN Properties"
-            class="h-12 sm:h-14 w-auto object-contain shrink-0 drop-shadow-[0_10px_30px_rgba(232,210,130,0.10)]"
+            class="h-24 sm:h-28 md:h-32 w-auto object-contain shrink-0"
           />
           <div class="leading-tight min-w-0">
             <div class="font-extrabold tracking-wide flex items-center gap-2 min-w-0">
               <span class="truncate">KAEN Properties</span>
               <span
-                class="hidden sm:inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-extrabold dashed-border"
-                style="border-color: rgba(232,210,130,0.85); color:#E8D282; background: rgba(232,210,130,0.08);"
+                class="hidden sm:inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold"
+                style="
+                  border: 1px dashed rgba(213,184,115,0.70);
+                  background: rgba(213,184,115,0.08);
+                  color: #D5B873;
+                "
               >
                 One-Stop Operator
               </span>
             </div>
-            <div class="text-xs text-kaen-muted mt-0.5">New Project • Renovation • Rental • Management</div>
+            <div class="text-xs text-kaen-muted mt-0.5">
+              New Project • Renovation • Rental • Management
+            </div>
           </div>
         </a>
 
-        <nav class="hidden lg:flex items-center gap-2 text-sm font-semibold text-kaen-muted">
-          <a class="navlink rounded-xl px-3 py-2" href="#one-stop">One-Stop</a>
-          <a class="navlink rounded-xl px-3 py-2" href="#services">Services</a>
-          <a class="navlink rounded-xl px-3 py-2" href="#management">Management</a>
-          <a class="navlink rounded-xl px-3 py-2" href="#faq">FAQ</a>
+        <nav
+          class="hidden lg:flex items-center gap-6 text-sm font-semibold text-kaen-muted"
+        >
+          <a class="hover:text-kaen-gold transition" href="#one-stop">One-Stop</a>
+          <a class="hover:text-kaen-gold transition" href="#services">Services</a>
+          <a class="hover:text-kaen-gold transition" href="#management">Management</a>
+          <a class="hover:text-kaen-gold transition" href="#faq">FAQ</a>
         </nav>
 
         <div class="flex items-center gap-2 shrink-0">
-          <a class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm font-extrabold btn-gold-outline"
-             href="#quote">
+          <a
+            class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline"
+            href="#quote"
+          >
             Get Quotation
           </a>
 
@@ -364,11 +359,16 @@
 
           <button
             id="menuBtn"
-            class="lg:hidden inline-flex items-center justify-center h-11 w-11 rounded-xl border border-kaen-line bg-kaen-bg/30 hover:bg-kaen-cardSoft transition gold-glow"
+            class="lg:hidden inline-flex items-center justify-center h-11 w-11 rounded-xl border border-kaen-line bg-white/5 hover:bg-white/10"
             aria-label="Open menu"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M4 7h16M4 12h16M4 17h16" stroke="#E8D282" stroke-width="2" stroke-linecap="round" />
+              <path
+                d="M4 7h16M4 12h16M4 17h16"
+                stroke="#FFFFFF"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
             </svg>
           </button>
         </div>
@@ -377,15 +377,16 @@
       <!-- Mobile menu panel -->
       <div
         id="mobileMenu"
-        class="lg:hidden hidden mt-4 rounded-2xl border border-kaen-line bg-kaen-cardSoft shadow-lift overflow-hidden"
+        class="lg:hidden hidden mt-4 rounded-2xl border border-kaen-line bg-kaen-bg/70 shadow-soft overflow-hidden"
       >
         <div class="p-3 grid gap-1 text-sm font-semibold text-kaen-muted">
-          <a class="px-3 py-2 rounded-xl navlink" href="#one-stop">One-Stop</a>
-          <a class="px-3 py-2 rounded-xl navlink" href="#services">Services</a>
-          <a class="px-3 py-2 rounded-xl navlink" href="#management">Management</a>
-          <a class="px-3 py-2 rounded-xl navlink" href="#faq">FAQ</a>
-          <a class="mt-2 inline-flex items-center justify-center h-11 rounded-xl btn-gold"
-             href="#quote">Get Quotation</a>
+          <a class="px-3 py-2 rounded-xl hover:bg-kaen-goldSoft hover:text-kaen-gold" href="#one-stop">One-Stop</a>
+          <a class="px-3 py-2 rounded-xl hover:bg-kaen-goldSoft hover:text-kaen-gold" href="#services">Services</a>
+          <a class="px-3 py-2 rounded-xl hover:bg-kaen-goldSoft hover:text-kaen-gold" href="#management">Management</a>
+          <a class="px-3 py-2 rounded-xl hover:bg-kaen-goldSoft hover:text-kaen-gold" href="#faq">FAQ</a>
+          <a class="mt-2 inline-flex items-center justify-center h-11 rounded-xl btn-gold" href="#quote"
+            >Get Quotation</a
+          >
         </div>
       </div>
     </header>
@@ -395,25 +396,32 @@
       <div class="mx-auto max-w-6xl px-4 pb-12 pt-4 sm:pt-6 md:pt-10 md:pb-16">
         <div class="grid gap-8 md:grid-cols-2 md:items-center">
           <div class="max-w-xl">
-            <div class="inline-flex flex-wrap items-center gap-x-3 gap-y-1 rounded-full border border-kaen-line bg-kaen-cardSoft px-4 sm:px-6 py-2 text-xs font-semibold text-kaen-muted">
+            <div
+              class="inline-flex flex-wrap items-center gap-x-3 gap-y-1 rounded-full border border-kaen-line bg-white/5 px-4 sm:px-6 py-2 text-xs font-semibold text-kaen-muted"
+            >
               <span>Hands-off rental operations</span>
-              <span class="h-1 w-1 rounded-full hidden sm:inline" style="background:#E8D282;"></span>
+              <span class="h-1 w-1 rounded-full hidden sm:inline" style="background:#D5B873"></span>
               <span>New Project → Renovation → Rental → Management</span>
             </div>
 
-            <h1 class="mt-4 text-[32px] sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.08]">
+            <h1
+              class="mt-4 text-[32px] sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.08]"
+            >
               Build rental income
-              <span style="color:#E8D282;"><br class="hidden sm:block" />Let KAEN run the unit</span>
+              <span style="color:#D5B873"
+                ><br class="hidden sm:block" />Let KAEN run the unit</span
+              >
             </h1>
 
             <p class="mt-4 text-base md:text-lg text-kaen-muted leading-relaxed">
-              KAEN Properties is a one-stop team for investors & owners — we help you choose the right direction,
-              renovate with an investment concept, rent out through in-house agents, and manage day-to-day operations.
+              KAEN Properties is a one-stop team for investors & owners — we
+              help you choose the right direction, renovate with an investment
+              concept, rent out through in-house agents, and manage day-to-day
+              operations.
             </p>
 
             <div class="mt-6 grid grid-cols-1 sm:flex sm:flex-wrap items-stretch gap-3">
-              <a class="inline-flex items-center justify-center h-12 rounded-xl px-5 text-sm btn-gold w-full sm:w-auto"
-                 href="#quote">
+              <a class="inline-flex items-center justify-center h-12 rounded-xl px-5 text-sm btn-gold w-full sm:w-auto" href="#quote">
                 Get Quotation
               </a>
 
@@ -427,66 +435,73 @@
                 WhatsApp Now
               </a>
 
-              <a class="inline-flex items-center justify-center h-12 rounded-xl px-5 text-sm btn-gold-outline w-full sm:w-auto"
-                 href="#one-stop">
+              <a
+                class="inline-flex items-center justify-center h-12 rounded-xl px-5 text-sm btn-gold-outline w-full sm:w-auto"
+                href="#one-stop"
+              >
                 See Flow
               </a>
             </div>
 
             <div class="mt-8 grid gap-3 sm:grid-cols-3">
-              <div class="rounded-2xl p-4 shadow-soft card-dark">
+              <div class="rounded-2xl kaen-card p-4 shadow-soft">
                 <div class="text-sm font-extrabold">Hands-off Investors</div>
-                <div class="text-xs text-kaen-muted mt-1">We operate the unit so you don’t have to</div>
+                <div class="text-xs text-kaen-muted mt-1">
+                  We operate the unit so you don’t have to
+                </div>
               </div>
-              <div class="rounded-2xl p-4 shadow-soft card-dark">
+              <div class="rounded-2xl kaen-card p-4 shadow-soft">
                 <div class="text-sm font-extrabold">Rentability-First Design</div>
-                <div class="text-xs text-kaen-muted mt-1">Built to attract tenants, not just look good.</div>
+                <div class="text-xs text-kaen-muted mt-1">
+                  Built to attract tenants, not just look good.
+                </div>
               </div>
-              <div class="rounded-2xl p-4 shadow-soft card-dark">
+              <div class="rounded-2xl kaen-card p-4 shadow-soft">
                 <div class="text-sm font-extrabold">Demand-Driven Locations</div>
-                <div class="text-xs text-kaen-muted mt-1">Focused on areas with consistent rental demand</div>
+                <div class="text-xs text-kaen-muted mt-1">
+                  Focused on areas with consistent rental demand
+                </div>
               </div>
             </div>
           </div>
 
           <div class="relative mt-2 md:mt-10">
             <div class="grid grid-cols-6 gap-3">
-              <div class="col-span-6 rounded-3xl overflow-hidden border border-kaen-line shadow-lift bg-kaen-cardSoft">
+              <div class="col-span-6 rounded-3xl overflow-hidden border border-kaen-line shadow-lift bg-white/5">
                 <img
                   src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1600&q=70"
                   alt="Modern apartment interior"
-                  class="h-56 sm:h-64 w-full object-cover"
+                  class="h-56 sm:h-64 w-full object-cover opacity-[0.92]"
                   loading="lazy"
                 />
               </div>
 
-              <div class="col-span-3 rounded-3xl overflow-hidden border border-kaen-line shadow-soft bg-kaen-cardSoft">
+              <div class="col-span-3 rounded-3xl overflow-hidden border border-kaen-line shadow-soft bg-white/5">
                 <img
                   src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=70"
                   alt="Property consulting"
-                  class="h-32 sm:h-44 w-full object-cover"
+                  class="h-32 sm:h-44 w-full object-cover opacity-[0.92]"
                   loading="lazy"
                 />
               </div>
 
-              <div class="col-span-3 rounded-3xl overflow-hidden border border-kaen-line shadow-soft bg-kaen-cardSoft">
+              <div class="col-span-3 rounded-3xl overflow-hidden border border-kaen-line shadow-soft bg-white/5">
                 <img
                   src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=70"
                   alt="Agents serving customers"
-                  class="h-32 sm:h-44 w-full object-cover"
+                  class="h-32 sm:h-44 w-full object-cover opacity-[0.92]"
                   loading="lazy"
                 />
               </div>
             </div>
 
-            <div class="absolute -top-10 -right-10 h-28 w-28 rounded-full blur-2xl" style="background: rgba(232,210,130,0.12);"></div>
-            <div class="absolute -bottom-10 -left-10 h-28 w-28 rounded-full blur-2xl" style="background: rgba(59,130,246,0.12);"></div>
+            <div class="absolute -top-10 -right-10 h-28 w-28 rounded-full blur-2xl" style="background: rgba(213,184,115,0.14);"></div>
+            <div class="absolute -bottom-10 -left-10 h-28 w-28 rounded-full blur-2xl" style="background: rgba(37,99,235,0.12);"></div>
 
-            <!-- ✅ watermark 用 logo 但更“高级” -->
             <img
               src="public/kaen-logo.png"
               alt=""
-              class="pointer-events-none absolute -right-20 -bottom-24 w-[22rem] opacity-[0.06] hidden md:block"
+              class="pointer-events-none absolute -right-24 -bottom-24 w-72 opacity-[0.06] hidden md:block"
             />
           </div>
         </div>
@@ -498,38 +513,57 @@
       <div class="mx-auto max-w-6xl px-4 py-14">
         <div class="flex items-end justify-between gap-6">
           <div class="max-w-2xl">
-            <h2 class="text-2xl md:text-3xl font-extrabold section-dot">One-Stop A–Z (Investor Flow)</h2>
+            <h2 class="text-2xl md:text-3xl font-extrabold sec-bullet">
+              One-Stop A–Z (Investor Flow)
+            </h2>
             <p class="mt-2 text-kaen-muted leading-relaxed">
-              One operator, clear responsibility. From strategy to stable rent — not just “renovation”.
+              One operator, clear responsibility. From strategy to stable rent —
+              not just “renovation”.
             </p>
           </div>
-          <a class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline"
-             href="#quote">Get Quotation</a>
+          <a class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline" href="#quote"
+            >Get Quotation</a
+          >
         </div>
 
         <div class="mt-8 grid gap-4 md:grid-cols-4">
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
-            <div class="text-xs font-extrabold" style="color:#E8D282;">STEP 1</div>
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
+            <div class="text-xs font-bold" style="color:#D5B873">STEP 1</div>
             <div class="mt-2 font-bold">New Project / Strategy</div>
-            <p class="mt-2 text-sm text-kaen-muted">Shortlist by demand, rentability, and realistic ownership plan.</p>
-            <div class="mt-4 text-xs text-kaen-muted">Output: shortlist + strategy (whole / rooms)</div>
+            <p class="mt-2 text-sm text-kaen-muted">
+              Shortlist by demand, rentability, and realistic ownership plan.
+            </p>
+            <div class="mt-4 text-xs text-kaen-muted">
+              Output: shortlist + strategy (whole / rooms)
+            </div>
           </div>
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
-            <div class="text-xs font-extrabold" style="color:#E8D282;">STEP 2</div>
+
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
+            <div class="text-xs font-bold" style="color:#D5B873">STEP 2</div>
             <div class="mt-2 font-bold">Renovation (Investment Concept)</div>
-            <p class="mt-2 text-sm text-kaen-muted">Layout + furnishing tenants want. Practical and durable decisions.</p>
-            <div class="mt-4 text-xs text-kaen-muted">Output: ready-to-market unit</div>
+            <p class="mt-2 text-sm text-kaen-muted">
+              Layout + furnishing tenants want. Practical and durable decisions.
+            </p>
+            <div class="mt-4 text-xs text-kaen-muted">
+              Output: ready-to-market unit
+            </div>
           </div>
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
-            <div class="text-xs font-extrabold" style="color:#E8D282;">STEP 3</div>
+
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
+            <div class="text-xs font-bold" style="color:#D5B873">STEP 3</div>
             <div class="mt-2 font-bold">Rental (In-house Agents)</div>
-            <p class="mt-2 text-sm text-kaen-muted">Marketing, viewing, screening, agreement — speed-to-rent focus.</p>
+            <p class="mt-2 text-sm text-kaen-muted">
+              Marketing, viewing, screening, agreement — speed-to-rent focus.
+            </p>
             <div class="mt-4 text-xs text-kaen-muted">Output: tenant secured</div>
           </div>
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
-            <div class="text-xs font-extrabold" style="color:#E8D282;">STEP 4</div>
+
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
+            <div class="text-xs font-bold" style="color:#D5B873">STEP 4</div>
             <div class="mt-2 font-bold">Management (Hands-off)</div>
-            <p class="mt-2 text-sm text-kaen-muted">Collection, maintenance coordination, tenant issues, follow-up.</p>
+            <p class="mt-2 text-sm text-kaen-muted">
+              Collection, maintenance coordination, tenant issues, follow-up.
+            </p>
             <div class="mt-4 text-xs text-kaen-muted">Output: stable operation</div>
           </div>
         </div>
@@ -541,21 +575,23 @@
       <div class="mx-auto max-w-6xl px-4 py-14">
         <div class="flex items-end justify-between gap-6">
           <div class="max-w-2xl">
-            <h2 class="text-2xl md:text-3xl font-extrabold section-dot">Services</h2>
+            <h2 class="text-2xl md:text-3xl font-extrabold sec-bullet">Services</h2>
             <p class="mt-2 text-kaen-muted leading-relaxed">
-              You don’t need to coordinate 3–4 parties. We run the unit like an operator.
+              You don’t need to coordinate 3–4 parties. We run the unit like an
+              operator.
             </p>
           </div>
-          <a class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold"
-             href="#quote">Quote My Unit</a>
+          <a class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold" href="#quote"
+            >Quote My Unit</a
+          >
         </div>
 
         <div class="mt-8 grid gap-4 md:grid-cols-3">
-          <div class="rounded-3xl overflow-hidden shadow-soft card-dark">
+          <div class="rounded-3xl kaen-card overflow-hidden shadow-soft">
             <img
               src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=70"
               alt="New project"
-              class="h-40 w-full object-cover"
+              class="h-40 w-full object-cover opacity-[0.92]"
               loading="lazy"
             />
             <div class="p-6">
@@ -571,11 +607,11 @@
             </div>
           </div>
 
-          <div class="rounded-3xl overflow-hidden shadow-soft card-dark">
+          <div class="rounded-3xl kaen-card overflow-hidden shadow-soft">
             <img
               src="https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=1200&q=70"
               alt="Renovation"
-              class="h-40 w-full object-cover"
+              class="h-40 w-full object-cover opacity-[0.92]"
               loading="lazy"
             />
             <div class="p-6">
@@ -591,11 +627,11 @@
             </div>
           </div>
 
-          <div class="rounded-3xl overflow-hidden shadow-soft card-dark">
+          <div class="rounded-3xl kaen-card overflow-hidden shadow-soft">
             <img
               src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=70"
               alt="Rent out"
-              class="h-40 w-full object-cover"
+              class="h-40 w-full object-cover opacity-[0.92]"
               loading="lazy"
             />
             <div class="p-6">
@@ -613,13 +649,13 @@
         </div>
 
         <div class="mt-6 grid gap-4 md:grid-cols-2">
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
             <div class="font-extrabold">Auction Property</div>
             <p class="mt-2 text-sm text-kaen-muted">
               We can assist investors who want auction opportunities with practical steps and risk awareness.
             </p>
           </div>
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
             <div class="font-extrabold">Subsale / Secondary Market</div>
             <p class="mt-2 text-sm text-kaen-muted">
               If you’re an owner planning to sell or restructure your portfolio, we can advise and assist on execution.
@@ -634,17 +670,20 @@
       <div class="mx-auto max-w-6xl px-4 py-14">
         <div class="flex items-end justify-between gap-6">
           <div class="max-w-2xl">
-            <h2 class="text-2xl md:text-3xl font-extrabold section-dot">Management (hands-off ownership)</h2>
+            <h2 class="text-2xl md:text-3xl font-extrabold sec-bullet">
+              Management (hands-off ownership)
+            </h2>
             <p class="mt-2 text-kaen-muted leading-relaxed">
               For investors who don’t want to manage tenant issues. We handle operations and coordination.
             </p>
           </div>
-          <a class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold"
-             href="#quote">Ask about management</a>
+          <a class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold" href="#quote"
+            >Ask about management</a
+          >
         </div>
 
         <div class="mt-8 grid gap-4 md:grid-cols-3">
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
             <div class="font-extrabold">Tenant & Agreement</div>
             <ul class="mt-3 space-y-2 text-sm text-kaen-muted list-disc list-inside">
               <li>Tenant screening support</li>
@@ -653,7 +692,7 @@
             </ul>
           </div>
 
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
             <div class="font-extrabold">Collection & Follow-up</div>
             <ul class="mt-3 space-y-2 text-sm text-kaen-muted list-disc list-inside">
               <li>Rental follow-up & reminders</li>
@@ -662,7 +701,7 @@
             </ul>
           </div>
 
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
             <div class="font-extrabold">Maintenance & Ops</div>
             <ul class="mt-3 space-y-2 text-sm text-kaen-muted list-disc list-inside">
               <li>Maintenance coordination</li>
@@ -672,7 +711,7 @@
           </div>
         </div>
 
-        <div class="mt-6 rounded-3xl p-6 shadow-soft card-dark">
+        <div class="mt-6 rounded-3xl kaen-card p-6 shadow-soft">
           <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
               <div class="font-extrabold">Want a hands-off plan?</div>
@@ -698,27 +737,35 @@
     <section class="bg-kaen-bg border-b border-kaen-line">
       <div class="mx-auto max-w-6xl px-4 py-14">
         <div class="max-w-2xl">
-          <h2 class="text-2xl md:text-3xl font-extrabold section-dot">What owners say</h2>
-          <p class="mt-2 text-kaen-muted leading-relaxed">Replace with your actual WhatsApp screenshots / owner feedback later.</p>
+          <h2 class="text-2xl md:text-3xl font-extrabold sec-bullet">What owners say</h2>
+          <p class="mt-2 text-kaen-muted leading-relaxed">
+            Replace with your actual WhatsApp screenshots / owner feedback later.
+          </p>
         </div>
 
         <div class="mt-8 grid gap-4 md:grid-cols-3">
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
             <div class="text-sm font-extrabold">“Very systematic. Less headache.”</div>
-            <div class="mt-2 text-sm" style="color:#E8D282;">★★★★★</div>
-            <p class="mt-2 text-sm text-kaen-muted">Renovation finished on schedule and rent out faster than expected.</p>
+            <div class="mt-2 text-sm" style="color:#D5B873">★★★★★</div>
+            <p class="mt-2 text-sm text-kaen-muted">
+              Renovation finished on schedule and rent out faster than expected.
+            </p>
             <div class="mt-4 text-xs text-kaen-muted">— Owner (KL)</div>
           </div>
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
             <div class="text-sm font-extrabold">“I can finally be hands-off.”</div>
-            <div class="mt-2 text-sm" style="color:#E8D282;">★★★★★</div>
-            <p class="mt-2 text-sm text-kaen-muted">Tenant issues, follow up, maintenance — KAEN handled it all.</p>
+            <div class="mt-2 text-sm" style="color:#D5B873">★★★★★</div>
+            <p class="mt-2 text-sm text-kaen-muted">
+              Tenant issues, follow up, maintenance — KAEN handled it all.
+            </p>
             <div class="mt-4 text-xs text-kaen-muted">— Investor</div>
           </div>
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
             <div class="text-sm font-extrabold">“Clear and practical.”</div>
-            <div class="mt-2 text-sm" style="color:#E8D282;">★★★★★</div>
-            <p class="mt-2 text-sm text-kaen-muted">No need to compare many contractors. Just choose the route and execute.</p>
+            <div class="mt-2 text-sm" style="color:#D5B873">★★★★★</div>
+            <p class="mt-2 text-sm text-kaen-muted">
+              No need to compare many contractors. Just choose the route and execute.
+            </p>
             <div class="mt-4 text-xs text-kaen-muted">— Landlord</div>
           </div>
         </div>
@@ -729,33 +776,33 @@
     <section id="faq" class="border-y border-kaen-line" style="background: rgba(26,31,58,0.18);">
       <div class="mx-auto max-w-6xl px-4 py-14">
         <div class="max-w-2xl">
-          <h2 class="text-2xl md:text-3xl font-extrabold section-dot">FAQ (investor questions)</h2>
+          <h2 class="text-2xl md:text-3xl font-extrabold sec-bullet">FAQ (investor questions)</h2>
           <p class="mt-2 text-kaen-muted leading-relaxed">Clear answers = more trust.</p>
         </div>
 
         <div class="mt-8 grid gap-4 md:grid-cols-2">
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
             <div class="font-extrabold">Do I need renovation to rent out?</div>
             <p class="mt-2 text-sm text-kaen-muted">
               Not always. But the right investment renovation can improve rentability and reduce issues long term.
             </p>
           </div>
 
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
             <div class="font-extrabold">Whole unit vs rooms — how to choose?</div>
             <p class="mt-2 text-sm text-kaen-muted">
               Depends on demand, risk tolerance, and ops preference. We propose a route based on your unit and timeline.
             </p>
           </div>
 
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
             <div class="font-extrabold">How fast can you rent out?</div>
             <p class="mt-2 text-sm text-kaen-muted">
               Depends on pricing, furnishing readiness and demand. We focus on speed-to-rent workflow to reduce vacancy.
             </p>
           </div>
 
-          <div class="rounded-3xl p-6 shadow-soft card-dark">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft">
             <div class="font-extrabold">Can you manage tenant issues and repairs?</div>
             <p class="mt-2 text-sm text-kaen-muted">
               Yes. We coordinate maintenance and handle day-to-day tenant communication — owners stay hands-off.
@@ -768,15 +815,15 @@
     <!-- QUOTE + CONTACT -->
     <section id="quote" class="bg-kaen-bg">
       <div class="mx-auto max-w-6xl px-4 py-14">
-        <div class="rounded-3xl border border-kaen-line shadow-lift overflow-hidden bg-kaen-cardSoft">
+        <div class="rounded-3xl border border-kaen-line bg-white/5 shadow-lift overflow-hidden">
           <div class="grid gap-8 md:grid-cols-2 md:items-start">
             <div class="p-8">
-              <h2 class="text-2xl md:text-3xl font-extrabold section-dot">Get a quotation</h2>
+              <h2 class="text-2xl md:text-3xl font-extrabold sec-bullet">Get a quotation</h2>
               <p class="mt-2 text-kaen-muted leading-relaxed">
                 Send your unit details — we’ll propose a practical route (whole unit / rooms) and the plan.
               </p>
 
-              <div class="mt-6 rounded-2xl border border-kaen-line bg-kaen-cardSoft p-5">
+              <div class="mt-6 rounded-2xl border border-kaen-line bg-white/5 p-5">
                 <div class="font-semibold">Send these 4 details</div>
                 <ul class="mt-2 list-disc list-inside text-sm text-kaen-muted space-y-1">
                   <li>Project name + unit size</li>
@@ -802,29 +849,29 @@
               </p>
             </div>
 
-            <div class="p-8 border-t md:border-t-0 md:border-l border-kaen-line bg-kaen-cardSoft">
-              <h3 class="text-xl font-extrabold section-dot">Contact</h3>
+            <div class="p-8 bg-white/5 border-t md:border-t-0 md:border-l border-kaen-line">
+              <h3 class="text-xl font-extrabold sec-bullet">Contact</h3>
 
               <div class="mt-5 space-y-3 text-sm">
-                <div class="rounded-2xl p-4 card-dark">
+                <div class="rounded-2xl kaen-card p-4">
                   <div class="font-semibold">WhatsApp / Hotline</div>
                   <div class="mt-1">
-                    <a class="font-extrabold hover:underline" style="color:#E8D282;" href="tel:+601136111763"
+                    <a class="font-extrabold hover:underline" style="color:#D5B873" href="tel:+601136111763"
                       >011-36111763</a
                     >
                   </div>
                 </div>
 
-                <div class="rounded-2xl p-4 card-dark">
+                <div class="rounded-2xl kaen-card p-4">
                   <div class="font-semibold">Email</div>
                   <div class="mt-1">
-                    <a class="font-extrabold hover:underline" style="color:#E8D282;" href="mailto:kaenproperties@gmail.com"
+                    <a class="font-extrabold hover:underline" style="color:#D5B873" href="mailto:kaenproperties@gmail.com"
                       >kaenproperties@gmail.com</a
                     >
                   </div>
                 </div>
 
-                <div class="rounded-2xl p-4 card-dark">
+                <div class="rounded-2xl kaen-card p-4">
                   <div class="font-semibold">Office</div>
                   <div class="mt-1 text-kaen-muted">
                     NO 27-4, Jalan Perdana 10/12, Pandan Perdana, 55300 WP Kuala Lumpur
@@ -845,16 +892,15 @@
     <footer class="border-t border-kaen-line" style="background:#0F1419;">
       <div class="mx-auto max-w-6xl px-4 py-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm">
         <div class="flex items-center gap-3 text-kaen-muted">
-          <!-- ✅ footer logo 也稍微放大 -->
-          <img src="public/kaen-logo.png" alt="KAEN Properties" class="h-9 w-auto object-contain" />
-          <span>© 2022–<span id="year"></span> KAEN Properties. All rights reserved.</span>
+          <img src="public/kaen-logo.png" alt="KAEN Properties" class="h-7 w-auto object-contain" />
+          <span>© 2022–<span id="year"></span> <span style="color:#D5B873; font-weight:800;">KAEN Properties</span>. All rights reserved.</span>
         </div>
-        <div class="flex flex-wrap gap-2 text-kaen-muted">
-          <a href="#one-stop" class="navlink rounded-xl px-3 py-2">One-Stop</a>
-          <a href="#services" class="navlink rounded-xl px-3 py-2">Services</a>
-          <a href="#management" class="navlink rounded-xl px-3 py-2">Management</a>
-          <a href="#faq" class="navlink rounded-xl px-3 py-2">FAQ</a>
-          <a href="#quote" class="navlink rounded-xl px-3 py-2">Quotation</a>
+        <div class="flex flex-wrap gap-4 text-kaen-muted">
+          <a href="#one-stop" class="hover:text-kaen-gold">One-Stop</a>
+          <a href="#services" class="hover:text-kaen-gold">Services</a>
+          <a href="#management" class="hover:text-kaen-gold">Management</a>
+          <a href="#faq" class="hover:text-kaen-gold">FAQ</a>
+          <a href="#quote" class="hover:text-kaen-gold">Quotation</a>
         </div>
       </div>
     </footer>
