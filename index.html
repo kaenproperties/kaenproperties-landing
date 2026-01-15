@@ -178,14 +178,10 @@
 
     <!-- TOP STRIP -->
     <div class="w-full border-b border-kaen-line bg-kaen-bg/75 backdrop-blur">
-      <div
-        class="mx-auto max-w-6xl px-4 py-2 flex items-center justify-between gap-3"
-      >
+      <div class="mx-auto max-w-6xl px-4 py-2 flex items-center justify-between gap-3">
         <div class="flex items-center gap-2 text-sm text-kaen-muted min-w-0">
           <span class="hidden sm:inline">Hotline:</span>
-          <a
-            class="font-semibold text-kaen-ink hover:underline shrink-0"
-            href="tel:+601136111763"
+          <a class="font-semibold text-kaen-ink hover:underline shrink-0" href="tel:+601136111763"
             >011-36111763</a
           >
           <span class="text-kaen-line hidden sm:inline">•</span>
@@ -194,7 +190,35 @@
           <span class="hidden sm:inline">9am–6pm</span>
         </div>
 
+        <!-- ✅ MOBILE FIX: WhatsApp button moves INTO this row (left of XHS) -->
         <div class="flex items-center gap-2 shrink-0">
+          <!-- Mobile WhatsApp (icon button) -->
+          <a
+            class="sm:hidden iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-white/5 px-3 py-1.5 text-sm font-extrabold text-kaen-ink hover:bg-white/10"
+            href="https://wa.me/601136111763?text=Hi%20KAEN%2C%20I%20want%20a%20quotation%20for%20my%20unit."
+            target="_blank"
+            rel="noreferrer"
+            aria-label="WhatsApp"
+          >
+            <span class="inline-flex items-center justify-center rounded-full p-1" style="background: rgba(37,211,102,0.16);">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M12 2.3A9.5 9.5 0 0 0 3.2 16l-.8 4.5 4.6-.8A9.5 9.5 0 1 0 12 2.3Z"
+                  fill="rgba(255,255,255,0.20)"
+                />
+                <path
+                  d="M12 4.2a7.7 7.7 0 0 0-6.7 11.5l-.5 2.6 2.7-.5A7.7 7.7 0 1 0 12 4.2Z"
+                  fill="#ffffff"
+                />
+                <path
+                  d="M16.6 14.4c-.2-.1-1.3-.6-1.5-.7-.2-.1-.4-.1-.6.1l-.5.7c-.1.2-.3.2-.5.1-.3-.1-1-.4-1.9-1.2-.7-.6-1.1-1.3-1.2-1.5-.1-.2 0-.4.1-.5l.4-.5c.1-.1.1-.3.2-.4 0-.1 0-.3 0-.4 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.8 2.3.9 2.5.1.2 1.6 2.6 4 3.6 2.3 1 2.3.7 2.7.7.4 0 1.3-.5 1.5-1 .2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"
+                  fill="#25D366"
+                />
+              </svg>
+            </span>
+            <span class="hidden xs:inline">WhatsApp</span>
+          </a>
+
           <!-- Xiaohongshu -->
           <a
             class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-white/5 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-white/10"
@@ -203,9 +227,7 @@
             rel="noreferrer"
             aria-label="Xiaohongshu"
           >
-            <span
-              class="inline-flex items-center justify-center rounded-full bg-brand-xhs/10 p-1"
-            >
+            <span class="inline-flex items-center justify-center rounded-full bg-brand-xhs/10 p-1">
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path
                   d="M7 8.5h3.2l-2.2 3.1 2.4 3.4H7.2L5.6 12.9 4 15h-2l2.6-3.4L2.2 8.5h2.2l1.2 2 1.4-2Zm9.8 0h2.2L16 12l3 4.0h-2.3l-1.8-2.6-1.8 2.6H11l3-4.0-2.9-3.5h2.2l1.7 2.2 1.8-2.2Z"
@@ -262,9 +284,7 @@
             rel="noreferrer"
             aria-label="Facebook"
           >
-            <span
-              class="inline-flex items-center justify-center rounded-full bg-brand-facebook/10 p-1"
-            >
+            <span class="inline-flex items-center justify-center rounded-full bg-brand-facebook/10 p-1">
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path
                   d="M14 8.6V7.2c0-.7.4-1 1.1-1h1.3V4h-2c-2.2 0-3.4 1.3-3.4 3.3v1.3H9v2.5h2v8h3v-8h2.3l.4-2.5H14Z"
@@ -283,9 +303,7 @@
             rel="noreferrer"
             aria-label="TikTok"
           >
-            <span
-              class="inline-flex items-center justify-center rounded-full bg-white/5 p-1"
-            >
+            <span class="inline-flex items-center justify-center rounded-full bg-white/5 p-1">
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path
                   d="M14.2 3h2.1c.2 1.6 1.1 3.1 2.6 4 .8.5 1.7.8 2.6.9v2.2c-1.9 0-3.6-.6-5.1-1.7v6.3c0 3.4-2.8 6.2-6.2 6.2S6 18.4 6 15s2.8-6.2 6.2-6.2c.4 0 .9.1 1.3.2v2.4c-.4-.2-.8-.3-1.3-.3-2.1 0-3.8 1.7-3.8 3.8 0 2.1 1.7 3.8 3.8 3.8s3.8-1.7 3.8-3.8V3Z"
@@ -330,9 +348,7 @@
           </div>
         </a>
 
-        <nav
-          class="hidden lg:flex items-center gap-6 text-sm font-semibold text-kaen-muted"
-        >
+        <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-kaen-muted">
           <a class="hover:text-kaen-gold transition" href="#one-stop">One-Stop</a>
           <a class="hover:text-kaen-gold transition" href="#services">Services</a>
           <a class="hover:text-kaen-gold transition" href="#management">Management</a>
@@ -340,15 +356,13 @@
         </nav>
 
         <div class="flex items-center gap-2 shrink-0">
-          <a
-            class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline"
-            href="#quote"
-          >
+          <a class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline" href="#quote">
             Get Quotation
           </a>
 
+          <!-- ✅ Desktop WhatsApp stays here, mobile WhatsApp moved to top strip -->
           <a
-            class="inline-flex items-center justify-center gap-2 h-11 rounded-xl px-4 text-sm font-extrabold text-white shadow-soft hover:opacity-95"
+            class="hidden sm:inline-flex items-center justify-center gap-2 h-11 rounded-xl px-4 text-sm font-extrabold text-white shadow-soft hover:opacity-95"
             style="background: #25d366"
             href="https://wa.me/601136111763?text=Hi%20KAEN%2C%20I%20want%20a%20quotation%20for%20my%20unit."
             target="_blank"
@@ -363,12 +377,7 @@
             aria-label="Open menu"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path
-                d="M4 7h16M4 12h16M4 17h16"
-                stroke="#FFFFFF"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
             </svg>
           </button>
         </div>
@@ -384,9 +393,7 @@
           <a class="px-3 py-2 rounded-xl hover:bg-kaen-goldSoft hover:text-kaen-gold" href="#services">Services</a>
           <a class="px-3 py-2 rounded-xl hover:bg-kaen-goldSoft hover:text-kaen-gold" href="#management">Management</a>
           <a class="px-3 py-2 rounded-xl hover:bg-kaen-goldSoft hover:text-kaen-gold" href="#faq">FAQ</a>
-          <a class="mt-2 inline-flex items-center justify-center h-11 rounded-xl btn-gold" href="#quote"
-            >Get Quotation</a
-          >
+          <a class="mt-2 inline-flex items-center justify-center h-11 rounded-xl btn-gold" href="#quote">Get Quotation</a>
         </div>
       </div>
     </header>
@@ -404,20 +411,14 @@
               <span>New Project → Renovation → Rental → Management</span>
             </div>
 
-            <h1
-              class="mt-4 text-[32px] sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.08]"
-            >
+            <h1 class="mt-4 text-[32px] sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.08]">
               Build rental income
-              <span style="color:#D5B873"
-                ><br class="hidden sm:block" />Let KAEN run the unit</span
-              >
+              <span style="color:#D5B873"><br class="hidden sm:block" />Let KAEN run the unit</span>
             </h1>
 
             <p class="mt-4 text-base md:text-lg text-kaen-muted leading-relaxed">
-              KAEN Properties is a one-stop team for investors & owners — we
-              help you choose the right direction, renovate with an investment
-              concept, rent out through in-house agents, and manage day-to-day
-              operations.
+              KAEN Properties is a one-stop team for investors & owners — we help you choose the right direction,
+              renovate with an investment concept, rent out through in-house agents, and manage day-to-day operations.
             </p>
 
             <div class="mt-6 grid grid-cols-1 sm:flex sm:flex-wrap items-stretch gap-3">
@@ -435,10 +436,7 @@
                 WhatsApp Now
               </a>
 
-              <a
-                class="inline-flex items-center justify-center h-12 rounded-xl px-5 text-sm btn-gold-outline w-full sm:w-auto"
-                href="#one-stop"
-              >
+              <a class="inline-flex items-center justify-center h-12 rounded-xl px-5 text-sm btn-gold-outline w-full sm:w-auto" href="#one-stop">
                 See Flow
               </a>
             </div>
@@ -446,21 +444,15 @@
             <div class="mt-8 grid gap-3 sm:grid-cols-3">
               <div class="rounded-2xl kaen-card p-4 shadow-soft">
                 <div class="text-sm font-extrabold">Hands-off Investors</div>
-                <div class="text-xs text-kaen-muted mt-1">
-                  We operate the unit so you don’t have to
-                </div>
+                <div class="text-xs text-kaen-muted mt-1">We operate the unit so you don’t have to</div>
               </div>
               <div class="rounded-2xl kaen-card p-4 shadow-soft">
                 <div class="text-sm font-extrabold">Rentability-First Design</div>
-                <div class="text-xs text-kaen-muted mt-1">
-                  Built to attract tenants, not just look good.
-                </div>
+                <div class="text-xs text-kaen-muted mt-1">Built to attract tenants, not just look good.</div>
               </div>
               <div class="rounded-2xl kaen-card p-4 shadow-soft">
                 <div class="text-sm font-extrabold">Demand-Driven Locations</div>
-                <div class="text-xs text-kaen-muted mt-1">
-                  Focused on areas with consistent rental demand
-                </div>
+                <div class="text-xs text-kaen-muted mt-1">Focused on areas with consistent rental demand</div>
               </div>
             </div>
           </div>
@@ -513,12 +505,9 @@
       <div class="mx-auto max-w-6xl px-4 py-14">
         <div class="flex items-end justify-between gap-6">
           <div class="max-w-2xl">
-            <h2 class="text-2xl md:text-3xl font-extrabold sec-bullet">
-              One-Stop A–Z (Investor Flow)
-            </h2>
+            <h2 class="text-2xl md:text-3xl font-extrabold sec-bullet">One-Stop A–Z (Investor Flow)</h2>
             <p class="mt-2 text-kaen-muted leading-relaxed">
-              One operator, clear responsibility. From strategy to stable rent —
-              not just “renovation”.
+              One operator, clear responsibility. From strategy to stable rent — not just “renovation”.
             </p>
           </div>
           <a class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline" href="#quote"
@@ -533,9 +522,7 @@
             <p class="mt-2 text-sm text-kaen-muted">
               Shortlist by demand, rentability, and realistic ownership plan.
             </p>
-            <div class="mt-4 text-xs text-kaen-muted">
-              Output: shortlist + strategy (whole / rooms)
-            </div>
+            <div class="mt-4 text-xs text-kaen-muted">Output: shortlist + strategy (whole / rooms)</div>
           </div>
 
           <div class="rounded-3xl kaen-card p-6 shadow-soft">
@@ -544,9 +531,7 @@
             <p class="mt-2 text-sm text-kaen-muted">
               Layout + furnishing tenants want. Practical and durable decisions.
             </p>
-            <div class="mt-4 text-xs text-kaen-muted">
-              Output: ready-to-market unit
-            </div>
+            <div class="mt-4 text-xs text-kaen-muted">Output: ready-to-market unit</div>
           </div>
 
           <div class="rounded-3xl kaen-card p-6 shadow-soft">
@@ -577,8 +562,7 @@
           <div class="max-w-2xl">
             <h2 class="text-2xl md:text-3xl font-extrabold sec-bullet">Services</h2>
             <p class="mt-2 text-kaen-muted leading-relaxed">
-              You don’t need to coordinate 3–4 parties. We run the unit like an
-              operator.
+              You don’t need to coordinate 3–4 parties. We run the unit like an operator.
             </p>
           </div>
           <a class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold" href="#quote"
