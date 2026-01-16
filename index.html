@@ -21,8 +21,6 @@
                 ink: "#FFFFFF",
                 muted: "#b0b8c1",
                 line: "#2d3748",
-
-                /* Logo-like gold (less “too yellow”) */
                 gold: "#D5B873",
                 goldHi: "#E2C57F",
                 goldSoft: "rgba(213,184,115,0.12)",
@@ -93,7 +91,6 @@
         height: 16px;
       }
 
-      /* Buttons */
       .btn-gold {
         background: #d5b873;
         color: #0d1117;
@@ -123,7 +120,6 @@
         transform: translateY(-1px);
       }
 
-      /* Cards */
       .kaen-card {
         background: rgba(26, 31, 58, 0.55);
         border: 1px solid #2d3748;
@@ -179,9 +175,12 @@
     <!-- TOP STRIP -->
     <div class="w-full border-b border-kaen-line bg-kaen-bg/75 backdrop-blur">
       <div class="mx-auto max-w-6xl px-4 py-2 flex items-center justify-between gap-3">
-        <div class="flex items-center gap-2 text-sm text-kaen-muted min-w-0">
+        <!-- ✅ FIX: allow wrapping + prevent overlap with right icons -->
+        <div class="flex items-center gap-2 text-sm text-kaen-muted min-w-0 flex-wrap pr-3">
           <span class="hidden sm:inline">Hotline:</span>
-          <a class="font-semibold text-kaen-ink hover:underline shrink-0" href="tel:+601136111763"
+          <a
+            class="font-semibold text-kaen-ink hover:underline shrink-0"
+            href="tel:+601136111763"
             >011-36111763</a
           >
           <span class="text-kaen-line hidden sm:inline">•</span>
@@ -190,8 +189,8 @@
           <span class="hidden sm:inline">9am–6pm</span>
         </div>
 
-        <!-- ✅ MOBILE FIX: WhatsApp button moves INTO this row (left of XHS) -->
-        <div class="flex items-center gap-2 shrink-0">
+        <!-- ✅ FIX: keep icons on one line + add spacing -->
+        <div class="flex items-center gap-2 shrink-0 flex-nowrap">
           <!-- Mobile WhatsApp (icon button) -->
           <a
             class="sm:hidden iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-white/5 px-3 py-1.5 text-sm font-extrabold text-kaen-ink hover:bg-white/10"
@@ -200,7 +199,10 @@
             rel="noreferrer"
             aria-label="WhatsApp"
           >
-            <span class="inline-flex items-center justify-center rounded-full p-1" style="background: rgba(37,211,102,0.16);">
+            <span
+              class="inline-flex items-center justify-center rounded-full p-1"
+              style="background: rgba(37, 211, 102, 0.16)"
+            >
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path
                   d="M12 2.3A9.5 9.5 0 0 0 3.2 16l-.8 4.5 4.6-.8A9.5 9.5 0 1 0 12 2.3Z"
@@ -216,7 +218,7 @@
                 />
               </svg>
             </span>
-            <span class="hidden xs:inline">WhatsApp</span>
+            <span class="hidden sm:inline">WhatsApp</span>
           </a>
 
           <!-- Xiaohongshu -->
@@ -320,9 +322,7 @@
     <!-- HEADER + NAV + MOBILE MENU -->
     <header class="mx-auto max-w-6xl px-4 py-4 sm:py-5">
       <div class="flex items-center justify-between gap-3">
-        <!-- Brand -->
         <a href="#" class="flex items-center gap-4 min-w-0">
-          <!-- LOGO 3X BIGGER -->
           <img
             src="public/kaen-logo.png"
             alt="KAEN Properties"
@@ -360,7 +360,6 @@
             Get Quotation
           </a>
 
-          <!-- ✅ Desktop WhatsApp stays here, mobile WhatsApp moved to top strip -->
           <a
             class="hidden sm:inline-flex items-center justify-center gap-2 h-11 rounded-xl px-4 text-sm font-extrabold text-white shadow-soft hover:opacity-95"
             style="background: #25d366"
@@ -383,7 +382,6 @@
         </div>
       </div>
 
-      <!-- Mobile menu panel -->
       <div
         id="mobileMenu"
         class="lg:hidden hidden mt-4 rounded-2xl border border-kaen-line bg-kaen-bg/70 shadow-soft overflow-hidden"
