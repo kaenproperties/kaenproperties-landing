@@ -1,0 +1,1777 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.title">
+      KAEN Properties | New Project • Renovation • Rental • Management
+    </title>
+    <meta
+      name="description"
+      content="KAEN Properties provides one-stop investor services in Kuala Lumpur: New Project selection, investment renovation, rent out with in-house agents, and full property management."
+      data-i18n="meta.description"
+      data-i18n-attr="content"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              kaen: {
+                bg: "#0d1117",
+                card: "#1a1f3a",
+                ink: "#FFFFFF",
+                muted: "#b0b8c1",
+                line: "#2d3748",
+                gold: "#D5B873",
+                goldHi: "#E2C57F",
+                goldSoft: "rgba(213,184,115,0.12)",
+                goldLine: "rgba(213,184,115,0.45)",
+              },
+              brand: {
+                whatsapp: "#25D366",
+                xhs: "#FF2E4D",
+                facebook: "#1877F2",
+              },
+            },
+            boxShadow: {
+              soft: "0 10px 30px rgba(0,0,0,0.35)",
+              lift: "0 18px 50px rgba(0,0,0,0.45)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html,
+      body {
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial,
+          sans-serif;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .hero-bg {
+        background-image: radial-gradient(
+            circle at 15% 20%,
+            rgba(213, 184, 115, 0.1),
+            transparent 38%
+          ),
+          radial-gradient(
+            circle at 85% 25%,
+            rgba(213, 184, 115, 0.08),
+            transparent 42%
+          ),
+          radial-gradient(
+            circle at 60% 90%,
+            rgba(37, 99, 235, 0.1),
+            transparent 48%
+          ),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.03), transparent 40%),
+          linear-gradient(to bottom, rgba(13, 17, 23, 0.96), rgba(13, 17, 23, 1));
+      }
+
+      .iconbtn svg {
+        width: 18px;
+        height: 18px;
+      }
+      .mini svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      .btn-gold {
+        background: #d5b873;
+        color: #0d1117;
+        border: 2px dashed rgba(213, 184, 115, 0.95);
+        font-weight: 800;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+      }
+      .btn-gold:hover {
+        background: #e2c57f;
+        box-shadow: 0 0 0 1px rgba(213, 184, 115, 0.5),
+          0 18px 50px rgba(0, 0, 0, 0.55);
+        transform: translateY(-1px);
+      }
+
+      .btn-gold-outline {
+        background: transparent;
+        color: #d5b873;
+        border: 2px dashed rgba(213, 184, 115, 0.95);
+        font-weight: 800;
+        transition: all 0.3s ease;
+      }
+      .btn-gold-outline:hover {
+        background: rgba(213, 184, 115, 0.1);
+        box-shadow: 0 0 0 1px rgba(213, 184, 115, 0.35),
+          0 14px 40px rgba(0, 0, 0, 0.45);
+        transform: translateY(-1px);
+      }
+
+      .kaen-card {
+        background: rgba(26, 31, 58, 0.55);
+        border: 1px solid #2d3748;
+        transition: all 0.3s ease;
+      }
+      .kaen-card:hover {
+        border-color: rgba(213, 184, 115, 0.85);
+        box-shadow: 0 0 0 1px rgba(213, 184, 115, 0.25),
+          0 18px 50px rgba(0, 0, 0, 0.55);
+        transform: translateY(-1px);
+      }
+
+      .sec-bullet::before {
+        content: "●";
+        color: #d5b873;
+        margin-right: 10px;
+        font-size: 12px;
+        position: relative;
+        top: -1px;
+      }
+
+      #langToggle {
+        min-width: 88px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-kaen-bg text-kaen-ink">
+    <!-- FLOATING WHATSAPP -->
+    <a
+      id="waFloating"
+      href="https://wa.me/601136111763?text=Hi%20KAEN%2C%20I%20want%20a%20quotation.%20Project%3A%20____%20Unit%20size%3A%20____%20Target%3A%20Whole%2FRooms%20Timeline%3A%20____%20Need%20management%3A%20Yes%2FNo"
+      target="_blank"
+      rel="noreferrer"
+      class="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-extrabold text-white shadow-lift hover:opacity-95"
+      style="background: #25d366"
+      aria-label="WhatsApp KAEN"
+    >
+      <span class="mini">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path
+            d="M12 2.3A9.5 9.5 0 0 0 3.2 16l-.8 4.5 4.6-.8A9.5 9.5 0 1 0 12 2.3Z"
+            fill="rgba(255,255,255,0.25)"
+          />
+          <path
+            d="M12 4.2a7.7 7.7 0 0 0-6.7 11.5l-.5 2.6 2.7-.5A7.7 7.7 0 1 0 12 4.2Z"
+            fill="#ffffff"
+          />
+          <path
+            d="M16.6 14.4c-.2-.1-1.3-.6-1.5-.7-.2-.1-.4-.1-.6.1l-.5.7c-.1.2-.3.2-.5.1-.3-.1-1-.4-1.9-1.2-.7-.6-1.1-1.3-1.2-1.5-.1-.2 0-.4.1-.5l.4-.5c.1-.1.1-.3.2-.4 0-.1 0-.3 0-.4 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.8 2.3.9 2.5.1.2 1.6 2.6 4 3.6 2.3 1 2.3.7 2.7.7.4 0 1.3-.5 1.5-1 .2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"
+            fill="#25D366"
+          />
+        </svg>
+      </span>
+      <span data-i18n="floating.whatsapp">WhatsApp</span>
+    </a>
+
+    <!-- TOP STRIP -->
+    <div class="w-full border-b border-kaen-line bg-kaen-bg/75 backdrop-blur">
+      <div
+        class="mx-auto max-w-6xl px-4 py-2 flex items-center justify-between gap-3"
+      >
+        <div
+          class="flex items-center gap-2 text-sm text-kaen-muted min-w-0 flex-wrap pr-3"
+        >
+          <span class="hidden sm:inline" data-i18n="top.hotline">Hotline:</span>
+          <a
+            class="font-semibold text-kaen-ink hover:underline shrink-0"
+            href="tel:+601136111763"
+            >011-36111763</a
+          >
+          <span class="text-kaen-line hidden sm:inline">•</span>
+          <span class="hidden sm:inline" data-i18n="top.location"
+            >Kuala Lumpur</span
+          >
+          <span class="hidden sm:inline text-kaen-line">•</span>
+          <span class="hidden sm:inline" data-i18n="top.hours">9am–6pm</span>
+        </div>
+
+        <div class="flex items-center gap-2 shrink-0 flex-nowrap">
+          <a
+            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-white/5 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-white/10"
+            href="https://xhslink.com/m/4HRKfUToTKR"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Xiaohongshu"
+          >
+            <span
+              class="inline-flex items-center justify-center rounded-full bg-brand-xhs/10 p-1"
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M7 8.5h3.2l-2.2 3.1 2.4 3.4H7.2L5.6 12.9 4 15h-2l2.6-3.4L2.2 8.5h2.2l1.2 2 1.4-2Zm9.8 0h2.2L16 12l3 4.0h-2.3l-1.8-2.6-1.8 2.6H11l3-4.0-2.9-3.5h2.2l1.7 2.2 1.8-2.2Z"
+                  fill="#FF2E4D"
+                />
+              </svg>
+            </span>
+            <span class="hidden sm:inline">小红书</span>
+          </a>
+
+          <a
+            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-white/5 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-white/10"
+            href="https://www.instagram.com/kaenproperties?igsh=MWEwaGtvZzdoZnloMA=="
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+          >
+            <span
+              class="inline-flex items-center justify-center rounded-full p-1"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(245, 133, 41, 0.18),
+                  rgba(221, 42, 123, 0.18),
+                  rgba(129, 52, 175, 0.18),
+                  rgba(81, 91, 212, 0.18)
+                );
+              "
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M7.5 2.8h9A4.7 4.7 0 0 1 21.2 7.5v9a4.7 4.7 0 0 1-4.7 4.7h-9A4.7 4.7 0 0 1 2.8 16.5v-9A4.7 4.7 0 0 1 7.5 2.8Zm0 1.8A2.9 2.9 0 0 0 4.6 7.5v9a2.9 2.9 0 0 0 2.9 2.9h9a2.9 2.9 0 0 0 2.9-2.9v-9a2.9 2.9 0 0 0-2.9-2.9h-9Z"
+                  fill="#DD2A7B"
+                />
+                <path
+                  d="M12 7.6A4.4 4.4 0 1 1 7.6 12 4.4 4.4 0 0 1 12 7.6Zm0 1.8A2.6 2.6 0 1 0 14.6 12 2.6 2.6 0 0 0 12 9.4Z"
+                  fill="#8134AF"
+                />
+                <path
+                  d="M17.2 6.8a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1Z"
+                  fill="#515BD4"
+                />
+              </svg>
+            </span>
+            <span class="hidden sm:inline">Instagram</span>
+          </a>
+
+          <a
+            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-white/5 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-white/10"
+            href="https://www.facebook.com/share/1FS6VBrKAe/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Facebook"
+          >
+            <span
+              class="inline-flex items-center justify-center rounded-full bg-brand-facebook/10 p-1"
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M14 8.6V7.2c0-.7.4-1 1.1-1h1.3V4h-2c-2.2 0-3.4 1.3-3.4 3.3v1.3H9v2.5h2v8h3v-8h2.3l.4-2.5H14Z"
+                  fill="#1877F2"
+                />
+              </svg>
+            </span>
+            <span class="hidden sm:inline">Facebook</span>
+          </a>
+
+          <a
+            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-white/5 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-white/10"
+            href="https://www.tiktok.com/@kaenproperties_official?_r=1&_t=ZS-92i3yxv6OoP"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="TikTok"
+          >
+            <span
+              class="inline-flex items-center justify-center rounded-full bg-white/5 p-1"
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M14.2 3h2.1c.2 1.6 1.1 3.1 2.6 4 .8.5 1.7.8 2.6.9v2.2c-1.9 0-3.6-.6-5.1-1.7v6.3c0 3.4-2.8 6.2-6.2 6.2S6 18.4 6 15s2.8-6.2 6.2-6.2c.4 0 .9.1 1.3.2v2.4c-.4-.2-.8-.3-1.3-.3-2.1 0-3.8 1.7-3.8 3.8 0 2.1 1.7 3.8 3.8 3.8s3.8-1.7 3.8-3.8V3Z"
+                  fill="#ffffff"
+                />
+              </svg>
+            </span>
+            <span class="hidden sm:inline">TikTok</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER + NAV + MOBILE MENU -->
+    <header class="mx-auto max-w-6xl px-4 py-4 sm:py-5">
+      <div class="flex items-center justify-between gap-3">
+        <a href="#" class="flex items-center gap-4 min-w-0">
+          <img
+            src="public/kaen-logo.png"
+            alt="KAEN Properties"
+            class="h-24 sm:h-28 md:h-32 w-auto object-contain shrink-0"
+          />
+          <div class="leading-tight min-w-0">
+            <div
+              class="font-extrabold tracking-wide flex items-center gap-2 min-w-0"
+            >
+              <span class="truncate" data-i18n="brand.name"
+                >KAEN Properties</span
+              >
+              <span
+                class="hidden sm:inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold"
+                style="
+                  border: 1px dashed rgba(213,184,115,0.7);
+                  background: rgba(213,184,115,0.08);
+                  color: #d5b873;
+                "
+                data-i18n="brand.badge"
+              >
+                One-Stop Operator
+              </span>
+            </div>
+            <div
+              class="text-xs text-kaen-muted mt-0.5"
+              data-i18n="brand.subline"
+            >
+              New Project • Renovation • Rental • Management
+            </div>
+          </div>
+        </a>
+
+        <nav
+          class="hidden lg:flex items-center gap-6 text-sm font-semibold text-kaen-muted"
+        >
+          <a
+            class="hover:text-kaen-gold transition"
+            href="#one-stop"
+            data-i18n="nav.onestop"
+            >One-Stop</a
+          >
+          <a
+            class="hover:text-kaen-gold transition"
+            href="#services"
+            data-i18n="nav.services"
+            >Services</a
+          >
+          <a
+            class="hover:text-kaen-gold transition"
+            href="#management"
+            data-i18n="nav.management"
+            >Management</a
+          >
+          <a
+            class="hover:text-kaen-gold transition"
+            href="#faq"
+            data-i18n="nav.faq"
+            >FAQ</a
+          >
+        </nav>
+
+        <div class="flex items-center gap-2 shrink-0">
+          <button
+            id="langToggle"
+            type="button"
+            class="inline-flex items-center justify-center h-11 rounded-xl border border-kaen-line bg-white/5 px-4 text-sm font-extrabold text-kaen-ink hover:bg-white/10"
+            aria-label="Toggle language"
+          >
+            中文
+          </button>
+
+          <a
+            class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline"
+            href="#quote"
+            data-i18n="cta.quote"
+          >
+            Get Quotation
+          </a>
+
+          <a
+            class="hidden sm:inline-flex items-center justify-center gap-2 h-11 rounded-xl px-4 text-sm font-extrabold text-white shadow-soft hover:opacity-95"
+            style="background: #25d366"
+            href="https://wa.me/601136111763?text=Hi%20KAEN%2C%20I%20want%20a%20quotation%20for%20my%20unit."
+            target="_blank"
+            rel="noreferrer"
+            data-i18n="cta.whatsapp"
+          >
+            WhatsApp
+          </a>
+
+          <button
+            id="menuBtn"
+            class="lg:hidden inline-flex items-center justify-center h-11 w-11 rounded-xl border border-kaen-line bg-white/5 hover:bg-white/10"
+            aria-label="Open menu"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M4 7h16M4 12h16M4 17h16"
+                stroke="#FFFFFF"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="mobileMenu"
+        class="lg:hidden hidden mt-4 rounded-2xl border border-kaen-line bg-kaen-bg/70 shadow-soft overflow-hidden"
+      >
+        <div class="p-3 grid gap-1 text-sm font-semibold text-kaen-muted">
+          <a
+            class="px-3 py-2 rounded-xl hover:bg-kaen-goldSoft hover:text-kaen-gold"
+            href="#one-stop"
+            data-i18n="nav.onestop"
+            >One-Stop</a
+          >
+          <a
+            class="px-3 py-2 rounded-xl hover:bg-kaen-goldSoft hover:text-kaen-gold"
+            href="#services"
+            data-i18n="nav.services"
+            >Services</a
+          >
+          <a
+            class="px-3 py-2 rounded-xl hover:bg-kaen-goldSoft hover:text-kaen-gold"
+            href="#management"
+            data-i18n="nav.management"
+            >Management</a
+          >
+          <a
+            class="px-3 py-2 rounded-xl hover:bg-kaen-goldSoft hover:text-kaen-gold"
+            href="#faq"
+            data-i18n="nav.faq"
+            >FAQ</a
+          >
+          <a
+            class="mt-2 inline-flex items-center justify-center h-11 rounded-xl btn-gold"
+            href="#quote"
+            data-i18n="cta.quote"
+            >Get Quotation</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="relative overflow-hidden hero-bg">
+      <div class="mx-auto max-w-6xl px-4 pb-12 pt-4 sm:pt-6 md:pt-10 md:pb-16">
+        <div class="grid gap-8 md:grid-cols-2 md:items-center">
+          <div class="max-w-xl">
+            <div
+              class="inline-flex flex-wrap items-center gap-x-3 gap-y-1 rounded-full border border-kaen-line bg-white/5 px-4 sm:px-6 py-2 text-xs font-semibold text-kaen-muted"
+            >
+              <span data-i18n="hero.tag1">Hands-off rental operations</span>
+              <span
+                class="h-1 w-1 rounded-full hidden sm:inline"
+                style="background: #d5b873"
+              ></span>
+              <span data-i18n="hero.tag2"
+                >New Project → Renovation → Rental → Management</span
+              >
+            </div>
+
+            <h1
+              class="mt-4 text-[32px] sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.08]"
+            >
+              <span data-i18n="hero.title1">Build rental income</span>
+              <span style="color: #d5b873"
+                ><br class="hidden sm:block" /><span data-i18n="hero.title2"
+                  >Let KAEN run the unit</span
+                ></span
+              >
+            </h1>
+
+            <p
+              class="mt-4 text-base md:text-lg text-kaen-muted leading-relaxed"
+              data-i18n="hero.desc"
+            >
+              KAEN Properties is a one-stop team for investors & owners — we help
+              you choose the right direction, renovate with an investment
+              concept, rent out through in-house agents, and manage day-to-day
+              operations.
+            </p>
+
+            <div
+              class="mt-6 grid grid-cols-1 sm:flex sm:flex-wrap items-stretch gap-3"
+            >
+              <a
+                class="inline-flex items-center justify-center h-12 rounded-xl px-5 text-sm btn-gold w-full sm:w-auto"
+                href="#quote"
+                data-i18n="cta.quote"
+              >
+                Get Quotation
+              </a>
+
+              <a
+                id="waHero"
+                class="inline-flex items-center justify-center gap-2 h-12 rounded-xl px-5 text-sm font-extrabold text-white shadow-soft hover:opacity-95 w-full sm:w-auto"
+                style="background: #25d366"
+                href="https://wa.me/601136111763?text=Hi%20KAEN%2C%20I%20want%20a%20quotation.%20Project%3A%20____%20Unit%20size%3A%20____%20Target%3A%20Whole%2FRooms%20Timeline%3A%20____%20Need%20management%3A%20Yes%2FNo"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="cta.whatsappNow"
+              >
+                WhatsApp Now
+              </a>
+
+              <a
+                class="inline-flex items-center justify-center h-12 rounded-xl px-5 text-sm btn-gold-outline w-full sm:w-auto"
+                href="#one-stop"
+                data-i18n="cta.seeFlow"
+              >
+                See Flow
+              </a>
+            </div>
+
+            <div class="mt-8 grid gap-3 sm:grid-cols-3">
+              <div class="rounded-2xl kaen-card p-4 shadow-soft h-full">
+                <div
+                  class="text-sm font-extrabold"
+                  data-i18n="hero.card1.title"
+                >
+                  Hands-off Investors
+                </div>
+                <div
+                  class="text-xs text-kaen-muted mt-1"
+                  data-i18n="hero.card1.desc"
+                >
+                  We operate the unit so you don’t have to
+                </div>
+              </div>
+              <div class="rounded-2xl kaen-card p-4 shadow-soft h-full">
+                <div
+                  class="text-sm font-extrabold"
+                  data-i18n="hero.card2.title"
+                >
+                  Rentability-First Design
+                </div>
+                <div
+                  class="text-xs text-kaen-muted mt-1"
+                  data-i18n="hero.card2.desc"
+                >
+                  Built to attract tenants, not just look good.
+                </div>
+              </div>
+              <div class="rounded-2xl kaen-card p-4 shadow-soft h-full">
+                <div
+                  class="text-sm font-extrabold"
+                  data-i18n="hero.card3.title"
+                >
+                  Demand-Driven Locations
+                </div>
+                <div
+                  class="text-xs text-kaen-muted mt-1"
+                  data-i18n="hero.card3.desc"
+                >
+                  Focused on areas with consistent rental demand
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative mt-2 md:mt-10">
+            <div class="grid grid-cols-6 gap-3">
+              <div
+                class="col-span-6 rounded-3xl overflow-hidden border border-kaen-line shadow-lift bg-white/5"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1600&q=70"
+                  alt="Modern apartment interior"
+                  class="h-56 sm:h-64 w-full object-cover opacity-[0.92]"
+                  loading="lazy"
+                />
+              </div>
+
+              <div
+                class="col-span-3 rounded-3xl overflow-hidden border border-kaen-line shadow-soft bg-white/5"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=70"
+                  alt="Property consulting"
+                  class="h-32 sm:h-44 w-full object-cover opacity-[0.92]"
+                  loading="lazy"
+                />
+              </div>
+
+              <div
+                class="col-span-3 rounded-3xl overflow-hidden border border-kaen-line shadow-soft bg-white/5"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=70"
+                  alt="Agents serving customers"
+                  class="h-32 sm:h-44 w-full object-cover opacity-[0.92]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div
+              class="absolute -top-10 -right-10 h-28 w-28 rounded-full blur-2xl"
+              style="background: rgba(213, 184, 115, 0.14)"
+            ></div>
+            <div
+              class="absolute -bottom-10 -left-10 h-28 w-28 rounded-full blur-2xl"
+              style="background: rgba(37, 99, 235, 0.12)"
+            ></div>
+
+            <img
+              src="public/kaen-logo.png"
+              alt=""
+              class="pointer-events-none absolute -right-24 -bottom-24 w-72 opacity-[0.06] hidden md:block"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ONE-STOP FLOW -->
+    <section
+      id="one-stop"
+      class="border-y border-kaen-line"
+      style="background: rgba(26, 31, 58, 0.18)"
+    >
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <div class="flex items-end justify-between gap-6">
+          <div class="max-w-2xl">
+            <h2
+              class="text-2xl md:text-3xl font-extrabold sec-bullet"
+              data-i18n="flow.title"
+            >
+              One-Stop A–Z (Investor Flow)
+            </h2>
+            <p
+              class="mt-2 text-kaen-muted leading-relaxed"
+              data-i18n="flow.desc"
+            >
+              One operator, clear responsibility. From strategy to stable rent —
+              not just “renovation”.
+            </p>
+          </div>
+          <a
+            class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline"
+            href="#quote"
+            data-i18n="cta.quote"
+            >Get Quotation</a
+          >
+        </div>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-4">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div
+              class="text-xs font-bold"
+              style="color: #d5b873"
+              data-i18n="flow.step1"
+            >
+              STEP 1
+            </div>
+            <div class="mt-2 font-bold" data-i18n="flow.step1.title">
+              New Project / Strategy
+            </div>
+            <p class="mt-2 text-sm text-kaen-muted" data-i18n="flow.step1.desc">
+              Shortlist by demand, rentability, and realistic ownership plan.
+            </p>
+            <div
+              class="mt-4 text-xs text-kaen-muted"
+              data-i18n="flow.step1.out"
+            >
+              Output: shortlist + strategy (whole / rooms)
+            </div>
+          </div>
+
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div
+              class="text-xs font-bold"
+              style="color: #d5b873"
+              data-i18n="flow.step2"
+            >
+              STEP 2
+            </div>
+            <div class="mt-2 font-bold" data-i18n="flow.step2.title">
+              Renovation (Investment Concept)
+            </div>
+            <p class="mt-2 text-sm text-kaen-muted" data-i18n="flow.step2.desc">
+              Layout + furnishing tenants want. Practical and durable decisions.
+            </p>
+            <div
+              class="mt-4 text-xs text-kaen-muted"
+              data-i18n="flow.step2.out"
+            >
+              Output: ready-to-market unit
+            </div>
+          </div>
+
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div
+              class="text-xs font-bold"
+              style="color: #d5b873"
+              data-i18n="flow.step3"
+            >
+              STEP 3
+            </div>
+            <div class="mt-2 font-bold" data-i18n="flow.step3.title">
+              Rental (In-house Agents)
+            </div>
+            <p class="mt-2 text-sm text-kaen-muted" data-i18n="flow.step3.desc">
+              Marketing, viewing, screening, agreement — speed-to-rent focus.
+            </p>
+            <div
+              class="mt-4 text-xs text-kaen-muted"
+              data-i18n="flow.step3.out"
+            >
+              Output: tenant secured
+            </div>
+          </div>
+
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div
+              class="text-xs font-bold"
+              style="color: #d5b873"
+              data-i18n="flow.step4"
+            >
+              STEP 4
+            </div>
+            <div class="mt-2 font-bold" data-i18n="flow.step4.title">
+              Management (Hands-off)
+            </div>
+            <p class="mt-2 text-sm text-kaen-muted" data-i18n="flow.step4.desc">
+              Collection, maintenance coordination, tenant issues, follow-up.
+            </p>
+            <div
+              class="mt-4 text-xs text-kaen-muted"
+              data-i18n="flow.step4.out"
+            >
+              Output: stable operation
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="bg-kaen-bg">
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <div class="flex items-end justify-between gap-6">
+          <div class="max-w-2xl">
+            <h2
+              class="text-2xl md:text-3xl font-extrabold sec-bullet"
+              data-i18n="services.title"
+            >
+              Services
+            </h2>
+            <p
+              class="mt-2 text-kaen-muted leading-relaxed"
+              data-i18n="services.desc"
+            >
+              You don’t need to coordinate 3–4 parties. We run the unit like an
+              operator.
+            </p>
+          </div>
+          <a
+            class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold"
+            href="#quote"
+            data-i18n="cta.quoteMyUnit"
+            >Quote My Unit</a
+          >
+        </div>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-3">
+          <div class="rounded-3xl kaen-card overflow-hidden shadow-soft h-full">
+            <img
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=70"
+              alt="New project"
+              class="h-40 w-full object-cover opacity-[0.92]"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <div class="text-sm font-extrabold" data-i18n="services.card1.title">
+                New Project
+              </div>
+              <p
+                class="mt-2 text-sm text-kaen-muted"
+                data-i18n="services.card1.desc"
+              >
+                For investors who want a practical shortlist — not marketing talk.
+              </p>
+              <ul
+                class="mt-4 space-y-2 text-sm list-disc list-inside text-kaen-muted"
+              >
+                <li data-i18n="services.card1.li1">
+                  Project & unit-type shortlisting
+                </li>
+                <li data-i18n="services.card1.li2">
+                  Match strategy: whole unit / rooms
+                </li>
+                <li data-i18n="services.card1.li3">
+                  Timeline planning: from purchase to rent
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="rounded-3xl kaen-card overflow-hidden shadow-soft h-full">
+            <img
+              src="https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=1200&q=70"
+              alt="Renovation"
+              class="h-40 w-full object-cover opacity-[0.92]"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <div class="text-sm font-extrabold" data-i18n="services.card2.title">
+                Investment Renovation
+              </div>
+              <p
+                class="mt-2 text-sm text-kaen-muted"
+                data-i18n="services.card2.desc"
+              >
+                Renovation designed for rentability: durable, practical, and
+                photo-ready.
+              </p>
+              <ul
+                class="mt-4 space-y-2 text-sm list-disc list-inside text-kaen-muted"
+              >
+                <li data-i18n="services.card2.li1">
+                  Layout & furnishing strategy
+                </li>
+                <li data-i18n="services.card2.li2">
+                  Budget clarity & timeline control
+                </li>
+                <li data-i18n="services.card2.li3">
+                  QC + handover readiness
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="rounded-3xl kaen-card overflow-hidden shadow-soft h-full">
+            <img
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=70"
+              alt="Rent out"
+              class="h-40 w-full object-cover opacity-[0.92]"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <div class="text-sm font-extrabold" data-i18n="services.card3.title">
+                Rental + Management
+              </div>
+              <p
+                class="mt-2 text-sm text-kaen-muted"
+                data-i18n="services.card3.desc"
+              >
+                In-house agents to rent out, and management to keep the unit
+                stable.
+              </p>
+              <ul
+                class="mt-4 space-y-2 text-sm list-disc list-inside text-kaen-muted"
+              >
+                <li data-i18n="services.card3.li1">
+                  Marketing, viewing, tenant screening
+                </li>
+                <li data-i18n="services.card3.li2">
+                  Agreement + move-in coordination
+                </li>
+                <li data-i18n="services.card3.li3">
+                  Collection + maintenance coordination
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 grid gap-4 md:grid-cols-2">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div class="font-extrabold" data-i18n="services.auction.title">
+              Auction Property
+            </div>
+            <p
+              class="mt-2 text-sm text-kaen-muted"
+              data-i18n="services.auction.desc"
+            >
+              We can assist investors who want auction opportunities with
+              practical steps and risk awareness.
+            </p>
+          </div>
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div class="font-extrabold" data-i18n="services.subsale.title">
+              Subsale / Secondary Market
+            </div>
+            <p
+              class="mt-2 text-sm text-kaen-muted"
+              data-i18n="services.subsale.desc"
+            >
+              If you’re an owner planning to sell or restructure your portfolio,
+              we can advise and assist on execution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANAGEMENT -->
+    <section
+      id="management"
+      class="border-y border-kaen-line"
+      style="background: rgba(26, 31, 58, 0.18)"
+    >
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <div class="flex items-end justify-between gap-6">
+          <div class="max-w-2xl">
+            <h2
+              class="text-2xl md:text-3xl font-extrabold sec-bullet"
+              data-i18n="management.title"
+            >
+              Management (hands-off ownership)
+            </h2>
+            <p
+              class="mt-2 text-kaen-muted leading-relaxed"
+              data-i18n="management.desc"
+            >
+              For investors who don’t want to manage tenant issues. We handle
+              operations and coordination.
+            </p>
+          </div>
+          <a
+            class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold"
+            href="#quote"
+            data-i18n="cta.askManagement"
+            >Ask about management</a
+          >
+        </div>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-3">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div class="font-extrabold" data-i18n="management.card1.title">
+              Tenant & Agreement
+            </div>
+            <ul
+              class="mt-3 space-y-2 text-sm text-kaen-muted list-disc list-inside"
+            >
+              <li data-i18n="management.card1.li1">Tenant screening support</li>
+              <li data-i18n="management.card1.li2">Agreement coordination</li>
+              <li data-i18n="management.card1.li3">
+                Move-in / move-out checklist mindset
+              </li>
+            </ul>
+          </div>
+
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div class="font-extrabold" data-i18n="management.card2.title">
+              Collection & Follow-up
+            </div>
+            <ul
+              class="mt-3 space-y-2 text-sm text-kaen-muted list-disc list-inside"
+            >
+              <li data-i18n="management.card2.li1">
+                Rental follow-up & reminders
+              </li>
+              <li data-i18n="management.card2.li2">Collection tracking</li>
+              <li data-i18n="management.card2.li3">Renewal coordination</li>
+            </ul>
+          </div>
+
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div class="font-extrabold" data-i18n="management.card3.title">
+              Maintenance & Ops
+            </div>
+            <ul
+              class="mt-3 space-y-2 text-sm text-kaen-muted list-disc list-inside"
+            >
+              <li data-i18n="management.card3.li1">Maintenance coordination</li>
+              <li data-i18n="management.card3.li2">
+                Utilities & ops coordination
+              </li>
+              <li data-i18n="management.card3.li3">
+                Tenant issues handling (day-to-day)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-6 rounded-3xl kaen-card p-6 shadow-soft">
+          <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+          >
+            <div>
+              <div
+                class="font-extrabold"
+                data-i18n="management.ctaTitle"
+              >
+                Want a hands-off plan?
+              </div>
+              <p
+                class="mt-1 text-sm text-kaen-muted"
+                data-i18n="management.ctaDesc"
+              >
+                Tell us your unit + target, we propose the best route and what
+                to prepare.
+              </p>
+            </div>
+            <a
+              id="waManagementPlan"
+              class="inline-flex items-center justify-center h-12 rounded-xl px-5 text-sm font-extrabold text-white shadow-soft hover:opacity-95"
+              style="background: #25d366"
+              href="https://wa.me/601136111763?text=Hi%20KAEN%2C%20I%20want%20a%20hands-off%20plan%20(renovation%20%2B%20rental%20%2B%20management).%20My%20unit%20is%3A"
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="cta.whatsappPlan"
+            >
+              WhatsApp for Plan
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="bg-kaen-bg border-b border-kaen-line">
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <div class="max-w-2xl">
+          <h2
+            class="text-2xl md:text-3xl font-extrabold sec-bullet"
+            data-i18n="testimonials.title"
+          >
+            What owners say
+          </h2>
+          <p
+            class="mt-2 text-kaen-muted leading-relaxed"
+            data-i18n="testimonials.desc"
+          >
+            Replace with your actual WhatsApp screenshots / owner feedback later.
+          </p>
+        </div>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-3">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div
+              class="text-sm font-extrabold"
+              data-i18n="testimonials.1.title"
+            >
+              “Very systematic. Less headache.”
+            </div>
+            <div class="mt-2 text-sm" style="color: #d5b873">★★★★★</div>
+            <p
+              class="mt-2 text-sm text-kaen-muted"
+              data-i18n="testimonials.1.desc"
+            >
+              Renovation finished on schedule and rent out faster than expected.
+            </p>
+            <div
+              class="mt-4 text-xs text-kaen-muted"
+              data-i18n="testimonials.1.name"
+            >
+              — Owner (KL)
+            </div>
+          </div>
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div
+              class="text-sm font-extrabold"
+              data-i18n="testimonials.2.title"
+            >
+              “I can finally be hands-off.”
+            </div>
+            <div class="mt-2 text-sm" style="color: #d5b873">★★★★★</div>
+            <p
+              class="mt-2 text-sm text-kaen-muted"
+              data-i18n="testimonials.2.desc"
+            >
+              Tenant issues, follow up, maintenance — KAEN handled it all.
+            </p>
+            <div
+              class="mt-4 text-xs text-kaen-muted"
+              data-i18n="testimonials.2.name"
+            >
+              — Investor
+            </div>
+          </div>
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div
+              class="text-sm font-extrabold"
+              data-i18n="testimonials.3.title"
+            >
+              “Clear and practical.”
+            </div>
+            <div class="mt-2 text-sm" style="color: #d5b873">★★★★★</div>
+            <p
+              class="mt-2 text-sm text-kaen-muted"
+              data-i18n="testimonials.3.desc"
+            >
+              No need to compare many contractors. Just choose the route and
+              execute.
+            </p>
+            <div
+              class="mt-4 text-xs text-kaen-muted"
+              data-i18n="testimonials.3.name"
+            >
+              — Landlord
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section
+      id="faq"
+      class="border-y border-kaen-line"
+      style="background: rgba(26, 31, 58, 0.18)"
+    >
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <div class="max-w-2xl">
+          <h2
+            class="text-2xl md:text-3xl font-extrabold sec-bullet"
+            data-i18n="faq.title"
+          >
+            FAQ (investor questions)
+          </h2>
+          <p
+            class="mt-2 text-kaen-muted leading-relaxed"
+            data-i18n="faq.desc"
+          >
+            Clear answers = more trust.
+          </p>
+        </div>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-2">
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div class="font-extrabold" data-i18n="faq.q1">
+              Do I need renovation to rent out?
+            </div>
+            <p class="mt-2 text-sm text-kaen-muted" data-i18n="faq.a1">
+              Not always. But the right investment renovation can improve
+              rentability and reduce issues long term.
+            </p>
+          </div>
+
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div class="font-extrabold" data-i18n="faq.q2">
+              Whole unit vs rooms — how to choose?
+            </div>
+            <p class="mt-2 text-sm text-kaen-muted" data-i18n="faq.a2">
+              Depends on demand, risk tolerance, and ops preference. We propose
+              a route based on your unit and timeline.
+            </p>
+          </div>
+
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div class="font-extrabold" data-i18n="faq.q3">
+              How fast can you rent out?
+            </div>
+            <p class="mt-2 text-sm text-kaen-muted" data-i18n="faq.a3">
+              Depends on pricing, furnishing readiness and demand. We focus on
+              speed-to-rent workflow to reduce vacancy.
+            </p>
+          </div>
+
+          <div class="rounded-3xl kaen-card p-6 shadow-soft h-full">
+            <div class="font-extrabold" data-i18n="faq.q4">
+              Can you manage tenant issues and repairs?
+            </div>
+            <p class="mt-2 text-sm text-kaen-muted" data-i18n="faq.a4">
+              Yes. We coordinate maintenance and handle day-to-day tenant
+              communication — owners stay hands-off.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE + CONTACT -->
+    <section id="quote" class="bg-kaen-bg">
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <div
+          class="rounded-3xl border border-kaen-line bg-white/5 shadow-lift overflow-hidden"
+        >
+          <div class="grid gap-8 md:grid-cols-2 md:items-start">
+            <div class="p-8">
+              <h2
+                class="text-2xl md:text-3xl font-extrabold sec-bullet"
+                data-i18n="quote.title"
+              >
+                Get a quotation
+              </h2>
+              <p
+                class="mt-2 text-kaen-muted leading-relaxed"
+                data-i18n="quote.desc"
+              >
+                Send your unit details — we’ll propose a practical route (whole
+                unit / rooms) and the plan.
+              </p>
+
+              <div class="mt-6 rounded-2xl border border-kaen-line bg-white/5 p-5">
+                <div class="font-semibold" data-i18n="quote.boxTitle">
+                  Send these 4 details
+                </div>
+                <ul
+                  class="mt-2 list-disc list-inside text-sm text-kaen-muted space-y-1"
+                >
+                  <li data-i18n="quote.li1">Project name + unit size</li>
+                  <li data-i18n="quote.li2">
+                    Target: whole unit / rooms / Airbnb
+                  </li>
+                  <li data-i18n="quote.li3">
+                    Your timeline (when you want to rent out)
+                  </li>
+                  <li data-i18n="quote.li4">
+                    Whether you want management included
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mt-6 flex flex-wrap gap-3">
+                <a
+                  id="waQuote"
+                  class="inline-flex items-center justify-center h-12 rounded-xl px-5 text-sm btn-gold"
+                  href="https://wa.me/601136111763?text=Hi%20KAEN%2C%20I%20want%20a%20quotation.%20Project%3A%20____%20Unit%20size%3A%20____%20Target%3A%20____%20Timeline%3A%20____%20Need%20management%3A%20Yes%2FNo"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="cta.whatsappQuotation"
+                >
+                  WhatsApp for Quotation
+                </a>
+              </div>
+
+              <p
+                class="mt-3 text-xs text-kaen-muted"
+                data-i18n="quote.note"
+              >
+                We focus on rentability + operational clarity — so owners can
+                stay hands-off.
+              </p>
+            </div>
+
+            <div class="p-8 bg-white/5 border-t md:border-t-0 md:border-l border-kaen-line">
+              <h3
+                class="text-xl font-extrabold sec-bullet"
+                data-i18n="contact.title"
+              >
+                Contact
+              </h3>
+
+              <div class="mt-5 space-y-3 text-sm">
+                <div class="rounded-2xl kaen-card p-4">
+                  <div class="font-semibold" data-i18n="contact.hotline">
+                    WhatsApp / Hotline
+                  </div>
+                  <div class="mt-1">
+                    <a
+                      class="font-extrabold hover:underline"
+                      style="color: #d5b873"
+                      href="tel:+601136111763"
+                      >011-36111763</a
+                    >
+                  </div>
+                </div>
+
+                <div class="rounded-2xl kaen-card p-4">
+                  <div class="font-semibold" data-i18n="contact.email">Email</div>
+                  <div class="mt-1">
+                    <a
+                      class="font-extrabold hover:underline"
+                      style="color: #d5b873"
+                      href="mailto:kaenproperties@gmail.com"
+                      >kaenproperties@gmail.com</a
+                    >
+                  </div>
+                </div>
+
+                <div class="rounded-2xl kaen-card p-4">
+                  <div class="font-semibold" data-i18n="contact.office">
+                    Office
+                  </div>
+                  <div class="mt-1 text-kaen-muted">
+                    NO 27-4, Jalan Perdana 10/12, Pandan Perdana, 55300 WP Kuala
+                    Lumpur
+                  </div>
+                </div>
+
+                <p class="text-xs text-kaen-muted pt-1">
+                  KAEN PROPERTIES SDN BHD (1466670-H) • KAEN PROPERTIES
+                  MANAGEMENT SDN BHD (1610050-V)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-kaen-line" style="background: #0f1419">
+      <div
+        class="mx-auto max-w-6xl px-4 py-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm"
+      >
+        <div class="flex items-center gap-3 text-kaen-muted">
+          <img
+            src="public/kaen-logo.png"
+            alt="KAEN Properties"
+            class="h-7 w-auto object-contain"
+          />
+          <span>
+            © 2022–<span id="year"></span>
+            <span style="color: #d5b873; font-weight: 800">KAEN Properties</span>.
+            <span data-i18n="footer.copy">All rights reserved.</span>
+          </span>
+        </div>
+        <div class="flex flex-wrap gap-4 text-kaen-muted">
+          <a href="#one-stop" class="hover:text-kaen-gold" data-i18n="footer.onestop"
+            >One-Stop</a
+          >
+          <a href="#services" class="hover:text-kaen-gold" data-i18n="footer.services"
+            >Services</a
+          >
+          <a
+            href="#management"
+            class="hover:text-kaen-gold"
+            data-i18n="footer.management"
+            >Management</a
+          >
+          <a href="#faq" class="hover:text-kaen-gold" data-i18n="footer.faq"
+            >FAQ</a
+          >
+          <a
+            href="#quote"
+            class="hover:text-kaen-gold"
+            data-i18n="footer.quotation"
+            >Quotation</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const i18n = {
+        en: {
+          "meta.title":
+            "KAEN Properties | New Project • Renovation • Rental • Management",
+          "meta.description":
+            "KAEN Properties provides one-stop investor services in Kuala Lumpur: New Project selection, investment renovation, rent out with in-house agents, and full property management.",
+
+          "floating.whatsapp": "WhatsApp",
+
+          "top.hotline": "Hotline:",
+          "top.location": "Kuala Lumpur",
+          "top.hours": "9am–6pm",
+
+          "brand.name": "KAEN Properties",
+          "brand.badge": "One-Stop Operator",
+          "brand.subline": "New Project • Renovation • Rental • Management",
+
+          "nav.onestop": "One-Stop",
+          "nav.services": "Services",
+          "nav.management": "Management",
+          "nav.faq": "FAQ",
+
+          "cta.quote": "Get Quotation",
+          "cta.whatsapp": "WhatsApp",
+          "cta.whatsappNow": "WhatsApp Now",
+          "cta.seeFlow": "See Flow",
+          "cta.quoteMyUnit": "Quote My Unit",
+          "cta.askManagement": "Ask about management",
+          "cta.whatsappPlan": "WhatsApp for Plan",
+          "cta.whatsappQuotation": "WhatsApp for Quotation",
+
+          "hero.tag1": "Hands-off rental operations",
+          "hero.tag2": "New Project → Renovation → Rental → Management",
+          "hero.title1": "Build rental income",
+          "hero.title2": "Let KAEN run the unit",
+          "hero.desc":
+            "KAEN Properties is a one-stop team for investors & owners — we help you choose the right direction, renovate with an investment concept, rent out through in-house agents, and manage day-to-day operations.",
+
+          "hero.card1.title": "Hands-off Investors",
+          "hero.card1.desc": "We operate the unit so you don’t have to",
+          "hero.card2.title": "Rentability-First Design",
+          "hero.card2.desc": "Built to attract tenants, not just look good.",
+          "hero.card3.title": "Demand-Driven Locations",
+          "hero.card3.desc":
+            "Focused on areas with consistent rental demand",
+
+          "flow.title": "One-Stop A–Z (Investor Flow)",
+          "flow.desc":
+            "One operator, clear responsibility. From strategy to stable rent — not just “renovation”.",
+          "flow.step1": "STEP 1",
+          "flow.step1.title": "New Project / Strategy",
+          "flow.step1.desc":
+            "Shortlist by demand, rentability, and realistic ownership plan.",
+          "flow.step1.out":
+            "Output: shortlist + strategy (whole / rooms)",
+          "flow.step2": "STEP 2",
+          "flow.step2.title": "Renovation (Investment Concept)",
+          "flow.step2.desc":
+            "Layout + furnishing tenants want. Practical and durable decisions.",
+          "flow.step2.out": "Output: ready-to-market unit",
+          "flow.step3": "STEP 3",
+          "flow.step3.title": "Rental (In-house Agents)",
+          "flow.step3.desc":
+            "Marketing, viewing, screening, agreement — speed-to-rent focus.",
+          "flow.step3.out": "Output: tenant secured",
+          "flow.step4": "STEP 4",
+          "flow.step4.title": "Management (Hands-off)",
+          "flow.step4.desc":
+            "Collection, maintenance coordination, tenant issues, follow-up.",
+          "flow.step4.out": "Output: stable operation",
+
+          "services.title": "Services",
+          "services.desc":
+            "You don’t need to coordinate 3–4 parties. We run the unit like an operator.",
+          "services.card1.title": "New Project",
+          "services.card1.desc":
+            "For investors who want a practical shortlist — not marketing talk.",
+          "services.card1.li1": "Project & unit-type shortlisting",
+          "services.card1.li2": "Match strategy: whole unit / rooms",
+          "services.card1.li3":
+            "Timeline planning: from purchase to rent",
+          "services.card2.title": "Investment Renovation",
+          "services.card2.desc":
+            "Renovation designed for rentability: durable, practical, and photo-ready.",
+          "services.card2.li1": "Layout & furnishing strategy",
+          "services.card2.li2": "Budget clarity & timeline control",
+          "services.card2.li3": "QC + handover readiness",
+          "services.card3.title": "Rental + Management",
+          "services.card3.desc":
+            "In-house agents to rent out, and management to keep the unit stable.",
+          "services.card3.li1":
+            "Marketing, viewing, tenant screening",
+          "services.card3.li2":
+            "Agreement + move-in coordination",
+          "services.card3.li3":
+            "Collection + maintenance coordination",
+          "services.auction.title": "Auction Property",
+          "services.auction.desc":
+            "We can assist investors who want auction opportunities with practical steps and risk awareness.",
+          "services.subsale.title": "Subsale / Secondary Market",
+          "services.subsale.desc":
+            "If you’re an owner planning to sell or restructure your portfolio, we can advise and assist on execution.",
+
+          "management.title": "Management (hands-off ownership)",
+          "management.desc":
+            "For investors who don’t want to manage tenant issues. We handle operations and coordination.",
+          "management.card1.title": "Tenant & Agreement",
+          "management.card1.li1": "Tenant screening support",
+          "management.card1.li2": "Agreement coordination",
+          "management.card1.li3":
+            "Move-in / move-out checklist mindset",
+          "management.card2.title": "Collection & Follow-up",
+          "management.card2.li1": "Rental follow-up & reminders",
+          "management.card2.li2": "Collection tracking",
+          "management.card2.li3": "Renewal coordination",
+          "management.card3.title": "Maintenance & Ops",
+          "management.card3.li1": "Maintenance coordination",
+          "management.card3.li2": "Utilities & ops coordination",
+          "management.card3.li3":
+            "Tenant issues handling (day-to-day)",
+          "management.ctaTitle": "Want a hands-off plan?",
+          "management.ctaDesc":
+            "Tell us your unit + target, we propose the best route and what to prepare.",
+
+          "testimonials.title": "What owners say",
+          "testimonials.desc":
+            "Replace with your actual WhatsApp screenshots / owner feedback later.",
+          "testimonials.1.title": "“Very systematic. Less headache.”",
+          "testimonials.1.desc":
+            "Renovation finished on schedule and rent out faster than expected.",
+          "testimonials.1.name": "— Owner (KL)",
+          "testimonials.2.title": "“I can finally be hands-off.”",
+          "testimonials.2.desc":
+            "Tenant issues, follow up, maintenance — KAEN handled it all.",
+          "testimonials.2.name": "— Investor",
+          "testimonials.3.title": "“Clear and practical.”",
+          "testimonials.3.desc":
+            "No need to compare many contractors. Just choose the route and execute.",
+          "testimonials.3.name": "— Landlord",
+
+          "faq.title": "FAQ (investor questions)",
+          "faq.desc": "Clear answers = more trust.",
+          "faq.q1": "Do I need renovation to rent out?",
+          "faq.a1":
+            "Not always. But the right investment renovation can improve rentability and reduce issues long term.",
+          "faq.q2": "Whole unit vs rooms — how to choose?",
+          "faq.a2":
+            "Depends on demand, risk tolerance, and ops preference. We propose a route based on your unit and timeline.",
+          "faq.q3": "How fast can you rent out?",
+          "faq.a3":
+            "Depends on pricing, furnishing readiness and demand. We focus on speed-to-rent workflow to reduce vacancy.",
+          "faq.q4": "Can you manage tenant issues and repairs?",
+          "faq.a4":
+            "Yes. We coordinate maintenance and handle day-to-day tenant communication — owners stay hands-off.",
+
+          "quote.title": "Get a quotation",
+          "quote.desc":
+            "Send your unit details — we’ll propose a practical route (whole unit / rooms) and the plan.",
+          "quote.boxTitle": "Send these 4 details",
+          "quote.li1": "Project name + unit size",
+          "quote.li2": "Target: whole unit / rooms / Airbnb",
+          "quote.li3":
+            "Your timeline (when you want to rent out)",
+          "quote.li4": "Whether you want management included",
+          "quote.note":
+            "We focus on rentability + operational clarity — so owners can stay hands-off.",
+
+          "contact.title": "Contact",
+          "contact.hotline": "WhatsApp / Hotline",
+          "contact.email": "Email",
+          "contact.office": "Office",
+
+          "footer.copy": "All rights reserved.",
+          "footer.onestop": "One-Stop",
+          "footer.services": "Services",
+          "footer.management": "Management",
+          "footer.faq": "FAQ",
+          "footer.quotation": "Quotation"
+        },
+
+        zh: {
+          "meta.title": "KAEN Properties | 新项目 • 装修 • 出租 • 管理",
+          "meta.description":
+            "KAEN Properties 在吉隆坡提供一站式投资型房产业务：新项目筛选、投资型装修、由内部团队协助出租，以及完整物业管理。",
+
+          "floating.whatsapp": "WhatsApp",
+
+          "top.hotline": "热线：",
+          "top.location": "吉隆坡",
+          "top.hours": "上午9点–下午6点",
+
+          "brand.name": "KAEN Properties",
+          "brand.badge": "一站式运营团队",
+          "brand.subline": "新项目 • 装修 • 出租 • 管理",
+
+          "nav.onestop": "一站式流程",
+          "nav.services": "服务",
+          "nav.management": "管理",
+          "nav.faq": "常见问题",
+
+          "cta.quote": "获取报价",
+          "cta.whatsapp": "WhatsApp",
+          "cta.whatsappNow": "立即 WhatsApp",
+          "cta.seeFlow": "查看流程",
+          "cta.quoteMyUnit": "为我的单位报价",
+          "cta.askManagement": "咨询管理服务",
+          "cta.whatsappPlan": "WhatsApp 获取方案",
+          "cta.whatsappQuotation": "WhatsApp 获取报价",
+
+          "hero.tag1": "轻松持有，交给团队处理出租运营",
+          "hero.tag2": "新项目 → 装修 → 出租 → 管理",
+          "hero.title1": "打造稳定租金收入",
+          "hero.title2": "让 KAEN 帮你运营单位",
+          "hero.desc":
+            "KAEN Properties 是面向投资者与业主的一站式团队——协助你选对方向、以投资逻辑做装修、通过内部团队出租，并处理日常营运管理。",
+
+          "hero.card1.title": "适合想省心的投资者",
+          "hero.card1.desc": "单位交给我们运营，你不用亲自处理",
+          "hero.card2.title": "以出租能力为先的设计",
+          "hero.card2.desc":
+            "重点不是只做得好看，而是更容易租得出去。",
+          "hero.card3.title": "以真实租赁需求为导向",
+          "hero.card3.desc": "聚焦租赁需求持续稳定的区域",
+
+          "flow.title": "一站式 A–Z（投资者流程）",
+          "flow.desc":
+            "一个团队负责到底，责任更清楚。从策略到稳定出租，不只是“做装修”。",
+          "flow.step1": "步骤 1",
+          "flow.step1.title": "新项目 / 策略规划",
+          "flow.step1.desc":
+            "根据需求、出租能力与实际持有计划进行筛选。",
+          "flow.step1.out": "产出：项目清单 + 出租策略（整租 / 分租）",
+          "flow.step2": "步骤 2",
+          "flow.step2.title": "装修（投资型概念）",
+          "flow.step2.desc":
+            "做租客真正想要的格局与配置，选择实用且耐用的方案。",
+          "flow.step2.out": "产出：可直接上市出租的单位",
+          "flow.step3": "步骤 3",
+          "flow.step3.title": "出租（内部团队）",
+          "flow.step3.desc":
+            "营销、带看、筛选、签约，全程以更快出租为目标。",
+          "flow.step3.out": "产出：成功找到租客",
+          "flow.step4": "步骤 4",
+          "flow.step4.title": "管理（省心持有）",
+          "flow.step4.desc":
+            "租金跟进、维修协调、租客问题处理与后续跟进。",
+          "flow.step4.out": "产出：稳定运营",
+
+          "services.title": "服务",
+          "services.desc":
+            "你不需要再自己协调 3–4 个不同团队。我们像运营者一样把单位跑起来。",
+          "services.card1.title": "新项目",
+          "services.card1.desc":
+            "给想要实用筛选建议的投资者，而不是只听销售话术。",
+          "services.card1.li1": "项目与户型筛选",
+          "services.card1.li2": "匹配策略：整租 / 分租",
+          "services.card1.li3": "从买入到出租的时间规划",
+          "services.card2.title": "投资型装修",
+          "services.card2.desc":
+            "以出租能力为核心的装修：耐用、实用，也适合营销展示。",
+          "services.card2.li1": "格局与家具配置策略",
+          "services.card2.li2": "预算清晰、工期可控",
+          "services.card2.li3": "QC 验收 + 交付准备",
+          "services.card3.title": "出租 + 管理",
+          "services.card3.desc":
+            "由内部团队负责出租，再由管理团队维持单位稳定运作。",
+          "services.card3.li1": "营销、带看、租客筛选",
+          "services.card3.li2": "合约与入住协调",
+          "services.card3.li3": "租金跟进与维修协调",
+          "services.auction.title": "拍卖房产",
+          "services.auction.desc":
+            "针对想布局拍卖机会的投资者，我们可提供更实际的流程协助与风险提醒。",
+          "services.subsale.title": "转售 / 二手市场",
+          "services.subsale.desc":
+            "若你是想出售或重整投资组合的业主，我们也可提供建议与执行协助。",
+
+          "management.title": "管理（省心持有）",
+          "management.desc":
+            "适合不想亲自处理租客问题的投资者。日常营运与协调由我们处理。",
+          "management.card1.title": "租客与合约",
+          "management.card1.li1": "租客筛选协助",
+          "management.card1.li2": "合约协调",
+          "management.card1.li3": "入住 / 退租检查思维",
+          "management.card2.title": "收租与跟进",
+          "management.card2.li1": "租金提醒与跟进",
+          "management.card2.li2": "收款追踪",
+          "management.card2.li3": "续租协调",
+          "management.card3.title": "维修与营运",
+          "management.card3.li1": "维修协调",
+          "management.card3.li2": "水电与日常营运协调",
+          "management.card3.li3": "处理租客日常问题",
+          "management.ctaTitle": "想要更省心的持有方案？",
+          "management.ctaDesc":
+            "告诉我们你的单位与目标，我们会建议更适合的路线与准备事项。",
+
+          "testimonials.title": "业主怎么说",
+          "testimonials.desc":
+            "后续可替换成真实 WhatsApp 截图或业主反馈。",
+          "testimonials.1.title": "“流程很系统，少了很多 headache。”",
+          "testimonials.1.desc": "装修按时完成，而且出租速度比预期更快。",
+          "testimonials.1.name": "— 业主（吉隆坡）",
+          "testimonials.2.title": "“终于可以很省心地持有了。”",
+          "testimonials.2.desc":
+            "租客问题、跟进、维修，KAEN 都帮我处理好了。",
+          "testimonials.2.name": "— 投资者",
+          "testimonials.3.title": "“清楚、实际。”",
+          "testimonials.3.desc":
+            "不用再自己比较一堆 contractor，选好路线后直接执行。",
+          "testimonials.3.name": "— 房东",
+
+          "faq.title": "FAQ（投资者常问问题）",
+          "faq.desc": "答案清楚，信任更容易建立。",
+          "faq.q1": "想出租，一定要先装修吗？",
+          "faq.a1":
+            "不一定。但做对的投资型装修，通常能提高出租能力，也能减少后续问题。",
+          "faq.q2": "整租还是分租，该怎么选？",
+          "faq.a2":
+            "要看当地需求、你的风险接受度，以及你对营运复杂度的偏好。我们会根据你的单位与时间线建议路线。",
+          "faq.q3": "多久可以租出去？",
+          "faq.a3":
+            "取决于定价、配置完成度和市场需求。我们的重点是加快出租流程，减少空置期。",
+          "faq.q4": "你们会处理租客问题和维修吗？",
+          "faq.a4":
+            "会。我们会协调维修并处理日常租客沟通，让业主更省心。",
+
+          "quote.title": "获取报价",
+          "quote.desc":
+            "把你的单位资料发给我们，我们会建议更实际的路线（整租 / 分租）与执行方案。",
+          "quote.boxTitle": "请提供这 4 项资料",
+          "quote.li1": "项目名称 + 单位面积",
+          "quote.li2": "目标：整租 / 分租 / Airbnb",
+          "quote.li3": "你的时间线（希望何时出租）",
+          "quote.li4": "是否需要包含管理服务",
+          "quote.note":
+            "我们的重点是出租能力与营运清晰度，让业主更省心。",
+
+          "contact.title": "联系方式",
+          "contact.hotline": "WhatsApp / 热线",
+          "contact.email": "电邮",
+          "contact.office": "办公室",
+
+          "footer.copy": "版权所有。",
+          "footer.onestop": "一站式流程",
+          "footer.services": "服务",
+          "footer.management": "管理",
+          "footer.faq": "常见问题",
+          "footer.quotation": "报价"
+        }
+      };
+
+      const whatsappMessages = {
+        en: {
+          quote:
+            "Hi KAEN, I want a quotation. Project: ____ Unit size: ____ Target: Whole/Rooms Timeline: ____ Need management: Yes/No",
+          plan:
+            "Hi KAEN, I want a hands-off plan (renovation + rental + management). My unit is:"
+        },
+        zh: {
+          quote:
+            "Hi KAEN，我想获取报价。项目：____ 单位面积：____ 目标：整租/分租 时间线：____ 是否需要管理：是/否",
+          plan:
+            "Hi KAEN，我想了解省心方案（装修 + 出租 + 管理）。我的单位是："
+        }
+      };
+
+      function setWaLink(id, text) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.href = `https://wa.me/601136111763?text=${encodeURIComponent(text)}`;
+      }
+
+      function applyLanguage(lang) {
+        const dict = i18n[lang];
+        if (!dict) return;
+
+        document.documentElement.lang = lang === "zh" ? "zh" : "en";
+
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          const attr = el.getAttribute("data-i18n-attr");
+          if (!dict[key]) return;
+
+          if (attr) {
+            el.setAttribute(attr, dict[key]);
+          } else {
+            el.textContent = dict[key];
+          }
+        });
+
+        const langToggle = document.getElementById("langToggle");
+        if (langToggle) {
+          langToggle.textContent = lang === "en" ? "中文" : "EN";
+        }
+
+        setWaLink("waFloating", whatsappMessages[lang].quote);
+        setWaLink("waHero", whatsappMessages[lang].quote);
+        setWaLink("waQuote", whatsappMessages[lang].quote);
+        setWaLink("waManagementPlan", whatsappMessages[lang].plan);
+
+        localStorage.setItem("kaen_lang", lang);
+      }
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const btn = document.getElementById("menuBtn");
+      const menu = document.getElementById("mobileMenu");
+      if (btn && menu) {
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+        menu.querySelectorAll("a").forEach((a) => {
+          a.addEventListener("click", () => menu.classList.add("hidden"));
+        });
+      }
+
+      const langToggle = document.getElementById("langToggle");
+      let currentLang = localStorage.getItem("kaen_lang") || "en";
+      applyLanguage(currentLang);
+
+      if (langToggle) {
+        langToggle.addEventListener("click", () => {
+          currentLang = currentLang === "en" ? "zh" : "en";
+          applyLanguage(currentLang);
+        });
+      }
+    </script>
+  </body>
+</html>
