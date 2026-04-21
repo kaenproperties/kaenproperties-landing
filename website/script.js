@@ -95,6 +95,48 @@ const i18n = {
     "services.subsale.desc":
       "If you’re an owner planning to sell or restructure your portfolio, we can advise and assist on execution.",
 
+    "nav.projects": "Projects",
+
+    "projects.title": "Completed Projects",
+    "projects.desc":
+    "Selected projects that reflect KAEN’s rental-focused renovation thinking, practical execution, and market-facing setup.",
+    "projects.ctaTop": "Plan My Unit",
+
+    "projects.bhp.year": "Year of Completion: 2024",
+    "projects.bhp.location": "Location: Bangsar",
+    "projects.bhp.near":
+    "Near Bangsar MRT, Jalan Maarof commercial area, cafes, and lifestyle amenities",
+    //"projects.bhp.desc":
+    //"A strong urban rental market where layout clarity, presentation, and tenant targeting matter. The setup focuses on practical planning and better rental positioning for city-working tenants.",
+
+    "projects.belfield.year": "Year of Completion: 2024",
+    "projects.belfield.location": "Location: Kuala Lumpur (Jalan Belfield)",
+    "projects.belfield.near":
+    "Near KL Sentral, Mid Valley, Brickfields, public transport and city centre amenities",
+    //"projects.belfield.desc":
+   // "A central KL project where accessibility and tenant profile drive demand. Renovation focuses on clean layout, practical furnishing, and positioning for city-working tenants.",
+    
+    "projects.era.year": "Year of Completion: 2024",
+    "projects.era.location": "Location: Segambut / Duta North",
+    "projects.era.near":
+    "Near Segambut KTM, DUKE Highway access, Mont Kiara vicinity, schools, and commercial areas",
+    //"projects.era.desc":
+    //"A project where balancing budget, usability, and rentability is important. The execution focuses on practical upgrades that support rental outcome without unnecessary cost.",
+
+    "projects.kensho.year": "Year of Completion: 2023",
+    "projects.kensho.location": "Location: Taman Danau Desa",
+    "projects.kensho.near":
+    "Near NSK Kuchai Lama, Mid Valley access, schools, and mature residential demand zone",
+    //"projects.kensho.desc":
+    //"Compact-space execution where layout efficiency and usability matter. The direction focuses on cleaner setup, better space use, and stronger rental appeal.",
+
+    "projects.bottomTitle": "Want your unit planned like this?",
+    "projects.bottomDesc":
+    "Send us your unit details and target. We’ll propose a practical renovation + rental direction based on your property.",
+    "projects.ctaBottom": "Plan My Unit",
+
+    "footer.projects": "Projects",
+
     "management.title": "Management (hands-off ownership)",
     "management.desc":
       "For investors who don’t want to manage tenant issues. We handle operations and coordination.",
@@ -259,6 +301,48 @@ const i18n = {
     "services.subsale.title": "转售 / 二手市场",
     "services.subsale.desc":
       "若你是想出售或重整投资组合的业主，我们也可提供建议与执行协助。",
+
+    "nav.projects": "项目案例",
+
+    "projects.title": "Completed Projects",
+    "projects.desc":
+    "这些项目展示的是 KAEN 以出租结果为导向的装修思路、实际执行能力，以及更适合市场出租的单位呈现方式。",
+    "projects.ctaTop": "规划我的单位",
+
+    "projects.bhp.year": "完成年份：2024年",
+    "projects.bhp.location": "地点：Bangsar",
+    "projects.bhp.near":
+    "靠近 Bangsar MRT、Jalan Maarof 商业区、咖啡店与生活设施",
+    //"projects.bhp.desc":
+   // "这是一个城市型高需求租赁市场，格局清晰度、现场呈现和租客定位都会直接影响出租表现。整体规划重点放在更实用的布局与更清楚的出租定位。",
+
+    "projects.belfield.year": "完成年份：2024年",
+    "projects.belfield.location": "地点：吉隆坡（Jalan Belfield）",
+    "projects.belfield.near":
+    "靠近 KL Sentral、Mid Valley、Brickfields，交通便利，城市生活设施齐全",
+   // "projects.belfield.desc":
+   // "属于市中心项目，交通与租客类型直接影响需求。装修重点在于清晰格局、实用家具配置，以及针对城市上班族的出租定位。",
+
+    "projects.era.year": "完成年份：2024年",
+    "projects.era.location": "地点：Segambut / Duta North",
+    "projects.era.near":
+    "靠近 Segambut KTM、DUKE 高速通道、Mont Kiara 周边、学校与商业区",
+    //"projects.era.desc":
+   // "这类项目更讲究预算、实用性与出租能力之间的平衡。执行重点是做有效升级，提升出租表现，同时避免不必要成本。",
+
+    "projects.kensho.year": "完成年份：2023年",
+    "projects.kensho.location": "地点：Taman Danau Desa",
+    "projects.kensho.near":
+    "靠近 NSK Kuchai Lama、前往 Mid Valley 便利、邻近学校与成熟住宅需求区",
+  //  "projects.kensho.desc":
+  //  "这类紧凑型单位更看重空间效率和使用便利性。整体方向是做更清爽的配置、更有效的空间利用，以及更强的出租吸引力。",
+
+    "projects.bottomTitle": "想把你的单位也规划成这样？",
+    "projects.bottomDesc":
+    "把你的单位资料和目标发给我们，我们会根据你的物业情况建议更实际的装修 + 出租方向。",
+    "projects.ctaBottom": "规划我的单位",
+
+    "footer.projects": "项目案例",
 
     "management.title": "管理（省心持有）",
     "management.desc":
