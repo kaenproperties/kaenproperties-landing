@@ -456,8 +456,14 @@ function applyLanguage(lang) {
   });
 
   const langToggle = document.getElementById("langToggle");
+  const langToggleMobile = document.getElementById("langToggleMobile");
+
   if (langToggle) {
     langToggle.textContent = lang === "en" ? "中文" : "EN";
+  }
+
+  if (langToggleMobile) {
+    langToggleMobile.textContent = lang === "en" ? "中文" : "EN";
   }
 
   setWaLink("waFloating", whatsappMessages[lang].quote);
@@ -484,12 +490,20 @@ if (menuBtn && mobileMenu) {
 }
 
 const langToggle = document.getElementById("langToggle");
+const langToggleMobile = document.getElementById("langToggleMobile");
+
 let currentLang = localStorage.getItem("kaen_lang") || "en";
 applyLanguage(currentLang);
 
+function toggleLanguage() {
+  currentLang = currentLang === "en" ? "zh" : "en";
+  applyLanguage(currentLang);
+}
+
 if (langToggle) {
-  langToggle.addEventListener("click", () => {
-    currentLang = currentLang === "en" ? "zh" : "en";
-    applyLanguage(currentLang);
-  });
+  langToggle.addEventListener("click", toggleLanguage);
+}
+
+if (langToggleMobile) {
+  langToggleMobile.addEventListener("click", toggleLanguage);
 }

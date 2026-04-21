@@ -209,110 +209,145 @@
     </div>
 
     <!-- HEADER + NAV + MOBILE MENU -->
-    <header class="mx-auto max-w-6xl px-4 py-4 sm:py-5">
-      <div class="flex items-center justify-between gap-3">
-        <a href="#" class="flex items-center gap-4 min-w-0">
+    <header class="mx-auto max-w-7xl px-4 py-4 sm:py-5">
+      <div class="hidden lg:grid lg:grid-cols-[auto_minmax(320px,420px)_1fr] lg:items-center lg:gap-8">
+        <!-- LEFT: LOGO -->
+        <a href="#" class="flex items-center shrink-0">
           <img
             src="../public/kaen-logo.png"
             alt="KAEN Properties"
-            class="h-24 sm:h-28 md:h-32 w-auto object-contain shrink-0"
+            class="h-20 xl:h-24 w-auto object-contain"
+          />
+        </a>
+
+        <!-- MIDDLE: BRAND BLOCK -->
+        <div class="min-w-0">
+          <div class="flex items-center gap-1 min-w-0">
+            <div class="text-[18px] xl:text-[20px] font-extrabold tracking-wide leading-none whitespace-nowrap shrink-0">
+              KAEN Properties
+            </div>
+
+            <span
+              class="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold shrink-0"
+              style="
+                border: 1px dashed rgba(213,184,115,0.7);
+                background: rgba(213,184,115,0.08);
+                color: #d5b873;
+              "
+              data-i18n="brand.badge"
+            >
+              One-Stop Operator
+            </span>
+          </div>
+
+          <div
+            class="mt-2 text-[11px] xl:text-[12px] leading-[1.25] text-kaen-muted max-w-[360px]"
+            data-i18n="brand.subline"
+          >
+            New Project • Renovation • Rental • Management
+          </div>
+        </div>
+
+        <!-- RIGHT: NAV + ACTIONS -->
+        <div class="flex items-center justify-end gap-6 min-w-0">
+          <nav
+            class="flex items-center gap-5 text-sm font-semibold text-kaen-muted shrink-0"
+          >
+            <a
+              class="hover:text-kaen-gold transition whitespace-nowrap"
+              href="#one-stop"
+              data-i18n="nav.onestop"
+              >One-Stop</a
+            >
+            <a
+              class="hover:text-kaen-gold transition whitespace-nowrap"
+              href="#services"
+              data-i18n="nav.services"
+              >Services</a
+            >
+            <a
+              class="hover:text-kaen-gold transition whitespace-nowrap"
+              href="#projects"
+              data-i18n="nav.projects"
+              >Projects</a
+            >
+            <a
+              class="hover:text-kaen-gold transition whitespace-nowrap"
+              href="#management"
+              data-i18n="nav.management"
+              >Management</a
+            >
+            <a
+              class="hover:text-kaen-gold transition whitespace-nowrap"
+              href="#faq"
+              data-i18n="nav.faq"
+              >FAQ</a
+            >
+          </nav>
+
+          <div class="flex items-center gap-2 shrink-0">
+            <button
+              id="langToggle"
+              type="button"
+              class="inline-flex items-center justify-center h-11 min-w-[110px] rounded-xl border border-kaen-line bg-white/5 px-4 text-sm font-extrabold text-kaen-ink hover:bg-white/10"
+              aria-label="Toggle language"
+            >
+              中文
+            </button>
+
+            <a
+              class="inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline min-w-[170px]"
+              href="#quote"
+              data-i18n="cta.quote"
+            >
+              Get Quotation
+            </a>
+
+            <a
+              class="inline-flex items-center justify-center h-11 rounded-xl px-5 text-sm font-extrabold text-white shadow-soft hover:opacity-95 min-w-[145px]"
+              style="background: #25d366"
+              href="https://wa.me/601136111763?text=Hi%20KAEN%2C%20I%20want%20a%20quotation%20for%20my%20unit."
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="cta.whatsapp"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE / TABLET HEADER -->
+      <div class="flex items-center justify-between gap-3 lg:hidden">
+        <a href="#" class="flex items-center gap-3 min-w-0">
+          <img
+            src="../public/kaen-logo.png"
+            alt="KAEN Properties"
+            class="h-16 sm:h-20 w-auto object-contain shrink-0"
           />
           <div class="leading-tight min-w-0">
-            <div
-              class="font-extrabold tracking-wide flex items-center gap-2 min-w-0"
-            >
-              <span class="truncate" data-i18n="brand.name"
-                >KAEN Properties</span
-              >
-              <span
-                class="hidden sm:inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold"
-                style="
-                  border: 1px dashed rgba(213,184,115,0.7);
-                  background: rgba(213,184,115,0.08);
-                  color: #d5b873;
-                "
-                data-i18n="brand.badge"
-              >
-                One-Stop Operator
-              </span>
+            <div class="font-extrabold tracking-wide text-[18px] truncate">
+              KAEN Properties
             </div>
-            <div
-              class="text-xs text-kaen-muted mt-0.5"
-              data-i18n="brand.subline"
-            >
+            <div class="text-[11px] text-kaen-muted mt-1 leading-[1.2]">
               New Project • Renovation • Rental • Management
             </div>
           </div>
         </a>
 
-        <nav
-          class="hidden lg:flex items-center gap-6 text-sm font-semibold text-kaen-muted"
-        >
-          <a
-            class="hover:text-kaen-gold transition"
-            href="#one-stop"
-            data-i18n="nav.onestop"
-            >One-Stop</a
-          >
-          <a
-            class="hover:text-kaen-gold transition"
-            href="#services"
-            data-i18n="nav.services"
-            >Services</a
-          >
-
-          <a 
-            class="hover:text-kaen-gold transition" 
-            href="#projects" 
-            data-i18n="nav.projects"
-            >Projects</a>
-
-          <a
-            class="hover:text-kaen-gold transition"
-            href="#management"
-            data-i18n="nav.management"
-            >Management</a
-          >
-          <a
-            class="hover:text-kaen-gold transition"
-            href="#faq"
-            data-i18n="nav.faq"
-            >FAQ</a
-          >
-        </nav>
-
         <div class="flex items-center gap-2 shrink-0">
           <button
-            id="langToggle"
+            id="langToggleMobile"
             type="button"
-            class="inline-flex items-center justify-center h-11 rounded-xl border border-kaen-line bg-white/5 px-4 text-sm font-extrabold text-kaen-ink hover:bg-white/10"
+            class="inline-flex items-center justify-center h-10 min-w-[82px] rounded-xl border border-kaen-line bg-white/5 px-3 text-sm font-extrabold text-kaen-ink hover:bg-white/10"
             aria-label="Toggle language"
           >
             中文
           </button>
 
-          <a
-            class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline"
-            href="#quote"
-            data-i18n="cta.quote"
-          >
-            Get Quotation
-          </a>
-
-          <a
-            class="hidden sm:inline-flex items-center justify-center gap-2 h-11 rounded-xl px-4 text-sm font-extrabold text-white shadow-soft hover:opacity-95"
-            style="background: #25d366"
-            href="https://wa.me/601136111763?text=Hi%20KAEN%2C%20I%20want%20a%20quotation%20for%20my%20unit."
-            target="_blank"
-            rel="noreferrer"
-            data-i18n="cta.whatsapp"
-          >
-            WhatsApp
-          </a>
-
           <button
             id="menuBtn"
-            class="lg:hidden inline-flex items-center justify-center h-11 w-11 rounded-xl border border-kaen-line bg-white/5 hover:bg-white/10"
+            class="inline-flex items-center justify-center h-10 w-10 rounded-xl border border-kaen-line bg-white/5 hover:bg-white/10"
             aria-label="Open menu"
           >
             <svg
@@ -350,13 +385,12 @@
             data-i18n="nav.services"
             >Services</a
           >
-
           <a
             class="px-3 py-2 rounded-xl hover:bg-kaen-goldSoft hover:text-kaen-gold"
             href="#projects"
             data-i18n="nav.projects"
-            >Projects</a>
-
+            >Projects</a
+          >
           <a
             class="px-3 py-2 rounded-xl hover:bg-kaen-goldSoft hover:text-kaen-gold"
             href="#management"
@@ -369,12 +403,24 @@
             data-i18n="nav.faq"
             >FAQ</a
           >
+
           <a
-            class="mt-2 inline-flex items-center justify-center h-11 rounded-xl btn-gold"
+            class="mt-2 inline-flex items-center justify-center h-11 rounded-xl btn-gold min-w-[140px]"
             href="#quote"
             data-i18n="cta.quote"
             >Get Quotation</a
           >
+
+          <a
+            class="inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm font-extrabold text-white shadow-soft hover:opacity-95"
+            style="background: #25d366"
+            href="https://wa.me/601136111763?text=Hi%20KAEN%2C%20I%20want%20a%20quotation%20for%20my%20unit."
+            target="_blank"
+            rel="noreferrer"
+            data-i18n="cta.whatsapp"
+          >
+            WhatsApp
+          </a>
         </div>
       </div>
     </header>
@@ -871,7 +917,7 @@
           <!-- Bangsar Hill Park -->
           <div class="rounded-3xl kaen-card overflow-hidden shadow-soft h-full">
             <img
-              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=70"
+              src="../public/completed_projects/bhp.jpg"
               alt="Bangsar Hill Park project"
               class="h-48 w-full object-cover opacity-[0.94]"
               loading="lazy"
@@ -902,7 +948,7 @@
           <!-- Belfield -->
           <div class="rounded-3xl kaen-card overflow-hidden shadow-soft h-full">
             <img
-              src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=70"
+              src="../public/completed_projects/belfield.jpg"
               alt="Belfield project"
               class="h-48 w-full object-cover opacity-[0.94]"
               loading="lazy"
@@ -933,7 +979,7 @@
           <!-- The ERA -->
           <div class="rounded-3xl kaen-card overflow-hidden shadow-soft h-full">
             <img
-              src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=70"
+              src="../public/completed_projects/era.jpg"
               alt="The ERA project"
               class="h-48 w-full object-cover opacity-[0.94]"
               loading="lazy"
@@ -964,7 +1010,7 @@
           <!-- Kensho Residence -->
           <div class="rounded-3xl kaen-card overflow-hidden shadow-soft h-full">
             <img
-              src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=70"
+              src="../public/completed_projects/kensho.jpg"
               alt="Kensho Residence project"
               class="h-48 w-full object-cover opacity-[0.94]"
               loading="lazy"
@@ -1416,7 +1462,7 @@
       <div
         class="mx-auto max-w-6xl px-4 py-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm"
       >
-        <div class="flex items-center gap-3 text-kaen-muted">
+        <div class="flex items-center gap-2 text-kaen-muted">
           <img
             src="../public/kaen-logo.png"
             alt="KAEN Properties"
