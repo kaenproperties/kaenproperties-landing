@@ -507,3 +507,65 @@ if (langToggle) {
 if (langToggleMobile) {
   langToggleMobile.addEventListener("click", toggleLanguage);
 }
+
+const track = document.getElementById("projectTrack");
+const next = document.getElementById("projNext");
+const prev = document.getElementById("projPrev");
+
+let isMoving = false;
+
+function slideNext() {
+  if (isMoving) return;
+  isMoving = true;
+
+  const cardWidth = track.children[0].offsetWidth + 20;
+
+  track.style.transition = "transform 0.4s ease";
+  track.style.transform = `translateX(-${cardWidth}px)`;
+
+  setTimeout(() => {
+    track.appendChild(track.firstElementChild);
+    track.style.transition = "none";
+    track.style.transform = "translateX(0)";
+    isMoving = false;
+  }, 400);
+}
+
+function slidePrev() {
+  if (isMoving) return;
+  isMoving = true;
+
+  const cardWidth = track.children[0].offsetWidth + 20;
+
+  track.prepend(track.lastElementChild);
+  track.style.transition = "none";
+  track.style.transform = `translateX(-${cardWidth}px)`;
+
+  requestAnimationFrame(() => {
+    track.style.transition = "transform 0.4s ease";
+    track.style.transform = "translateX(0)";
+  });
+
+  setTimeout(() => {
+    isMoving = false;
+  }, 400);
+}
+
+next.onclick = slideNext;
+prev.onclick = slidePrev;
+
+let startX = 0;
+
+track.addEventListener("touchstart", e => {
+  startX = e.touches[0].clientX;
+});
+
+track.addEventListener("touchend", e => {
+  let endX = e.changedTouches[0].clientX;
+
+  if (startX - endX > 50) {
+    slideNext();
+  } else if (endX - startX > 50) {
+    slidePrev();
+  }
+});
