@@ -859,268 +859,565 @@
     </section>
     
       
-    <!-- COMPLETED PROJECTS -->
+    <!-- PROJECTS HUB -->
     <section
       id="projects"
       class="border-y border-kaen-line"
       style="background: rgba(26, 31, 58, 0.18)"
     >
       <div class="mx-auto max-w-6xl px-4 py-14">
+
+        <!-- ONGOING PROJECTS -->
         <div class="flex items-end justify-between gap-6">
           <div class="max-w-2xl">
             <h2
               class="text-2xl md:text-3xl font-extrabold sec-bullet"
-              data-i18n="projects.title"
+              data-i18n="projectsOngoing.title"
             >
-              Completed Projects
+              Ongoing Projects
             </h2>
             <p
               class="mt-2 text-kaen-muted leading-relaxed"
-              data-i18n="projects.desc"
+              data-i18n="projectsOngoing.desc"
             >
-              Selected projects that reflect KAEN’s rental-focused renovation
-              thinking, practical execution, and market-facing setup.
+              Units currently under execution, where layout, furnishing, and practical renovation decisions are being carried through for rental outcome.
             </p>
           </div>
 
           <a
             class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline min-w-[140px]"
             href="#quote"
-            data-i18n="projects.ctaTop"
+            data-i18n="projectsOngoing.ctaTop"
           >
             Plan My Unit
           </a>
         </div>
 
-        <!-- SLIDER VERSION -->
         <div class="relative mt-8">
-
-          <!-- LEFT -->
-          <button id="projPrev"
-            class="absolute -left-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-white/10 border border-kaen-line">
+          <button
+            id="ongoingPrev"
+            class="absolute -left-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-white/10 border border-kaen-line"
+            aria-label="Previous ongoing projects"
+          >
             ‹
           </button>
 
-          <!-- RIGHT -->
-          <button id="projNext"
-            class="absolute -right-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-white/10 border border-kaen-line">
+          <button
+            id="ongoingNext"
+            class="absolute -right-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-white/10 border border-kaen-line"
+            aria-label="Next ongoing projects"
+          >
             ›
           </button>
 
-          <!-- VIEW -->
           <div class="overflow-hidden">
-            <div id="projectTrack" class="flex gap-5">
-
-              <!-- Bangsar -->
+            <div id="ongoingTrack" class="flex gap-5">
               <div class="project-card">
-                <img src="../public/completed_projects/bhp.jpg" />
-
+                <img src="../public/ongoing_projects/kensho.jpg" alt="Kensho" />
                 <div class="content">
-                  <div class="title">Bangsar Hill Park</div>
-
-                  <div class="desc">
-                    Positioned for city-working tenants with strong MRT-driven demand.
+                  <div class="title">Kensho</div>
+                  <div class="desc" data-i18n="projectsOngoing.kensho.desc">
+                    Execution focused on cleaner layout, practical furnishing, and tenant usability.
                   </div>
-
                   <div class="meta">
-                    <div>2024 • Bangsar</div>
-                    <div>Urban professionals / MRT access</div>
+                    <div data-i18n="projectsOngoing.kensho.meta1">Ongoing • Renovation in Progress</div>
+                    <div data-i18n="projectsOngoing.kensho.meta2">Compact-space optimization</div>
                   </div>
                 </div>
               </div>
 
-              <!-- Belfield -->
               <div class="project-card">
-                <img src="../public/completed_projects/belfield.jpg" />
-
+                <img src="../public/ongoing_projects/era.jpg" alt="The Era" />
                 <div class="content">
-                  <div class="title">Sunway Belfield</div>
-
-                  <div class="desc">
-                    Central KL setup focused on accessibility and consistent tenant flow.
+                  <div class="title">The Era</div>
+                  <div class="desc" data-i18n="projectsOngoing.theEra.desc">
+                    Ongoing work prioritizes practical upgrades with controlled cost and rental usability.
                   </div>
-
                   <div class="meta">
-                    <div>2024 • KL City</div>
-                    <div>KL Sentral / Mid Valley demand</div>
+                    <div data-i18n="projectsOngoing.theEra.meta1">Ongoing • Execution Stage</div>
+                    <div data-i18n="projectsOngoing.theEra.meta2">Balanced cost-to-rent approach</div>
                   </div>
                 </div>
               </div>
 
-              <!-- ERA -->
               <div class="project-card">
-                <img src="../public/completed_projects/era.jpg" />
-
-                <div class="content">
-                  <div class="title">The ERA</div>
-
-                  <div class="desc">
-                    Balanced cost vs rent with practical upgrades for stable occupancy.
-                  </div>
-
-                  <div class="meta">
-                    <div>2024 • Segambut</div>
-                    <div>Mid-income tenant pool</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Kensho -->
-              <div class="project-card">
-                <img src="../public/completed_projects/kensho.jpg" />
-
-                <div class="content">
-                  <div class="title">Kensho Residence</div>
-
-                  <div class="desc">
-                    Compact unit optimized for usability and efficient space planning.
-                  </div>
-
-                  <div class="meta">
-                    <div>2023 • Danau Desa</div>
-                    <div>Family + working tenants</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Nexus -->
-              <div class="project-card">
-                <img src="../public/completed_projects/nexus.jpg" />
-
+                <img src="../public/ongoing_projects/nexus.jpg" alt="Nexus Taman Pertama" />
                 <div class="content">
                   <div class="title">Nexus Taman Pertama</div>
-
-                  <div class="desc">
-                    MRT-driven rental demand with strong room rental positioning.
+                  <div class="desc" data-i18n="projectsOngoing.nexus.desc">
+                    Current setup emphasizes room-rental practicality and smoother tenant turnover.
                   </div>
-
                   <div class="meta">
-                    <div>2023 • Cheras</div>
-                    <div>Room rental strategy</div>
+                    <div data-i18n="projectsOngoing.nexus.meta1">Ongoing • Renovation in Progress</div>
+                    <div data-i18n="projectsOngoing.nexus.meta2">Transit-led rental demand</div>
                   </div>
                 </div>
               </div>
 
-              <!-- Laurel -->
               <div class="project-card">
-                <img src="../public/completed_projects/laurel.jpg" />
-
+                <img src="../public/ongoing_projects/2rio.jpg" alt="2Rio" />
                 <div class="content">
-                  <div class="title">Laurel Residence</div>
-
-                  <div class="desc">
-                    Positioned for office tenants with proximity to business hubs.
+                  <div class="title">2Rio</div>
+                  <div class="desc" data-i18n="projectsOngoing.twoRio.desc">
+                    Ongoing execution built around practical market fit and rental-facing setup.
                   </div>
-
                   <div class="meta">
-                    <div>2024 • Bangsar South</div>
-                    <div>Office crowd demand</div>
+                    <div data-i18n="projectsOngoing.twoRio.meta1">Ongoing • Execution Stage</div>
+                    <div data-i18n="projectsOngoing.twoRio.meta2">Tenant-ready planning</div>
                   </div>
                 </div>
               </div>
 
-              <!-- Velocity -->
               <div class="project-card">
-                <img src="../public/completed_projects/velocity.jpg" />
-
+                <img src="../public/ongoing_projects/bhp.jpg" alt="Bangsar Hill Park" />
                 <div class="content">
-                  <div class="title">Sunway Velocity 2</div>
-
-                  <div class="desc">
-                    High-traffic area setup with strong tenant turnover potential.
+                  <div class="title">Bangsar Hill Park</div>
+                  <div class="desc" data-i18n="projectsOngoing.bhp.desc">
+                    Ongoing work targets city-working tenant demand with cleaner presentation and layout.
                   </div>
-
                   <div class="meta">
-                    <div>2024 • Cheras</div>
-                    <div>Mall + MRT traffic</div>
+                    <div data-i18n="projectsOngoing.bhp.meta1">Ongoing • Renovation in Progress</div>
+                    <div data-i18n="projectsOngoing.bhp.meta2">Urban professionals / demand-led area</div>
                   </div>
                 </div>
               </div>
 
-              <!-- YouCity -->
               <div class="project-card">
-                <img src="../public/completed_projects/youcity.jpg" />
-
+                <img src="../public/ongoing_projects/skyline.jpg" alt="Skyline Pudu" />
                 <div class="content">
-                  <div class="title">YouCity 3</div>
-
-                  <div class="desc">
-                    Affordable rental positioning with stable mass-market demand.
+                  <div class="title">Skyline Pudu</div>
+                  <div class="desc" data-i18n="projectsOngoing.skylinePudu.desc">
+                    Execution direction focuses on practical rental appeal in a city-accessible location.
                   </div>
-
                   <div class="meta">
-                    <div>2023 • Cheras</div>
-                    <div>Mass rental segment</div>
+                    <div data-i18n="projectsOngoing.skylinePudu.meta1">Ongoing • Execution Stage</div>
+                    <div data-i18n="projectsOngoing.skylinePudu.meta2">City-fringe tenant demand</div>
                   </div>
                 </div>
               </div>
 
-              <!-- JRK -->
               <div class="project-card">
-                <img src="../public/completed_projects/jrk.jpg" />
-
+                <img src="../public/ongoing_projects/dclover.jpg" alt="D' Clover" />
                 <div class="content">
-                  <div class="title">JRK Convena</div>
-
-                  <div class="desc">
-                    Lifestyle-driven location with demand from Bukit Jalil tenants.
+                  <div class="title">D' Clover</div>
+                  <div class="desc" data-i18n="projectsOngoing.dClover.desc">
+                    Renovation in progress with focus on usability, durable choices, and rental readiness.
                   </div>
-
                   <div class="meta">
-                    <div>2024 • Bukit Jalil</div>
-                    <div>Young professionals</div>
+                    <div data-i18n="projectsOngoing.dClover.meta1">Ongoing • Renovation in Progress</div>
+                    <div data-i18n="projectsOngoing.dClover.meta2">Practical execution</div>
                   </div>
                 </div>
               </div>
 
-              <!-- Nest2 -->
               <div class="project-card">
-                <img src="../public/completed_projects/nest2.jpg" />
-
+                <img src="../public/ongoing_projects/sunway-artessa.jpg" alt="Sunway Artessa" />
                 <div class="content">
-                  <div class="title">Nest 2</div>
-
-                  <div class="desc">
-                    Practical setup targeting steady rental demand near city fringe.
+                  <div class="title">Sunway Artessa</div>
+                  <div class="desc" data-i18n="projectsOngoing.sunwayArtessa.desc">
+                    Current execution built around tenant usability and stronger market-facing presentation.
                   </div>
-
                   <div class="meta">
-                    <div>2023 • Old Klang Road</div>
-                    <div>Mixed tenant pool</div>
+                    <div data-i18n="projectsOngoing.sunwayArtessa.meta1">Ongoing • Execution Stage</div>
+                    <div data-i18n="projectsOngoing.sunwayArtessa.meta2">Rental-focused setup</div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div> 
 
+        <!-- UPCOMING PROJECTS -->
+        <div>
+          <div class="mt-16">
+            <div class="flex items-end justify-between gap-6">
+              <div class="max-w-2xl">
+                <h2
+                  class="text-2xl md:text-3xl font-extrabold sec-bullet"
+                  data-i18n="projectsUpcoming.title"
+                >
+                  Upcoming Projects
+                </h2>
+                <p
+                  class="mt-2 text-kaen-muted leading-relaxed"
+                  data-i18n="projectsUpcoming.desc"
+                >
+                  Projects in planning and pre-execution stage, prepared with rental demand, layout logic, and marketability in mind.
+                </p>
+              </div>
 
+              <a
+                class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline min-w-[140px]"
+                href="#quote"
+                data-i18n="projectsUpcoming.ctaTop"
+              >
+                Plan My Unit
+              </a>
+            </div>
 
+            <div class="relative mt-8">
+              <button
+                id="upcomingPrev"
+                class="absolute -left-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-white/10 border border-kaen-line"
+                aria-label="Previous upcoming projects"
+              >
+                ‹
+              </button>
+
+              <button
+                id="upcomingNext"
+                class="absolute -right-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-white/10 border border-kaen-line"
+                aria-label="Next upcoming projects"
+              >
+                ›
+              </button>
+
+              <div class="overflow-hidden">
+                <div id="upcomingTrack" class="flex gap-5">
+                  <div class="project-card">
+                    <img src="../public/upcoming_projects/sunway-dhill.jpg" alt="Sunway d'hill" />
+                    <div class="content">
+                      <div class="title">Sunway d'hill</div>
+                      <div class="desc" data-i18n="projectsUpcoming.sunwayDhill.desc">
+                        Planned with practical rental positioning and tenant-ready layout direction.
+                      </div>
+                      <div class="meta">
+                        <div data-i18n="projectsUpcoming.sunwayDhill.meta1">Upcoming • Rental Planning Stage</div>
+                        <div data-i18n="projectsUpcoming.sunwayDhill.meta2">Investor-focused setup</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card">
+                    <img src="../public/upcoming_projects/sunway-jernih.jpg" alt="Sunway Jernih" />
+                    <div class="content">
+                      <div class="title">Sunway Jernih</div>
+                      <div class="desc" data-i18n="projectsUpcoming.sunwayJernih.desc">
+                        Pre-execution planning focused on practical furnishing and rental readiness.
+                      </div>
+                      <div class="meta">
+                        <div data-i18n="projectsUpcoming.sunwayJernih.meta1">Upcoming • Planning Phase</div>
+                        <div data-i18n="projectsUpcoming.sunwayJernih.meta2">Rentability-first</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card">
+                    <img src="../public/upcoming_projects/maxim-risen.jpg" alt="Maxim Risen" />
+                    <div class="content">
+                      <div class="title">Maxim Risen</div>
+                      <div class="desc" data-i18n="projectsUpcoming.maximRisen.desc">
+                        Early-stage project preparation with emphasis on usable layout and market fit.
+                      </div>
+                      <div class="meta">
+                        <div data-i18n="projectsUpcoming.maximRisen.meta1">Upcoming • Planning Phase</div>
+                        <div data-i18n="projectsUpcoming.maximRisen.meta2">Market-facing strategy</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card">
+                    <img src="../public/upcoming_projects/dterra.jpg" alt="D' Terra" />
+                    <div class="content">
+                      <div class="title">D' Terra</div>
+                      <div class="desc" data-i18n="projectsUpcoming.dterra.desc">
+                        Planned for efficient setup and smoother rent-out positioning from launch.
+                      </div>
+                      <div class="meta">
+                        <div data-i18n="projectsUpcoming.dterra.meta1">Upcoming • Rental Planning Stage</div>
+                        <div data-i18n="projectsUpcoming.dterra.meta2">Operationally practical</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card">
+                    <img src="../public/upcoming_projects/astoria-ampang.jpg" alt="Astoria Ampang" />
+                    <div class="content">
+                      <div class="title">Astoria Ampang</div>
+                      <div class="desc" data-i18n="projectsUpcoming.astoriaAmpang.desc">
+                        Prepared with investor-led thinking on layout, furnishing, and rental appeal.
+                      </div>
+                      <div class="meta">
+                        <div data-i18n="projectsUpcoming.astoriaAmpang.meta1">Upcoming • Pre-execution</div>
+                        <div data-i18n="projectsUpcoming.astoriaAmpang.meta2">Investor-oriented planning</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card">
+                    <img src="../public/upcoming_projects/edelweiss.jpg" alt="Edelweiss" />
+                    <div class="content">
+                      <div class="title">Edelweiss</div>
+                      <div class="desc" data-i18n="projectsUpcoming.edelweiss.desc">
+                        Upcoming project prepared around rental outcome, not decorative excess.
+                      </div>
+                      <div class="meta">
+                        <div data-i18n="projectsUpcoming.edelweiss.meta1">Upcoming • Planning Phase</div>
+                        <div data-i18n="projectsUpcoming.edelweiss.meta2">ROI-aware direction</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card">
+                    <img src="../public/upcoming_projects/m-astra.jpg" alt="M Astra" />
+                    <div class="content">
+                      <div class="title">M Astra</div>
+                      <div class="desc" data-i18n="projectsUpcoming.mAstra.desc">
+                        Planned with practical layout decisions to support cleaner rental execution.
+                      </div>
+                      <div class="meta">
+                        <div data-i18n="projectsUpcoming.mAstra.meta1">Upcoming • Pre-launch Setup</div>
+                        <div data-i18n="projectsUpcoming.mAstra.meta2">Rental-ready planning</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card">
+                    <img src="../public/upcoming_projects/aster-hill.jpg" alt="Aster Hill" />
+                    <div class="content">
+                      <div class="title">Aster Hill</div>
+                      <div class="desc" data-i18n="projectsUpcoming.asterHill.desc">
+                        Preparation focuses on market-facing presentation and realistic rental use.
+                      </div>
+                      <div class="meta">
+                        <div data-i18n="projectsUpcoming.asterHill.meta1">Upcoming • Planning Phase</div>
+                        <div data-i18n="projectsUpcoming.asterHill.meta2">Demand-conscious setup</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card">
+                    <img src="../public/upcoming_projects/nestree.jpg" alt="Nestree" />
+                    <div class="content">
+                      <div class="title">Nestree</div>
+                      <div class="desc" data-i18n="projectsUpcoming.nestree.desc">
+                        Upcoming rental-oriented planning with emphasis on usability and smoother operations.
+                      </div>
+                      <div class="meta">
+                        <div data-i18n="projectsUpcoming.nestree.meta1">Upcoming • Pre-execution</div>
+                        <div data-i18n="projectsUpcoming.nestree.meta2">Operational clarity</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="mt-8 rounded-3xl kaen-card p-6 shadow-soft">
-          <div
-            class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
-          >
-            <div>
-              <div class="font-extrabold" data-i18n="projects.bottomTitle">
-                Want your unit planned like this?
-              </div>
-              <p
-                class="mt-1 text-sm text-kaen-muted"
-                data-i18n="projects.bottomDesc"
+        <!-- COMPLETED PROJECTS -->
+        <div class="mt-16">
+          <div class="flex items-end justify-between gap-6">
+            <div class="max-w-2xl">
+              <h2
+                class="text-2xl md:text-3xl font-extrabold sec-bullet"
+                data-i18n="projectsCompleted.title"
               >
-                Send us your unit details and target. We’ll propose a practical
-                renovation + rental direction based on your property.
+                Completed Projects
+              </h2>
+              <p
+                class="mt-2 text-kaen-muted leading-relaxed"
+                data-i18n="projectsCompleted.desc"
+              >
+                Completed units that reflect KAEN’s rental-focused renovation thinking, practical execution, and market-facing setup.
               </p>
             </div>
 
             <a
-              class="inline-flex items-center justify-center h-12 rounded-xl px-5 text-sm btn-gold min-w-[160px]"
+              class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline min-w-[140px]"
               href="#quote"
-              data-i18n="projects.ctaBottom"
+              data-i18n="projectsCompleted.ctaTop"
             >
               Plan My Unit
             </a>
+          </div>
+
+          <div class="relative mt-8">
+            <button
+              id="completedPrev"
+              class="absolute -left-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-white/10 border border-kaen-line"
+              aria-label="Previous completed projects"
+            >
+              ‹
+            </button>
+
+            <button
+              id="completedNext"
+              class="absolute -right-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-white/10 border border-kaen-line"
+              aria-label="Next completed projects"
+            >
+              ›
+            </button>
+
+            <div class="overflow-hidden">
+              <div id="completedTrack" class="flex gap-5">
+                <div class="project-card">
+                  <img src="../public/completed_projects/velocity.jpg" alt="Sunway Velocity Two" />
+                  <div class="content">
+                    <div class="title">Sunway Velocity Two</div>
+                    <div class="desc" data-i18n="projectsCompleted.sunwayVelocityTwo.desc">
+                      Completed setup shaped around high-traffic rental demand and efficient tenant positioning.
+                    </div>
+                    <div class="meta">
+                      <div data-i18n="projectsCompleted.sunwayVelocityTwo.meta1">Completed • Cheras</div>
+                      <div data-i18n="projectsCompleted.sunwayVelocityTwo.meta2">Mall + MRT demand</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-card">
+                  <img src="../public/completed_projects/belfield.jpg" alt="Sunway Belfield" />
+                  <div class="content">
+                    <div class="title">Sunway Belfield</div>
+                    <div class="desc" data-i18n="projectsCompleted.sunwayBelfield.desc">
+                      Completed city-core execution focused on practical setup and stronger tenant flow.
+                    </div>
+                    <div class="meta">
+                      <div data-i18n="projectsCompleted.sunwayBelfield.meta1">Completed • KL City</div>
+                      <div data-i18n="projectsCompleted.sunwayBelfield.meta2">Accessibility-led demand</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-card">
+                  <img src="../public/completed_projects/pv9.png" alt="PV9" />
+                  <div class="content">
+                    <div class="title">PV9</div>
+                    <div class="desc" data-i18n="projectsCompleted.pv9.desc">
+                      Completed with practical rentability in mind, balancing setup cost and occupancy potential.
+                    </div>
+                    <div class="meta">
+                      <div data-i18n="projectsCompleted.pv9.meta1">Completed • KL</div>
+                      <div data-i18n="projectsCompleted.pv9.meta2">Mass-market rental positioning</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-card">
+                  <img src="../public/completed_projects/ucsi2.jpg" alt="UCSI Residence 2" />
+                  <div class="content">
+                    <div class="title">UCSI Residence 2</div>
+                    <div class="desc" data-i18n="projectsCompleted.ucsiResidence2.desc">
+                      Completed with student and young-tenant practicality as the main execution direction.
+                    </div>
+                    <div class="meta">
+                      <div data-i18n="projectsCompleted.ucsiResidence2.meta1">Completed • Cheras</div>
+                      <div data-i18n="projectsCompleted.ucsiResidence2.meta2">Student-led tenant demand</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-card">
+                  <img src="../public/completed_projects/the-birch.jpg" alt="The Birch" />
+                  <div class="content">
+                    <div class="title">The Birch</div>
+                    <div class="desc" data-i18n="projectsCompleted.theBirch.desc">
+                      Completed execution aimed at stronger presentation and practical rental usability.
+                    </div>
+                    <div class="meta">
+                      <div data-i18n="projectsCompleted.theBirch.meta1">Completed • KL</div>
+                      <div data-i18n="projectsCompleted.theBirch.meta2">Practical rental-ready setup</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-card">
+                  <img src="../public/completed_projects/mvertica.jpg" alt="M Vertica" />
+                  <div class="content">
+                    <div class="title">M Vertica</div>
+                    <div class="desc" data-i18n="projectsCompleted.mVertica.desc">
+                      Completed around urban rental demand, practical furnishing, and tenant-friendly usability.
+                    </div>
+                    <div class="meta">
+                      <div data-i18n="projectsCompleted.mVertica.meta1">Completed • Cheras</div>
+                      <div data-i18n="projectsCompleted.mVertica.meta2">Urban working tenants</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-card">
+                  <img src="../public/completed_projects/moscar.jpg" alt="M Oscar" />
+                  <div class="content">
+                    <div class="title">M Oscar</div>
+                    <div class="desc" data-i18n="projectsCompleted.mOscar.desc">
+                      Completed with a cost-conscious setup that still supports practical rental outcome.
+                    </div>
+                    <div class="meta">
+                      <div data-i18n="projectsCompleted.mOscar.meta1">Completed • KL</div>
+                      <div data-i18n="projectsCompleted.mOscar.meta2">Cost-controlled execution</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-card">
+                  <img src="../public/completed_projects/ava.jpg" alt="AVA" />
+                  <div class="content">
+                    <div class="title">AVA</div>
+                    <div class="desc" data-i18n="projectsCompleted.ava.desc">
+                      Completed setup focused on market-facing readiness and smoother rent-out presentation.
+                    </div>
+                    <div class="meta">
+                      <div data-i18n="projectsCompleted.ava.meta1">Completed • KL</div>
+                      <div data-i18n="projectsCompleted.ava.meta2">Presentation-driven rentability</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-card">
+                  <img src="../public/completed_projects/kuchai-sentral.jpg" alt="Kuchai Sentral" />
+                  <div class="content">
+                    <div class="title">Kuchai Sentral</div>
+                    <div class="desc" data-i18n="projectsCompleted.kuchaiSentral.desc">
+                      Completed for a mature rental zone with practical usability and tenant convenience in mind.
+                    </div>
+                    <div class="meta">
+                      <div data-i18n="projectsCompleted.kuchaiSentral.meta1">Completed • Kuchai</div>
+                      <div data-i18n="projectsCompleted.kuchaiSentral.meta2">Mature demand area</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-card">
+                  <img src="../public/completed_projects/nadayu-801.jpg" alt="Nadayu 801" />
+                  <div class="content">
+                    <div class="title">Nadayu 801</div>
+                    <div class="desc" data-i18n="projectsCompleted.nadayu801.desc">
+                      Completed with operational practicality and stable rental positioning as core priorities.
+                    </div>
+                    <div class="meta">
+                      <div data-i18n="projectsCompleted.nadayu801.meta1">Completed • KL</div>
+                      <div data-i18n="projectsCompleted.nadayu801.meta2">Stable occupancy focus</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 rounded-3xl kaen-card p-6 shadow-soft">
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+            >
+              <div>
+                <div class="font-extrabold" data-i18n="projectsCompleted.bottomTitle">
+                  Want your unit planned like this?
+                </div>
+                <p
+                  class="mt-1 text-sm text-kaen-muted"
+                  data-i18n="projectsCompleted.bottomDesc"
+                >
+                  Send us your unit details and target. We’ll propose a practical renovation + rental direction based on your property.
+                </p>
+              </div>
+
+              <a
+                class="inline-flex items-center justify-center h-12 rounded-xl px-5 text-sm btn-gold min-w-[160px]"
+                href="#quote"
+                data-i18n="projectsCompleted.ctaBottom"
+              >
+                Plan My Unit
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -97,38 +97,177 @@ const i18n = {
 
     "nav.projects": "Projects",
 
-    "projects.title": "Completed Projects",
-    "projects.desc":
-    "Selected projects that reflect KAEN’s rental-focused renovation thinking, practical execution, and market-facing setup.",
-    "projects.ctaTop": "Plan My Unit",
+    /* =========================
+      PROJECT SECTION TITLES / CTA
+    ========================= */
 
-    "projects.bhp.year": "Year of Completion: 2024",
-    "projects.bhp.location": "Location: Bangsar",
-    "projects.bhp.near":
-    "Near Bangsar MRT, Jalan Maarof commercial area, cafes, and lifestyle amenities",
-    //"projects.bhp.desc":
-    //"A strong urban rental market where layout clarity, presentation, and tenant targeting matter. The setup focuses on practical planning and better rental positioning for city-working tenants.",
+    "projectsOngoing.title": "Ongoing Projects",
+    "projectsOngoing.desc":
+      "Units currently under execution, where layout, furnishing, and practical renovation decisions are carried through for rental outcome.",
+    "projectsOngoing.ctaTop": "Plan My Unit",
 
-    "projects.belfield.year": "Year of Completion: 2024",
-    "projects.belfield.location": "Location: Kuala Lumpur (Jalan Belfield)",
-    "projects.belfield.near":
-    "Near KL Sentral, Mid Valley, Brickfields, public transport and city centre amenities",
-    //"projects.belfield.desc":
-   // "A central KL project where accessibility and tenant profile drive demand. Renovation focuses on clean layout, practical furnishing, and positioning for city-working tenants.",
-    
-    "projects.era.year": "Year of Completion: 2024",
-    "projects.era.location": "Location: Segambut / Duta North",
-    "projects.era.near":
-    "Near Segambut KTM, DUKE Highway access, Mont Kiara vicinity, schools, and commercial areas",
-    //"projects.era.desc":
-    //"A project where balancing budget, usability, and rentability is important. The execution focuses on practical upgrades that support rental outcome without unnecessary cost.",
+    "projectsUpcoming.title": "Upcoming Projects",
+    "projectsUpcoming.desc":
+      "Projects in planning and pre-execution stage, prepared with rental demand, layout logic, and marketability in mind.",
+    "projectsUpcoming.ctaTop": "Plan My Unit",
 
-    "projects.kensho.year": "Year of Completion: 2023",
-    "projects.kensho.location": "Location: Taman Danau Desa",
-    "projects.kensho.near":
-    "Near NSK Kuchai Lama, Mid Valley access, schools, and mature residential demand zone",
-    //"projects.kensho.desc":
-    //"Compact-space execution where layout efficiency and usability matter. The direction focuses on cleaner setup, better space use, and stronger rental appeal.",
+    "projectsCompleted.title": "Completed Projects",
+    "projectsCompleted.desc":
+      "Selected projects that reflect KAEN’s rental-focused renovation thinking, practical execution, and market-facing setup.",
+    "projectsCompleted.ctaTop": "Plan My Unit",
+
+    "projectsCompleted.bottomTitle": "Want your unit planned like this?",
+    "projectsCompleted.bottomDesc":
+      "Send us your unit details and target. We’ll propose a practical renovation + rental direction based on your property.",
+    "projectsCompleted.ctaBottom": "Plan My Unit",
+
+    /* =========================
+      ONGOING PROJECTS
+    ========================= */
+
+    "projectsOngoing.kensho.desc":
+      "Execution focused on improving layout efficiency and creating a cleaner, tenant-ready unit.",
+    "projectsOngoing.kensho.meta1": "Ongoing • Renovation",
+    "projectsOngoing.kensho.meta2": "Compact unit optimization",
+
+    "projectsOngoing.theEra.desc":
+      "Ongoing work prioritizes practical upgrades with controlled cost and strong rental usability.",
+    "projectsOngoing.theEra.meta1": "Ongoing • Execution",
+    "projectsOngoing.theEra.meta2": "Balanced cost-to-rent",
+
+    "projectsOngoing.nexus.desc":
+      "Renovation structured around MRT-driven demand with room rental positioning.",
+    "projectsOngoing.nexus.meta1": "Ongoing • Renovation",
+    "projectsOngoing.nexus.meta2": "Room rental strategy",
+
+    "projectsOngoing.twoRio.desc":
+      "Execution focused on functional layout and mid-market tenant appeal.",
+    "projectsOngoing.twoRio.meta1": "Ongoing • In Progress",
+    "projectsOngoing.twoRio.meta2": "Mid-market rental",
+
+    "projectsOngoing.bhp.desc":
+      "Ongoing enhancement to strengthen rental positioning in a high-demand urban area.",
+    "projectsOngoing.bhp.meta1": "Ongoing • Upgrade",
+    "projectsOngoing.bhp.meta2": "City tenant demand",
+
+    "projectsOngoing.skylinePudu.desc":
+      "Work focused on practical setup targeting city-working tenants.",
+    "projectsOngoing.skylinePudu.meta1": "Ongoing • Renovation",
+    "projectsOngoing.skylinePudu.meta2": "Urban rental segment",
+
+    "projectsOngoing.dClover.desc":
+      "Execution emphasizes usability, durability, and consistent rental appeal.",
+    "projectsOngoing.dClover.meta1": "Ongoing • Execution",
+    "projectsOngoing.dClover.meta2": "Long-term rental stability",
+
+    "projectsOngoing.sunwayArtessa.desc":
+      "Renovation aimed at aligning layout and furnishing with tenant expectations.",
+    "projectsOngoing.sunwayArtessa.meta1": "Ongoing • In Progress",
+    "projectsOngoing.sunwayArtessa.meta2": "Tenant-focused design",
+
+    /* =========================
+      UPCOMING PROJECTS
+    ========================= */
+
+    "projectsUpcoming.sunwayDhill.desc":
+      "Planned with a clear rental strategy, focusing on layout efficiency and tenant-ready setup.",
+    "projectsUpcoming.sunwayDhill.meta1": "Upcoming • Planning Stage",
+    "projectsUpcoming.sunwayDhill.meta2": "Rentability-first positioning",
+
+    "projectsUpcoming.sunwayJernih.desc":
+      "Early-stage planning focused on practical furnishing and strong tenant demand alignment.",
+    "projectsUpcoming.sunwayJernih.meta1": "Upcoming • Pre-execution",
+    "projectsUpcoming.sunwayJernih.meta2": "Tenant-driven layout",
+
+    "projectsUpcoming.maximRisen.desc":
+      "Positioned for urban rental demand with focus on efficient space usage and affordability.",
+    "projectsUpcoming.maximRisen.meta1": "Upcoming • Strategy Phase",
+    "projectsUpcoming.maximRisen.meta2": "Mass rental segment",
+
+    "projectsUpcoming.dterra.desc":
+      "Planned for stable rental flow with emphasis on practical setup and long-term usability.",
+    "projectsUpcoming.dterra.meta1": "Upcoming • Planning",
+    "projectsUpcoming.dterra.meta2": "Balanced rental positioning",
+
+    "projectsUpcoming.astoriaAmpang.desc":
+      "Targeted for city-fringe tenants with focus on accessibility and functional layout.",
+    "projectsUpcoming.astoriaAmpang.meta1": "Upcoming • Strategy",
+    "projectsUpcoming.astoriaAmpang.meta2": "Urban tenant demand",
+
+    "projectsUpcoming.edelweiss.desc":
+      "Concept built around lifestyle-driven tenants with practical furnishing direction.",
+    "projectsUpcoming.edelweiss.meta1": "Upcoming • Planning",
+    "projectsUpcoming.edelweiss.meta2": "Lifestyle tenant segment",
+
+    "projectsUpcoming.mAstra.desc":
+      "Planned for efficient rental conversion with focus on cost control and usability.",
+    "projectsUpcoming.mAstra.meta1": "Upcoming • Pre-launch",
+    "projectsUpcoming.mAstra.meta2": "Cost-to-rent balance",
+
+    "projectsUpcoming.asterHill.desc":
+      "Early-stage planning prioritizing layout clarity and tenant comfort.",
+    "projectsUpcoming.asterHill.meta1": "Upcoming • Planning",
+    "projectsUpcoming.asterHill.meta2": "Usability-focused setup",
+
+    "projectsUpcoming.nestree.desc":
+      "Designed for steady rental demand with practical furnishing and simple execution.",
+    "projectsUpcoming.nestree.meta1": "Upcoming • Strategy",
+    "projectsUpcoming.nestree.meta2": "Stable rental positioning",
+
+    /* =========================
+      COMPLETED PROJECTS
+    ========================= */
+
+    "projectsCompleted.sunwayVelocityTwo.desc":
+      "Completed setup designed for high-traffic rental demand with strong tenant turnover.",
+    "projectsCompleted.sunwayVelocityTwo.meta1": "Completed • Cheras",
+    "projectsCompleted.sunwayVelocityTwo.meta2": "MRT + mall demand",
+
+    "projectsCompleted.sunwayBelfield.desc":
+      "City-core execution focused on accessibility, tenant flow, and practical furnishing.",
+    "projectsCompleted.sunwayBelfield.meta1": "Completed • KL City",
+    "projectsCompleted.sunwayBelfield.meta2": "KL Sentral proximity",
+
+    "projectsCompleted.pv9.desc":
+      "Positioned for steady rental demand with simple and efficient setup.",
+    "projectsCompleted.pv9.meta1": "Completed • Setapak",
+    "projectsCompleted.pv9.meta2": "Student + working tenants",
+
+    "projectsCompleted.ucsiResidence2.desc":
+      "Designed for student rental demand with practical layout and durable furnishing.",
+    "projectsCompleted.ucsiResidence2.meta1": "Completed • Cheras",
+    "projectsCompleted.ucsiResidence2.meta2": "Student segment",
+
+    "projectsCompleted.theBirch.desc":
+      "Setup focused on clean presentation and mid-market tenant positioning.",
+    "projectsCompleted.theBirch.meta1": "Completed • KL",
+    "projectsCompleted.theBirch.meta2": "Mid-tier rental",
+
+    "projectsCompleted.mVertica.desc":
+      "High-density project optimized for rental efficiency and tenant usability.",
+    "projectsCompleted.mVertica.meta1": "Completed • Cheras",
+    "projectsCompleted.mVertica.meta2": "Mass rental demand",
+
+    "projectsCompleted.mOscar.desc":
+      "Execution focused on cost control while maintaining rental appeal.",
+    "projectsCompleted.mOscar.meta1": "Completed • Off Jalan Ipoh",
+    "projectsCompleted.mOscar.meta2": "Affordable segment",
+
+    "projectsCompleted.ava.desc":
+      "Designed for balanced rental positioning with practical space usage.",
+    "projectsCompleted.ava.meta1": "Completed • KL",
+    "projectsCompleted.ava.meta2": "Mixed tenant pool",
+
+    "projectsCompleted.kuchaiSentral.desc":
+      "Strategic setup targeting consistent rental demand in mature residential zone.",
+    "projectsCompleted.kuchaiSentral.meta1": "Completed • Kuchai",
+    "projectsCompleted.kuchaiSentral.meta2": "Stable demand area",
+
+    "projectsCompleted.nadayu801.desc":
+      "Execution focused on family-friendly layout and long-term tenancy stability.",
+    "projectsCompleted.nadayu801.meta1": "Completed • Subang",
+    "projectsCompleted.nadayu801.meta2": "Family tenant segment",
+
 
     "projects.bottomTitle": "Want your unit planned like this?",
     "projects.bottomDesc":
@@ -304,38 +443,139 @@ const i18n = {
 
     "nav.projects": "项目案例",
 
-    "projects.title": "Completed Projects",
-    "projects.desc":
-    "这些项目展示的是 KAEN 以出租结果为导向的装修思路、实际执行能力，以及更适合市场出租的单位呈现方式。",
-    "projects.ctaTop": "规划我的单位",
+    /* =========================
+      PROJECT SECTION TITLES / CTA
+    ========================= */
 
-    "projects.bhp.year": "完成年份：2024年",
-    "projects.bhp.location": "地点：Bangsar",
-    "projects.bhp.near":
-    "靠近 Bangsar MRT、Jalan Maarof 商业区、咖啡店与生活设施",
-    //"projects.bhp.desc":
-   // "这是一个城市型高需求租赁市场，格局清晰度、现场呈现和租客定位都会直接影响出租表现。整体规划重点放在更实用的布局与更清楚的出租定位。",
+    "projectsOngoing.title": "进行中项目",
+    "projectsOngoing.desc": "这些单位正在执行中，围绕出租结果进行格局、家具配置与实用装修决策。",
+    "projectsOngoing.ctaTop": "规划我的单位",
 
-    "projects.belfield.year": "完成年份：2024年",
-    "projects.belfield.location": "地点：吉隆坡（Jalan Belfield）",
-    "projects.belfield.near":
-    "靠近 KL Sentral、Mid Valley、Brickfields，交通便利，城市生活设施齐全",
-   // "projects.belfield.desc":
-   // "属于市中心项目，交通与租客类型直接影响需求。装修重点在于清晰格局、实用家具配置，以及针对城市上班族的出租定位。",
+    "projectsUpcoming.title": "即将启动项目",
+    "projectsUpcoming.desc": "这些项目处于规划与前期准备阶段，重点放在租赁需求、格局逻辑与市场呈现。",
+    "projectsUpcoming.ctaTop": "规划我的单位",
 
-    "projects.era.year": "完成年份：2024年",
-    "projects.era.location": "地点：Segambut / Duta North",
-    "projects.era.near":
-    "靠近 Segambut KTM、DUKE 高速通道、Mont Kiara 周边、学校与商业区",
-    //"projects.era.desc":
-   // "这类项目更讲究预算、实用性与出租能力之间的平衡。执行重点是做有效升级，提升出租表现，同时避免不必要成本。",
+    "projectsCompleted.title": "已完成项目",
+    "projectsCompleted.desc": "这些已完成单位展示了 KAEN 以出租为导向的装修思路、实际执行能力与市场化呈现。",
+    "projectsCompleted.ctaTop": "规划我的单位",
 
-    "projects.kensho.year": "完成年份：2023年",
-    "projects.kensho.location": "地点：Taman Danau Desa",
-    "projects.kensho.near":
-    "靠近 NSK Kuchai Lama、前往 Mid Valley 便利、邻近学校与成熟住宅需求区",
-  //  "projects.kensho.desc":
-  //  "这类紧凑型单位更看重空间效率和使用便利性。整体方向是做更清爽的配置、更有效的空间利用，以及更强的出租吸引力。",
+    "projectsCompleted.bottomTitle": "想把你的单位也规划成这样？",
+    "projectsCompleted.bottomDesc": "把你的单位资料和目标发给我们，我们会根据你的物业情况建议更实际的装修 + 出租方向。",
+    "projectsCompleted.ctaBottom": "规划我的单位",
+
+    // Ongoing projects
+
+    "projectsOngoing.kensho.desc": "当前执行以空间利用率与租客使用体验为重点。",
+    "projectsOngoing.kensho.meta1": "进行中 • 装修执行",
+    "projectsOngoing.kensho.meta2": "小户型优化",
+
+    "projectsOngoing.theEra.desc": "控制成本的同时，确保出租实用性与稳定性。",
+    "projectsOngoing.theEra.meta1": "进行中 • 执行阶段",
+    "projectsOngoing.theEra.meta2": "成本与出租平衡",
+
+    "projectsOngoing.nexus.desc": "围绕分租模式进行优化，提高出租效率。",
+    "projectsOngoing.nexus.meta1": "进行中 • 装修执行",
+    "projectsOngoing.nexus.meta2": "交通带动需求",
+
+    "projectsOngoing.twoRio.desc": "执行方向以市场接受度与出租效率为核心。",
+    "projectsOngoing.twoRio.meta1": "进行中 • 执行阶段",
+    "projectsOngoing.twoRio.meta2": "出租导向",
+
+    "projectsOngoing.bhp.desc": "针对城市租客需求进行布局与呈现优化。",
+    "projectsOngoing.bhp.meta1": "进行中 • 装修执行",
+    "projectsOngoing.bhp.meta2": "城市租客需求",
+
+    "projectsOngoing.skylinePudu.desc": "以市区便利性为基础，提升出租吸引力。",
+    "projectsOngoing.skylinePudu.meta1": "进行中 • 执行阶段",
+    "projectsOngoing.skylinePudu.meta2": "市区需求",
+
+    "projectsOngoing.dClover.desc": "注重耐用性与日常使用便利性。",
+    "projectsOngoing.dClover.meta1": "进行中 • 装修执行",
+    "projectsOngoing.dClover.meta2": "实用导向",
+
+    "projectsOngoing.sunwayArtessa.desc": "以出租表现为目标进行整体执行。",
+    "projectsOngoing.sunwayArtessa.meta1": "进行中 • 执行阶段",
+    "projectsOngoing.sunwayArtessa.meta2": "出租导向",
+
+    //upcoming projects
+
+    "projectsUpcoming.sunwayDhill.desc": "前期规划围绕出租需求，优先考虑实用格局与租客接受度。",
+    "projectsUpcoming.sunwayDhill.meta1": "规划中 • 出租策略阶段",
+    "projectsUpcoming.sunwayDhill.meta2": "以投资为导向",
+
+    "projectsUpcoming.sunwayJernih.desc": "以实际出租为出发点进行家具与空间配置规划。",
+    "projectsUpcoming.sunwayJernih.meta1": "规划中 • 前期阶段",
+    "projectsUpcoming.sunwayJernih.meta2": "以出租为核心",
+
+    "projectsUpcoming.maximRisen.desc": "早期规划阶段，重点在格局实用性与市场匹配度。",
+    "projectsUpcoming.maximRisen.meta1": "规划中 • 策略阶段",
+    "projectsUpcoming.maximRisen.meta2": "市场导向",
+
+    "projectsUpcoming.dterra.desc": "提前规划出租路径，确保交付后更容易进入市场。",
+    "projectsUpcoming.dterra.meta1": "规划中 • 出租准备",
+    "projectsUpcoming.dterra.meta2": "实操导向",
+
+    "projectsUpcoming.astoriaAmpang.desc": "从投资角度规划格局与配置，减少后期调整成本。",
+    "projectsUpcoming.astoriaAmpang.meta1": "规划中 • 前期执行准备",
+    "projectsUpcoming.astoriaAmpang.meta2": "投资导向",
+
+    "projectsUpcoming.edelweiss.desc": "以出租结果为目标，而不是单纯设计美观。",
+    "projectsUpcoming.edelweiss.meta1": "规划中 • 出租策略阶段",
+    "projectsUpcoming.edelweiss.meta2": "回报意识",
+
+    "projectsUpcoming.mAstra.desc": "规划重点在实用布局与出租执行效率。",
+    "projectsUpcoming.mAstra.meta1": "规划中 • 准备阶段",
+    "projectsUpcoming.mAstra.meta2": "出租导向",
+
+    "projectsUpcoming.asterHill.desc": "以市场接受度为前提进行空间与呈现规划。",
+    "projectsUpcoming.asterHill.meta1": "规划中 • 前期阶段",
+    "projectsUpcoming.asterHill.meta2": "需求导向",
+
+    "projectsUpcoming.nestree.desc": "围绕出租流程与日常管理便利性进行规划。",
+    "projectsUpcoming.nestree.meta1": "规划中 • 执行准备",
+    "projectsUpcoming.nestree.meta2": "运营思维",
+
+    //completed projects
+
+    "projectsCompleted.sunwayVelocityTwo.desc": "围绕高人流区域进行配置，提升出租转化率。",
+    "projectsCompleted.sunwayVelocityTwo.meta1": "已完成 • Cheras",
+    "projectsCompleted.sunwayVelocityTwo.meta2": "商场 + MRT 需求",
+
+    "projectsCompleted.sunwayBelfield.desc": "市中心项目，以交通便利性带动稳定租客来源。",
+    "projectsCompleted.sunwayBelfield.meta1": "已完成 • KL 市中心",
+    "projectsCompleted.sunwayBelfield.meta2": "交通驱动需求",
+
+    "projectsCompleted.pv9.desc": "在成本与出租表现之间取得平衡的执行方案。",
+    "projectsCompleted.pv9.meta1": "已完成 • KL",
+    "projectsCompleted.pv9.meta2": "大众租赁市场",
+
+    "projectsCompleted.ucsiResidence2.desc": "以学生与年轻租客为核心设计方向。",
+    "projectsCompleted.ucsiResidence2.meta1": "已完成 • Cheras",
+    "projectsCompleted.ucsiResidence2.meta2": "学生需求",
+
+    "projectsCompleted.theBirch.desc": "提升整体呈现与出租实用性。",
+    "projectsCompleted.theBirch.meta1": "已完成 • KL",
+    "projectsCompleted.theBirch.meta2": "实用出租配置",
+
+    "projectsCompleted.mVertica.desc": "围绕城市上班族需求进行空间与配置优化。",
+    "projectsCompleted.mVertica.meta1": "已完成 • Cheras",
+    "projectsCompleted.mVertica.meta2": "上班族需求",
+
+    "projectsCompleted.mOscar.desc": "以成本控制为前提，同时保证出租可行性。",
+    "projectsCompleted.mOscar.meta1": "已完成 • KL",
+    "projectsCompleted.mOscar.meta2": "成本导向",
+
+    "projectsCompleted.ava.desc": "提升市场展示效果，缩短出租周期。",
+    "projectsCompleted.ava.meta1": "已完成 • KL",
+    "projectsCompleted.ava.meta2": "展示驱动出租",
+
+    "projectsCompleted.kuchaiSentral.desc": "成熟区域项目，强调实用性与稳定出租。",
+    "projectsCompleted.kuchaiSentral.meta1": "已完成 • Kuchai",
+    "projectsCompleted.kuchaiSentral.meta2": "成熟租赁区",
+
+    "projectsCompleted.nadayu801.desc": "以稳定出租与日常管理效率为核心。",
+    "projectsCompleted.nadayu801.meta1": "已完成 • KL",
+    "projectsCompleted.nadayu801.meta2": "稳定出租",
 
     "projects.bottomTitle": "想把你的单位也规划成这样？",
     "projects.bottomDesc":
@@ -508,64 +748,65 @@ if (langToggleMobile) {
   langToggleMobile.addEventListener("click", toggleLanguage);
 }
 
-const track = document.getElementById("projectTrack");
-const next = document.getElementById("projNext");
-const prev = document.getElementById("projPrev");
+function initProjectCarousel(trackId, prevId, nextId) {
+  const track = document.getElementById(trackId);
+  const prev = document.getElementById(prevId);
+  const next = document.getElementById(nextId);
 
-let isMoving = false;
+  if (!track || !prev || !next) return;
 
-function slideNext() {
-  if (isMoving) return;
-  isMoving = true;
+  let isMoving = false;
+  let startX = 0;
 
-  const cardWidth = track.children[0].offsetWidth + 20;
+  function slideNext() {
+    if (isMoving) return;
+    isMoving = true;
 
-  track.style.transition = "transform 0.4s ease";
-  track.style.transform = `translateX(-${cardWidth}px)`;
-
-  setTimeout(() => {
-    track.appendChild(track.firstElementChild);
-    track.style.transition = "none";
-    track.style.transform = "translateX(0)";
-    isMoving = false;
-  }, 400);
-}
-
-function slidePrev() {
-  if (isMoving) return;
-  isMoving = true;
-
-  const cardWidth = track.children[0].offsetWidth + 20;
-
-  track.prepend(track.lastElementChild);
-  track.style.transition = "none";
-  track.style.transform = `translateX(-${cardWidth}px)`;
-
-  requestAnimationFrame(() => {
+    const cardWidth = track.children[0].offsetWidth + 20;
     track.style.transition = "transform 0.4s ease";
-    track.style.transform = "translateX(0)";
+    track.style.transform = `translateX(-${cardWidth}px)`;
+
+    setTimeout(() => {
+      track.appendChild(track.firstElementChild);
+      track.style.transition = "none";
+      track.style.transform = "translateX(0)";
+      isMoving = false;
+    }, 400);
+  }
+
+  function slidePrev() {
+    if (isMoving) return;
+    isMoving = true;
+
+    const cardWidth = track.children[0].offsetWidth + 20;
+    track.prepend(track.lastElementChild);
+    track.style.transition = "none";
+    track.style.transform = `translateX(-${cardWidth}px)`;
+
+    requestAnimationFrame(() => {
+      track.style.transition = "transform 0.4s ease";
+      track.style.transform = "translateX(0)";
+    });
+
+    setTimeout(() => {
+      isMoving = false;
+    }, 400);
+  }
+
+  next.addEventListener("click", slideNext);
+  prev.addEventListener("click", slidePrev);
+
+  track.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
   });
 
-  setTimeout(() => {
-    isMoving = false;
-  }, 400);
+  track.addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) slideNext();
+    if (endX - startX > 50) slidePrev();
+  });
 }
 
-next.onclick = slideNext;
-prev.onclick = slidePrev;
-
-let startX = 0;
-
-track.addEventListener("touchstart", e => {
-  startX = e.touches[0].clientX;
-});
-
-track.addEventListener("touchend", e => {
-  let endX = e.changedTouches[0].clientX;
-
-  if (startX - endX > 50) {
-    slideNext();
-  } else if (endX - startX > 50) {
-    slidePrev();
-  }
-});
+initProjectCarousel("upcomingTrack", "upcomingPrev", "upcomingNext");
+initProjectCarousel("ongoingTrack", "ongoingPrev", "ongoingNext");
+initProjectCarousel("completedTrack", "completedPrev", "completedNext");
