@@ -1,9 +1,9 @@
 const i18n = {
   en: {
     "meta.title":
-      "KAEN Properties | New Project • Renovation • Rental • Management",
+      "KAEN Properties | Rental-Focused Property Investment Support in Kuala Lumpur",
     "meta.description":
-      "KAEN Properties provides one-stop investor services in Kuala Lumpur: New Project selection, investment renovation, rent out with in-house agents, and full property management.",
+      "KAEN Properties helps property investors in Kuala Lumpur choose the right project, renovate for rental, secure tenants, and manage units with less hassle.",
 
     "floating.whatsapp": "WhatsApp",
 
@@ -351,9 +351,10 @@ const i18n = {
   },
 
   zh: {
-    "meta.title": "KAEN Properties | 新项目 • 装修 • 出租 • 管理",
+    "meta.title":
+      "KAEN Properties | 吉隆坡房产投资、出租装修与物业管理支持",
     "meta.description":
-      "KAEN Properties 在吉隆坡提供一站式投资型房产业务：新项目筛选、投资型装修、由内部团队协助出租，以及完整物业管理。",
+      "KAEN Properties 为吉隆坡房产投资者提供一站式支持，包括新项目筛选、出租导向装修、租客招募与物业管理，让业主更省心。",
 
     "floating.whatsapp": "WhatsApp",
 
