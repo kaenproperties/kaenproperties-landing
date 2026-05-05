@@ -43,6 +43,7 @@ const i18n = {
     "hero.card3.title": "Demand-Driven Locations",
     "hero.card3.desc": "Focused on areas with consistent rental demand",
 
+
     "flow.title": "One-Stop A–Z (Investor Flow)",
     "flow.desc":
       "One operator, clear responsibility. From strategy to stable rent — not just “renovation”.",
@@ -341,6 +342,12 @@ const i18n = {
     "contact.hotline": "WhatsApp / Hotline",
     "contact.email": "Email",
     "contact.office": "Office",
+
+    "trust.label": "Execution Proof",
+    "trust.title": "Execution matters more than design.",
+    "trust.desc": "KAEN focuses on getting units rental-ready efficiently — not just making them look good. Our work is built around speed-to-rent, practical setup, and repeatable execution.",
+    "trust.note": "Recognised for execution speed and supported by construction-related standards.",
+    "trust.logoLabel": "Recognition & Industry Alignment",
 
     "footer.copy": "All rights reserved.",
     "footer.onestop": "One-Stop",
@@ -646,6 +653,12 @@ const i18n = {
     "contact.hotline": "WhatsApp / 热线",
     "contact.email": "电邮",
     "contact.office": "办公室",
+
+    "trust.label": "执行证明",
+    "trust.title": "执行，比设计更重要。",
+    "trust.desc": "KAEN 注重高效率地把单位准备到可出租状态，而不只是让单位看起来漂亮。我们的重点是出租速度、实用配置和可重复执行的流程。",
+    "trust.note": "具备执行速度相关认可，并以建筑相关标准加强业主信任。",
+    "trust.logoLabel": "行业认可与资质支持",
 
     "footer.copy": "版权所有。",
     "footer.onestop": "一站式流程",
