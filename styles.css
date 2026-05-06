@@ -289,3 +289,364 @@ img {
   }
 
 }
+
+/* =========================================================
+   GLOBAL RESPONSIVE FIXES
+========================================================= */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================================================
+   TABLET OPTIMIZATION
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  /* CONTAINER */
+  .max-w-6xl,
+  .max-w-7xl {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* HERO */
+  h1 {
+    line-height: 1.12 !important;
+  }
+
+  /* HEADER */
+  header nav {
+    gap: 18px !important;
+  }
+
+  /* FLOW SECTION */
+  #one-stop .grid.md\\:grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* SERVICES */
+  #services .md\\:grid-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* MANAGEMENT */
+  #management .md\\:grid-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* CTA BUTTONS */
+  .btn-gold,
+  .btn-gold-outline {
+    white-space: nowrap;
+  }
+
+  /* PROJECT SLIDERS */
+  #ongoingTrack,
+  #upcomingTrack,
+  #completedTrack {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+}
+
+/* =========================================================
+   MOBILE OPTIMIZATION
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* CONTAINER */
+  .max-w-6xl,
+  .max-w-7xl {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* SECTION SPACING */
+  section .py-14 {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+
+  /* HEADINGS */
+  h1 {
+    font-size: 34px !important;
+    line-height: 1.08 !important;
+  }
+
+  h2 {
+    line-height: 1.15 !important;
+  }
+
+  /* PARAGRAPHS */
+  p {
+    word-break: break-word;
+  }
+
+  /* SECTION HEADER STACK */
+  #one-stop .flex.items-end.justify-between,
+  #services .flex.items-end.justify-between,
+  #projects .flex.items-end.justify-between,
+  #management .flex.items-end.justify-between,
+  #faq .flex.items-end.justify-between {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  /* HERO BUTTONS */
+  .hero-bg .grid.grid-cols-1.sm\\:flex {
+    width: 100%;
+  }
+
+  .hero-bg .grid.grid-cols-1.sm\\:flex a {
+    width: 100%;
+  }
+
+  /* FLOW CARDS */
+  #one-stop .grid.md\\:grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  /* SERVICES */
+  #services .md\\:grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  /* EXTRA SERVICES */
+  #services .md\\:grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  /* MANAGEMENT */
+  #management .md\\:grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  /* TESTIMONIALS */
+  #testimonials .md\\:grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  /* FAQ */
+  #faq .md\\:grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACT */
+  #contact .md\\:grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  /* PROJECT BUTTONS */
+  #ongoingPrev,
+  #ongoingNext,
+  #upcomingPrev,
+  #upcomingNext,
+  #completedPrev,
+  #completedNext {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* PROJECT TRACK */
+  #ongoingTrack,
+  #upcomingTrack,
+  #completedTrack {
+    gap: 14px;
+  }
+
+  /* PROJECT CARD */
+  .project-card {
+    flex-basis: 86%;
+    width: 86%;
+    min-width: 86%;
+    height: 210px;
+  }
+
+  /* PROJECT TITLE */
+  .project-card .title {
+    font-size: 15px;
+  }
+
+  /* TOP STRIP */
+  .iconbtn {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .iconbtn span.hidden.sm\\:inline {
+    display: none !important;
+  }
+
+  /* FOOTER */
+  footer .flex-wrap {
+    gap: 14px;
+  }
+
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  /* HERO */
+  h1 {
+    font-size: 30px !important;
+  }
+
+  /* SECTION TITLES */
+  h2 {
+    font-size: 28px !important;
+  }
+
+  /* PROJECT CARD */
+  .project-card {
+    flex-basis: 90%;
+    width: 90%;
+    min-width: 90%;
+    height: 200px;
+  }
+
+  /* BUTTONS */
+  .btn-gold,
+  .btn-gold-outline {
+    width: 100%;
+  }
+
+  /* TOP STRIP */
+  .iconbtn {
+    min-width: unset;
+  }
+
+}
+
+/* =========================================================
+   MOBILE POLISH
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* GLOBAL */
+  body {
+    font-size: 15px;
+  }
+
+  p {
+    line-height: 1.75;
+  }
+
+  /* SECTION SPACING */
+  section {
+    overflow-x: hidden;
+  }
+
+  section .max-w-6xl,
+  section .max-w-7xl {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  /* CHINESE TEXT */
+  html[lang="zh"] p,
+  html[lang="zh"] div,
+  html[lang="zh"] span {
+    line-height: 1.8;
+  }
+
+  /* INFO BOXES */
+  .kaen-card {
+    border-radius: 24px;
+  }
+
+  /* CERTIFICATION BOX */
+  .cert-box {
+    padding: 0 !important;
+    overflow: hidden;
+  }
+
+  .cert-box img {
+    max-width: 110px;
+    max-height: 70px;
+    object-fit: contain;
+  }
+
+  /* CERT GRID */
+  .cert-grid {
+    min-height: unset !important;
+  }
+
+  .cert-grid > div {
+    padding: 26px 18px !important;
+  }
+
+  /* FOOTER */
+ @media (max-width: 768px) {
+
+  footer .max-w-6xl {
+    align-items: center !important;
+    text-align: center;
+    gap: 20px;
+  }
+
+  footer .flex.items-center.gap-3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer img {
+    height: 26px;
+  }
+
+  footer .text-sm {
+    text-align: center;
+    line-height: 1.7;
+  }
+
+  footer .flex-wrap {
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 18px;
+  }
+
+  footer a {
+    white-space: nowrap;
+  }
+}
+
+  /* COPYRIGHT */
+  footer .leading-relaxed {
+    line-height: 1.7;
+  }
+
+  /* PROJECT SECTION */
+  .project-card {
+    border-radius: 22px;
+  }
+
+  .project-overlay {
+    padding: 14px 12px;
+  }
+
+  .project-card .title {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+}

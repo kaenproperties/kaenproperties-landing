@@ -293,6 +293,40 @@
     
     <!-- HEADER + NAV + MOBILE MENU -->
     <header class="mx-auto max-w-7xl px-4 py-4 sm:py-5">
+
+      <!-- MOBILE HEADER -->
+      <div class="flex lg:hidden items-center justify-between gap-3">
+        <a href="#" class="flex items-center gap-3 min-w-0">
+          <img
+            src="public/kaen-logo.png"
+            alt="KAEN Properties"
+            class="h-14 w-auto object-contain shrink-0"
+          />
+
+          <div class="min-w-0">
+            <div class="text-base font-extrabold leading-none">
+              KAEN Properties
+            </div>
+
+            <div
+              class="mt-1 text-[11px] leading-tight text-kaen-muted"
+              data-i18n="brand.subline"
+            >
+              New Project • Renovation • Rental • Management
+            </div>
+          </div>
+        </a>
+
+        <button
+          id="langToggleMobile"
+          type="button"
+          class="inline-flex items-center justify-center h-10 min-w-[72px] rounded-xl border border-kaen-line bg-white/5 px-3 text-sm font-extrabold text-kaen-ink"
+        >
+          中文
+        </button>
+      </div>
+
+      <!-- DESKTOP HEADER -->
       <div class="hidden lg:grid lg:grid-cols-[auto_minmax(320px,420px)_1fr] lg:items-center lg:gap-8">
         
         <!-- LEFT: LOGO -->
