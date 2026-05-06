@@ -1,672 +1,500 @@
 const i18n = {
   en: {
-    "meta.title":
-      "KAEN Properties | Rental-Focused Property Investment Support in Kuala Lumpur",
-    "meta.description":
-      "KAEN Properties helps property investors in Kuala Lumpur choose the right project, renovate for rental, secure tenants, and manage units with less hassle.",
-
-    "floating.whatsapp": "WhatsApp",
+    "meta.title": "KAEN Properties | Rental-Focused Property Investment Support KL",
+    "meta.description": "One-stop property investment support in Kuala Lumpur. Choose the right property, renovate for rental, secure tenants, and manage with less hassle.",
+    "meta.keywords": "property investment Kuala Lumpur, rental property Malaysia, renovation for rental, property management KL, KAEN Properties",
+    "meta.ogTitle": "KAEN Properties | Rental Investment Support",
+    "meta.ogDescription": "Choose right. Renovate smart. Rent out. Manage with less hassle.",
+    "meta.twitterTitle": "KAEN Properties | Rental Investment Support",
+    "meta.twitterDescription": "One-stop support for property investors: selection, renovation, rental, and management.",
 
     "top.hotline": "Hotline:",
     "top.location": "Kuala Lumpur",
     "top.hours": "9am–6pm",
 
-    "brand.name": "KAEN Properties",
     "brand.badge": "One-Stop Operator",
     "brand.subline": "New Project • Renovation • Rental • Management",
 
-    "nav.onestop": "One-Stop",
+    "nav.oneStop": "One-Stop",
     "nav.services": "Services",
+    "nav.projects": "Projects",
     "nav.management": "Management",
     "nav.faq": "FAQ",
+    "nav.quotation": "Quotation",
 
-    "cta.quote": "Get Quotation",
+    "cta.quote": "Get Quote",
     "cta.whatsapp": "WhatsApp",
     "cta.whatsappNow": "WhatsApp Now",
     "cta.seeFlow": "See Flow",
     "cta.quoteMyUnit": "Quote My Unit",
-    "cta.askManagement": "Ask about management",
-    "cta.whatsappPlan": "WhatsApp for Plan",
-    "cta.whatsappQuotation": "WhatsApp for Quotation",
 
-    "hero.tag1": "Hands-off rental operations",
-    "hero.tag2": "New Project → Renovation → Rental → Management",
+    "hero.tagline1": "Hands-off rental ownership",
+    "hero.tagline2": "New Project → Renovation → Rental → Management",
     "hero.title1": "Build rental income",
     "hero.title2": "Let KAEN run the unit",
-    "hero.desc":
-      "KAEN Properties is a one-stop team for investors & owners — we help you choose the right direction, renovate with an investment concept, rent out through in-house agents, and manage day-to-day operations.",
+    "hero.desc": "We help investors choose the right property, set up for rental, secure tenants, and manage the unit — all in one place.",
+    "hero.card1.title": "Hands-off",
+    "hero.card1.desc": "We run the unit for you",
+    "hero.card2.title": "Rentability First",
+    "hero.card2.desc": "Designed to attract tenants",
+    "hero.card3.title": "Demand Areas",
+    "hero.card3.desc": "Focused on rental demand",
 
-    "hero.card1.title": "Hands-off Investors",
-    "hero.card1.desc": "We operate the unit so you don’t have to",
-    "hero.card2.title": "Rentability-First Design",
-    "hero.card2.desc": "Built to attract tenants, not just look good.",
-    "hero.card3.title": "Demand-Driven Locations",
-    "hero.card3.desc": "Focused on areas with consistent rental demand",
-
-
-    "flow.title": "One-Stop A–Z (Investor Flow)",
-    "flow.desc":
-      "One operator, clear responsibility. From strategy to stable rent — not just “renovation”.",
-    "flow.step1": "STEP 1",
-    "flow.step1.title": "New Project / Strategy",
-    "flow.step1.desc":
-      "Shortlist by demand, rentability, and realistic ownership plan.",
-    "flow.step1.out": "Output: shortlist + strategy (whole / rooms)",
-    "flow.step2": "STEP 2",
-    "flow.step2.title": "Renovation (Investment Concept)",
-    "flow.step2.desc":
-      "Layout + furnishing tenants want. Practical and durable decisions.",
-    "flow.step2.out": "Output: ready-to-market unit",
-    "flow.step3": "STEP 3",
-    "flow.step3.title": "Rental (In-house Agents)",
-    "flow.step3.desc":
-      "Marketing, viewing, screening, agreement — speed-to-rent focus.",
-    "flow.step3.out": "Output: tenant secured",
-    "flow.step4": "STEP 4",
-    "flow.step4.title": "Management (Hands-off)",
-    "flow.step4.desc":
-      "Collection, maintenance coordination, tenant issues, follow-up.",
-    "flow.step4.out": "Output: stable operation",
+    "flow.title": "One-Stop Investor Flow",
+    "flow.desc": "One team. One direction. From planning to rental operations.",
+    "flow.step1.label": "STEP 1",
+    "flow.step1.title": "Project Strategy",
+    "flow.step1.desc": "Choose based on rental demand, layout practicality, and ownership fit.",
+    "flow.step1.output": "Output: investment direction",
+    "flow.step2.label": "STEP 2",
+    "flow.step2.title": "Rental Renovation",
+    "flow.step2.desc": "Practical setup focused on tenants, durability, and speed-to-rent.",
+    "flow.step2.output": "Output: rental-ready unit",
+    "flow.step3.label": "STEP 3",
+    "flow.step3.title": "Rental Execution",
+    "flow.step3.desc": "Marketing, viewing, tenant screening, and agreement handling.",
+    "flow.step3.output": "Output: tenant secured",
+    "flow.step4.label": "STEP 4",
+    "flow.step4.title": "Unit Management",
+    "flow.step4.desc": "Rent collection, maintenance coordination, and tenant follow-up.",
+    "flow.step4.output": "Output: stable operations",
 
     "services.title": "Services",
-    "services.desc":
-      "You don’t need to coordinate 3–4 parties. We run the unit like an operator.",
+    "services.desc": "One operator for planning, renovation, rental, and management.",
+    "services.card1.imgAlt": "New project",
     "services.card1.title": "New Project",
-    "services.card1.desc":
-      "For investors who want a practical shortlist — not marketing talk.",
-    "services.card1.li1": "Project & unit-type shortlisting",
-    "services.card1.li2": "Match strategy: whole unit / rooms",
-    "services.card1.li3": "Timeline planning: from purchase to rent",
+    "services.card1.desc": "Practical project selection based on rental logic.",
+    "services.card1.point1": "Project & unit shortlisting",
+    "services.card1.point2": "Whole unit / room strategy",
+    "services.card1.point3": "Purchase-to-rental planning",
+    "services.card2.imgAlt": "Renovation",
     "services.card2.title": "Investment Renovation",
-    "services.card2.desc":
-      "Renovation designed for rentability: durable, practical, and photo-ready.",
-    "services.card2.li1": "Layout & furnishing strategy",
-    "services.card2.li2": "Budget clarity & timeline control",
-    "services.card2.li3": "QC + handover readiness",
+    "services.card2.desc": "Renovation planned for rentability, not unnecessary aesthetics.",
+    "services.card2.point1": "Layout & furnishing planning",
+    "services.card2.point2": "Budget & timeline control",
+    "services.card2.point3": "QC & handover coordination",
+    "services.card3.imgAlt": "Rental management",
     "services.card3.title": "Rental + Management",
-    "services.card3.desc":
-      "In-house agents to rent out, and management to keep the unit stable.",
-    "services.card3.li1": "Marketing, viewing, tenant screening",
-    "services.card3.li2": "Agreement + move-in coordination",
-    "services.card3.li3": "Collection + maintenance coordination",
-    "services.auction.title": "Auction Property",
-    "services.auction.desc":
-      "We can assist investors who want auction opportunities with practical steps and risk awareness.",
-    "services.subsale.title": "Subsale / Secondary Market",
-    "services.subsale.desc":
-      "If you’re an owner planning to sell or restructure your portfolio, we can advise and assist on execution.",
+    "services.card3.desc": "In-house rental execution with ongoing management support.",
+    "services.card3.point1": "Marketing & tenant screening",
+    "services.card3.point2": "Agreement & move-in handling",
+    "services.card3.point3": "Collection & maintenance coordination",
+    "services.extra1.title": "Auction Property",
+    "services.extra1.desc": "Guidance for investors exploring auction opportunities and risks.",
+    "services.extra2.title": "Subsale Market",
+    "services.extra2.desc": "Support for owners planning to sell, restructure, or reposition units.",
 
-    "nav.projects": "Projects",
+    "projects.planMyUnit": "Plan My Unit",
 
-    /* =========================
-      PROJECT SECTION TITLES / CTA
-    ========================= */
-
-    "projectsOngoing.title": "Ongoing Projects",
-    "projectsOngoing.desc":
-      "Units currently under execution, where layout, furnishing, and practical renovation decisions are carried through for rental outcome.",
-    "projectsOngoing.ctaTop": "Plan My Unit",
-
-    "projectsUpcoming.title": "Upcoming Projects",
-    "projectsUpcoming.desc":
-      "Projects in planning and pre-execution stage, prepared with rental demand, layout logic, and marketability in mind.",
-    "projectsUpcoming.ctaTop": "Plan My Unit",
-
-    "projectsCompleted.title": "Completed Projects",
-    "projectsCompleted.desc":
-      "Selected projects that reflect KAEN’s rental-focused renovation thinking, practical execution, and market-facing setup.",
-    "projectsCompleted.ctaTop": "Plan My Unit",
-
-    "projectsCompleted.bottomTitle": "Want your unit planned like this?",
-    "projectsCompleted.bottomDesc":
-      "Send us your unit details and target. We’ll propose a practical renovation + rental direction based on your property.",
-    "projectsCompleted.ctaBottom": "Plan My Unit",
-
-    /* =========================
-      ONGOING PROJECTS
-    ========================= */
-
-    "projectsOngoing.kensho.desc":
-      "Execution focused on improving layout efficiency and creating a cleaner, tenant-ready unit.",
-    "projectsOngoing.kensho.meta1": "Ongoing • Renovation",
-    "projectsOngoing.kensho.meta2": "Compact unit optimization",
-
-    "projectsOngoing.theEra.desc":
-      "Ongoing work prioritizes practical upgrades with controlled cost and strong rental usability.",
-    "projectsOngoing.theEra.meta1": "Ongoing • Execution",
-    "projectsOngoing.theEra.meta2": "Balanced cost-to-rent",
-
-    "projectsOngoing.nexus.desc":
-      "Renovation structured around MRT-driven demand with room rental positioning.",
-    "projectsOngoing.nexus.meta1": "Ongoing • Renovation",
-    "projectsOngoing.nexus.meta2": "Room rental strategy",
-
-    "projectsOngoing.twoRio.desc":
-      "Execution focused on functional layout and mid-market tenant appeal.",
-    "projectsOngoing.twoRio.meta1": "Ongoing • In Progress",
-    "projectsOngoing.twoRio.meta2": "Mid-market rental",
-
-    "projectsOngoing.bhp.desc":
-      "Ongoing enhancement to strengthen rental positioning in a high-demand urban area.",
-    "projectsOngoing.bhp.meta1": "Ongoing • Upgrade",
-    "projectsOngoing.bhp.meta2": "City tenant demand",
-
-    "projectsOngoing.skylinePudu.desc":
-      "Work focused on practical setup targeting city-working tenants.",
-    "projectsOngoing.skylinePudu.meta1": "Ongoing • Renovation",
-    "projectsOngoing.skylinePudu.meta2": "Urban rental segment",
-
-    "projectsOngoing.dClover.desc":
-      "Execution emphasizes usability, durability, and consistent rental appeal.",
-    "projectsOngoing.dClover.meta1": "Ongoing • Execution",
-    "projectsOngoing.dClover.meta2": "Long-term rental stability",
-
-    "projectsOngoing.sunwayArtessa.desc":
-      "Renovation aimed at aligning layout and furnishing with tenant expectations.",
-    "projectsOngoing.sunwayArtessa.meta1": "Ongoing • In Progress",
-    "projectsOngoing.sunwayArtessa.meta2": "Tenant-focused design",
+    "projects.ongoing.title": "Ongoing Projects",
+    "projects.ongoing.desc": "Units currently under renovation and rental setup execution.",
+    "projects.ongoing.kensho.title": "Kensho Residence",
+    "projects.ongoing.kensho.desc": "Compact-space setup focused on practical tenant use.",
+    "projects.ongoing.kensho.status": "Ongoing • Rental Setup",
+    "projects.ongoing.kensho.focus": "Compact layout strategy",
+    "projects.ongoing.era.title": "The Era",
+    "projects.ongoing.era.desc": "Balanced renovation approach with controlled setup cost.",
+    "projects.ongoing.era.status": "Ongoing • Execution",
+    "projects.ongoing.era.focus": "Cost-to-rent focused",
+    "projects.ongoing.nexus.title": "Nexus Taman Pertama",
+    "projects.ongoing.nexus.desc": "Room-rental setup planned for smoother tenant turnover.",
+    "projects.ongoing.nexus.status": "Ongoing • Renovation",
+    "projects.ongoing.nexus.focus": "Transit rental demand",
+    "projects.ongoing.2rio.title": "2Rio",
+    "projects.ongoing.2rio.desc": "Rental-focused execution with practical furnishing direction.",
+    "projects.ongoing.2rio.status": "Ongoing • Execution",
+    "projects.ongoing.2rio.focus": "Tenant-ready planning",
+    "projects.ongoing.bhp.title": "Bangsar Hill Park",
+    "projects.ongoing.bhp.desc": "Urban rental setup targeting working professionals.",
+    "projects.ongoing.bhp.status": "Ongoing • Renovation",
+    "projects.ongoing.bhp.focus": "City-working tenants",
+    "projects.ongoing.skyline.title": "Skyline Pudu",
+    "projects.ongoing.skyline.desc": "City-fringe unit optimized for rental accessibility.",
+    "projects.ongoing.skyline.status": "Ongoing • Execution",
+    "projects.ongoing.skyline.focus": "Central location demand",
+    "projects.ongoing.dclover.title": "D' Clover",
+    "projects.ongoing.dclover.desc": "Practical renovation setup with durable execution choices.",
+    "projects.ongoing.dclover.status": "Ongoing • Renovation",
+    "projects.ongoing.dclover.focus": "Practical rental setup",
+    "projects.ongoing.artessa.title": "Sunway Artessa",
+    "projects.ongoing.artessa.desc": "Rental-ready planning with tenant usability in mind.",
+    "projects.ongoing.artessa.status": "Ongoing • Execution",
+    "projects.ongoing.artessa.focus": "Rental-focused planning",
 
     /* =========================
       UPCOMING PROJECTS
     ========================= */
 
-    "projectsUpcoming.sunwayDhill.desc":
-      "Planned with a clear rental strategy, focusing on layout efficiency and tenant-ready setup.",
-    "projectsUpcoming.sunwayDhill.meta1": "Upcoming • Planning Stage",
-    "projectsUpcoming.sunwayDhill.meta2": "Rentability-first positioning",
+    "projectsUpcoming.title": "Upcoming Projects",
+    "projectsUpcoming.desc": "Projects planned with rental demand and practical setup in mind.",
+    "projectsUpcoming.ctaTop": "Plan My Unit",
 
-    "projectsUpcoming.sunwayJernih.desc":
-      "Early-stage planning focused on practical furnishing and strong tenant demand alignment.",
-    "projectsUpcoming.sunwayJernih.meta1": "Upcoming • Pre-execution",
-    "projectsUpcoming.sunwayJernih.meta2": "Tenant-driven layout",
+    "projectsUpcoming.sunwayDhill.desc": "Practical rental positioning and tenant-ready layout.",
+    "projectsUpcoming.sunwayDhill.meta1": "Upcoming • Planning",
+    "projectsUpcoming.sunwayDhill.meta2": "Investor-focused setup",
 
-    "projectsUpcoming.maximRisen.desc":
-      "Positioned for urban rental demand with focus on efficient space usage and affordability.",
-    "projectsUpcoming.maximRisen.meta1": "Upcoming • Strategy Phase",
-    "projectsUpcoming.maximRisen.meta2": "Mass rental segment",
+    "projectsUpcoming.sunwayJernih.desc": "Practical furnishing and rental-ready planning.",
+    "projectsUpcoming.sunwayJernih.meta1": "Upcoming • Planning",
+    "projectsUpcoming.sunwayJernih.meta2": "Rentability-first",
 
-    "projectsUpcoming.dterra.desc":
-      "Planned for stable rental flow with emphasis on practical setup and long-term usability.",
+    "projectsUpcoming.maximRisen.desc": "Usable layout planned for market fit.",
+    "projectsUpcoming.maximRisen.meta1": "Upcoming • Planning",
+    "projectsUpcoming.maximRisen.meta2": "Market-facing strategy",
+
+    "projectsUpcoming.dterra.desc": "Planned for smoother rent-out execution.",
     "projectsUpcoming.dterra.meta1": "Upcoming • Planning",
-    "projectsUpcoming.dterra.meta2": "Balanced rental positioning",
+    "projectsUpcoming.dterra.meta2": "Operationally practical",
 
-    "projectsUpcoming.astoriaAmpang.desc":
-      "Targeted for city-fringe tenants with focus on accessibility and functional layout.",
-    "projectsUpcoming.astoriaAmpang.meta1": "Upcoming • Strategy",
-    "projectsUpcoming.astoriaAmpang.meta2": "Urban tenant demand",
+    "projectsUpcoming.astoriaAmpang.desc": "Investor-led layout and furnishing direction.",
+    "projectsUpcoming.astoriaAmpang.meta1": "Upcoming • Pre-execution",
+    "projectsUpcoming.astoriaAmpang.meta2": "Investor-oriented planning",
 
-    "projectsUpcoming.edelweiss.desc":
-      "Concept built around lifestyle-driven tenants with practical furnishing direction.",
+    "projectsUpcoming.edelweiss.desc": "Rental outcome first, not decorative excess.",
     "projectsUpcoming.edelweiss.meta1": "Upcoming • Planning",
-    "projectsUpcoming.edelweiss.meta2": "Lifestyle tenant segment",
+    "projectsUpcoming.edelweiss.meta2": "ROI-aware direction",
 
-    "projectsUpcoming.mAstra.desc":
-      "Planned for efficient rental conversion with focus on cost control and usability.",
+    "projectsUpcoming.mAstra.desc": "Practical layout for cleaner rental execution.",
     "projectsUpcoming.mAstra.meta1": "Upcoming • Pre-launch",
-    "projectsUpcoming.mAstra.meta2": "Cost-to-rent balance",
+    "projectsUpcoming.mAstra.meta2": "Rental-ready planning",
 
-    "projectsUpcoming.asterHill.desc":
-      "Early-stage planning prioritizing layout clarity and tenant comfort.",
+    "projectsUpcoming.asterHill.desc": "Market-facing setup for real rental use.",
     "projectsUpcoming.asterHill.meta1": "Upcoming • Planning",
-    "projectsUpcoming.asterHill.meta2": "Usability-focused setup",
+    "projectsUpcoming.asterHill.meta2": "Demand-conscious setup",
 
-    "projectsUpcoming.nestree.desc":
-      "Designed for steady rental demand with practical furnishing and simple execution.",
-    "projectsUpcoming.nestree.meta1": "Upcoming • Strategy",
-    "projectsUpcoming.nestree.meta2": "Stable rental positioning",
+    "projectsUpcoming.nestree.desc": "Usability and smoother operations in mind.",
+    "projectsUpcoming.nestree.meta1": "Upcoming • Pre-execution",
+    "projectsUpcoming.nestree.meta2": "Operational clarity",
+
 
     /* =========================
       COMPLETED PROJECTS
     ========================= */
 
-    "projectsCompleted.sunwayVelocityTwo.desc":
-      "Completed setup designed for high-traffic rental demand with strong tenant turnover.",
+    "projectsCompleted.title": "Completed Projects",
+    "projectsCompleted.desc": "Completed units built around practical rental setup and market demand.",
+    "projectsCompleted.ctaTop": "Plan My Unit",
+
+    "projectsCompleted.sunwayVelocityTwo.desc": "Practical setup for strong rental demand.",
     "projectsCompleted.sunwayVelocityTwo.meta1": "Completed • Cheras",
-    "projectsCompleted.sunwayVelocityTwo.meta2": "MRT + mall demand",
+    "projectsCompleted.sunwayVelocityTwo.meta2": "Mall + MRT demand",
 
-    "projectsCompleted.sunwayBelfield.desc":
-      "City-core execution focused on accessibility, tenant flow, and practical furnishing.",
+    "projectsCompleted.sunwayBelfield.desc": "City-core setup focused on tenant flow.",
     "projectsCompleted.sunwayBelfield.meta1": "Completed • KL City",
-    "projectsCompleted.sunwayBelfield.meta2": "KL Sentral proximity",
+    "projectsCompleted.sunwayBelfield.meta2": "Accessibility-led demand",
 
-    "projectsCompleted.pv9.desc":
-      "Positioned for steady rental demand with simple and efficient setup.",
-    "projectsCompleted.pv9.meta1": "Completed • Setapak",
-    "projectsCompleted.pv9.meta2": "Student + working tenants",
+    "projectsCompleted.pv9.desc": "Balanced setup cost and rental practicality.",
+    "projectsCompleted.pv9.meta1": "Completed • KL",
+    "projectsCompleted.pv9.meta2": "Mass-market rental",
 
-    "projectsCompleted.ucsiResidence2.desc":
-      "Designed for student rental demand with practical layout and durable furnishing.",
+    "projectsCompleted.ucsiResidence2.desc": "Practical setup for students and young tenants.",
     "projectsCompleted.ucsiResidence2.meta1": "Completed • Cheras",
-    "projectsCompleted.ucsiResidence2.meta2": "Student segment",
+    "projectsCompleted.ucsiResidence2.meta2": "Student-led demand",
 
-    "projectsCompleted.theBirch.desc":
-      "Setup focused on clean presentation and mid-market tenant positioning.",
+    "projectsCompleted.theBirch.desc": "Rental-ready setup with practical usability.",
     "projectsCompleted.theBirch.meta1": "Completed • KL",
-    "projectsCompleted.theBirch.meta2": "Mid-tier rental",
+    "projectsCompleted.theBirch.meta2": "Practical rental setup",
 
-    "projectsCompleted.mVertica.desc":
-      "High-density project optimized for rental efficiency and tenant usability.",
+    "projectsCompleted.mVertica.desc": "Urban rental setup with tenant-friendly planning.",
     "projectsCompleted.mVertica.meta1": "Completed • Cheras",
-    "projectsCompleted.mVertica.meta2": "Mass rental demand",
+    "projectsCompleted.mVertica.meta2": "Urban working tenants",
 
-    "projectsCompleted.mOscar.desc":
-      "Execution focused on cost control while maintaining rental appeal.",
-    "projectsCompleted.mOscar.meta1": "Completed • Off Jalan Ipoh",
-    "projectsCompleted.mOscar.meta2": "Affordable segment",
+    "projectsCompleted.mOscar.desc": "Cost-conscious setup with practical rental focus.",
+    "projectsCompleted.mOscar.meta1": "Completed • KL",
+    "projectsCompleted.mOscar.meta2": "Cost-controlled execution",
 
-    "projectsCompleted.ava.desc":
-      "Designed for balanced rental positioning with practical space usage.",
+    "projectsCompleted.ava.desc": "Market-ready setup for smoother rent-out.",
     "projectsCompleted.ava.meta1": "Completed • KL",
-    "projectsCompleted.ava.meta2": "Mixed tenant pool",
+    "projectsCompleted.ava.meta2": "Presentation-driven rentability",
 
-    "projectsCompleted.kuchaiSentral.desc":
-      "Strategic setup targeting consistent rental demand in mature residential zone.",
+    "projectsCompleted.kuchaiSentral.desc": "Practical setup for mature rental demand.",
     "projectsCompleted.kuchaiSentral.meta1": "Completed • Kuchai",
-    "projectsCompleted.kuchaiSentral.meta2": "Stable demand area",
+    "projectsCompleted.kuchaiSentral.meta2": "Mature demand area",
 
-    "projectsCompleted.nadayu801.desc":
-      "Execution focused on family-friendly layout and long-term tenancy stability.",
-    "projectsCompleted.nadayu801.meta1": "Completed • Subang",
-    "projectsCompleted.nadayu801.meta2": "Family tenant segment",
+    "projectsCompleted.nadayu801.desc": "Stable rental positioning with practical setup.",
+    "projectsCompleted.nadayu801.meta1": "Completed • KL",
+    "projectsCompleted.nadayu801.meta2": "Stable occupancy focus",
 
+    "projectsCompleted.bottomTitle": "Want your unit planned like this?",
+    "projectsCompleted.bottomDesc": "Send us your unit details and rental target. We’ll suggest a practical rental setup.",
+    "projectsCompleted.ctaBottom": "Plan My Unit",
 
-    "projects.bottomTitle": "Want your unit planned like this?",
-    "projects.bottomDesc":
-    "Send us your unit details and target. We’ll propose a practical renovation + rental direction based on your property.",
-    "projects.ctaBottom": "Plan My Unit",
+    "management.title": "Hands-Off Management",
+    "management.desc": "We handle tenant coordination, collection, and daily operations so owners stay hands-off.",
+    "management.cta.askAboutManagement": "Ask About Management",
+    "management.card1.title": "Tenant Handling",
+    "management.card1.point1": "Tenant screening",
+    "management.card1.point2": "Agreement coordination",
+    "management.card1.point3": "Move-in / move-out support",
+    "management.card2.title": "Rental Collection",
+    "management.card2.point1": "Rental reminders",
+    "management.card2.point2": "Collection tracking",
+    "management.card2.point3": "Renewal coordination",
+    "management.card3.title": "Operations Support",
+    "management.card3.point1": "Maintenance coordination",
+    "management.card3.point2": "Utility coordination",
+    "management.card3.point3": "Tenant issue handling",
+    "management.bottomCta.title": "Want a fully hands-off setup?",
+    "management.bottomCta.desc": "Share your unit details and rental target. KAEN will propose the most practical setup and management route.",
+    "management.bottomCta.whatsapp": "WhatsApp for Plan",
 
-    "footer.projects": "Projects",
+    "testimonials.title": "Owner Feedback",
+    "testimonials.desc": "Practical execution and smoother ownership experience.",
+    "testimonials.card1.title": "“Very systematic and efficient.”",
+    "testimonials.card1.desc": "Renovation completed on schedule and the unit rented out faster than expected.",
+    "testimonials.card1.owner": "— Owner, Kuala Lumpur",
+    "testimonials.card2.title": "“I can finally stay hands-off.”",
+    "testimonials.card2.desc": "KAEN handled tenant coordination, follow-ups, and maintenance issues smoothly.",
+    "testimonials.card2.owner": "— Investor",
+    "testimonials.card3.title": "“Straightforward and practical.”",
+    "testimonials.card3.desc": "Easier than coordinating multiple contractors and agents separately.",
+    "testimonials.card3.owner": "— Property Owner",
 
-    "management.title": "Management (hands-off ownership)",
-    "management.desc":
-      "For investors who don’t want to manage tenant issues. We handle operations and coordination.",
-    "management.card1.title": "Tenant & Agreement",
-    "management.card1.li1": "Tenant screening support",
-    "management.card1.li2": "Agreement coordination",
-    "management.card1.li3": "Move-in / move-out checklist mindset",
-    "management.card2.title": "Collection & Follow-up",
-    "management.card2.li1": "Rental follow-up & reminders",
-    "management.card2.li2": "Collection tracking",
-    "management.card2.li3": "Renewal coordination",
-    "management.card3.title": "Maintenance & Ops",
-    "management.card3.li1": "Maintenance coordination",
-    "management.card3.li2": "Utilities & ops coordination",
-    "management.card3.li3": "Tenant issues handling (day-to-day)",
-    "management.ctaTitle": "Want a hands-off plan?",
-    "management.ctaDesc":
-      "Tell us your unit + target, we propose the best route and what to prepare.",
+    "faq.label": "Investor FAQ",
+    "faq.title": "Common Investor Questions",
+    "faq.desc": "Straightforward answers. No unnecessary sales talk.",
+    "faq.card1.question": "Do I need renovation before renting out?",
+    "faq.card1.answer": "Not always. The goal is practical setup that improves rentability and reduces future issues.",
+    "faq.card2.question": "Whole unit or room rental?",
+    "faq.card2.answer": "Depends on demand, target tenant, and operational preference. KAEN proposes the most practical route.",
+    "faq.card3.question": "How fast can the unit rent out?",
+    "faq.card3.answer": "Depends on pricing, furnishing readiness, and market demand. We focus on reducing vacancy time.",
+    "faq.card4.question": "Can KAEN handle tenant issues?",
+    "faq.card4.answer": "Yes. We coordinate maintenance, follow-ups, and day-to-day tenant communication.",
 
-    "testimonials.title": "What owners say",
-    "testimonials.desc":
-      "Replace with your actual WhatsApp screenshots / owner feedback later.",
-    "testimonials.1.title": "“Very systematic. Less headache.”",
-    "testimonials.1.desc":
-      "Renovation finished on schedule and rent out faster than expected.",
-    "testimonials.1.name": "— Owner (KL)",
-    "testimonials.2.title": "“I can finally be hands-off.”",
-    "testimonials.2.desc":
-      "Tenant issues, follow up, maintenance — KAEN handled it all.",
-    "testimonials.2.name": "— Investor",
-    "testimonials.3.title": "“Clear and practical.”",
-    "testimonials.3.desc":
-      "No need to compare many contractors. Just choose the route and execute.",
-    "testimonials.3.name": "— Landlord",
+    "quote.label": "Get Started",
+    "quote.title": "Get a Practical Rental Plan",
+    "quote.desc": "Share your unit details and rental target. KAEN will propose a practical renovation and rental direction.",
+    "quote.info.title": "Send These Details",
+    "quote.info.property.label": "Property",
+    "quote.info.property.desc": "Project name + unit size",
+    "quote.info.target.label": "Rental Target",
+    "quote.info.target.desc": "Whole unit / room rental",
+    "quote.info.timeline.label": "Timeline",
+    "quote.info.timeline.desc": "Expected rent-out timing",
+    "quote.info.management.label": "Management",
+    "quote.info.management.desc": "With or without management",
+    "quote.button": "WhatsApp for Quotation",
+    "quote.note": "Focused on rentability, practical setup, and smoother ownership experience.",
 
-    "faq.title": "FAQ (investor questions)",
-    "faq.desc": "Clear answers = more trust.",
-    "faq.q1": "Do I need renovation to rent out?",
-    "faq.a1":
-      "Not always. But the right investment renovation can improve rentability and reduce issues long term.",
-    "faq.q2": "Whole unit vs rooms — how to choose?",
-    "faq.a2":
-      "Depends on demand, risk tolerance, and ops preference. We propose a route based on your unit and timeline.",
-    "faq.q3": "How fast can you rent out?",
-    "faq.a3":
-      "Depends on pricing, furnishing readiness and demand. We focus on speed-to-rent workflow to reduce vacancy.",
-    "faq.q4": "Can you manage tenant issues and repairs?",
-    "faq.a4":
-      "Yes. We coordinate maintenance and handle day-to-day tenant communication — owners stay hands-off.",
+    "contact.label": "Contact",
+    "contact.title": "Contact KAEN",
+    "contact.phone.label": "WhatsApp / Hotline",
+    "contact.email.label": "Email",
+    "contact.office.label": "Office",
+    "contact.office.address": "NO 27-4, Jalan Perdana 10/12,<br>Pandan Perdana, 55300 Kuala Lumpur",
+    "contact.company": "KAEN PROPERTIES SDN BHD (1466670-H)<br>KAEN PROPERTIES MANAGEMENT SDN BHD (1610050-V)",
 
-    "quote.title": "Get a quotation",
-    "quote.desc":
-      "Send your unit details — we’ll propose a practical route (whole unit / rooms) and the plan.",
-    "quote.boxTitle": "Send these 4 details",
-    "quote.li1": "Project name + unit size",
-    "quote.li2": "Target: whole unit / rooms / Airbnb",
-    "quote.li3": "Your timeline (when you want to rent out)",
-    "quote.li4": "Whether you want management included",
-    "quote.note":
-      "We focus on rentability + operational clarity — so owners can stay hands-off.",
+    "proof.label": "Execution Proof",
+    "proof.title": "Practical execution matters more than fancy presentation.",
+    "proof.desc": "KAEN focuses on helping investors set up rental-ready units efficiently — with practical renovation, smoother operations, and faster execution.",
+    "proof.point1.label": "Focus",
+    "proof.point1.desc": "Rental-ready execution",
+    "proof.point2.label": "Direction",
+    "proof.point2.desc": "Practical & repeatable setup",
+    "proof.note": "Supported by construction-related industry alignment and execution-based recognition.",
+    "proof.rightTitle": "Recognition & Industry Alignment",
 
-    "contact.title": "Contact",
-    "contact.hotline": "WhatsApp / Hotline",
-    "contact.email": "Email",
-    "contact.office": "Office",
-
-    "trust.label": "Execution Proof",
-    "trust.title": "Execution matters more than design.",
-    "trust.desc": "KAEN focuses on getting units rental-ready efficiently — not just making them look good. Our work is built around speed-to-rent, practical setup, and repeatable execution.",
-    "trust.note": "Recognised for execution speed and supported by construction-related standards.",
-    "trust.logoLabel": "Recognition & Industry Alignment",
-
-    "footer.copy": "All rights reserved.",
-    "footer.onestop": "One-Stop",
-    "footer.services": "Services",
-    "footer.management": "Management",
-    "footer.faq": "FAQ",
-    "footer.quotation": "Quotation",
+    "footer.rights": "All rights reserved."
   },
 
   zh: {
-    "meta.title":
-      "KAEN Properties | 吉隆坡房产投资、出租装修与物业管理支持",
-    "meta.description":
-      "KAEN Properties 为吉隆坡房产投资者提供一站式支持，包括新项目筛选、出租导向装修、租客招募与物业管理，让业主更省心。",
-
-    "floating.whatsapp": "WhatsApp",
+    "meta.title": "KAEN Properties | 吉隆坡出租导向房产投资支持",
+    "meta.description": "吉隆坡一站式房产投资支持。协助投资者选对房产、做出租导向装修、找到租客，并减少管理麻烦。",
+    "meta.keywords": "吉隆坡房产投资, 马来西亚出租房产, 出租装修, 吉隆坡物业管理, KAEN Properties",
+    "meta.ogTitle": "KAEN Properties | 出租投资支持",
+    "meta.ogDescription": "选对房产，聪明装修，有效出租，轻松管理。",
+    "meta.twitterTitle": "KAEN Properties | 出租投资支持",
+    "meta.twitterDescription": "为房产投资者提供一站式支持：项目筛选、装修、出租与管理。",
 
     "top.hotline": "热线：",
     "top.location": "吉隆坡",
-    "top.hours": "上午9点–下午6点",
+    "top.hours": "9am–6pm",
 
-    "brand.name": "KAEN Properties",
     "brand.badge": "一站式运营团队",
     "brand.subline": "新项目 • 装修 • 出租 • 管理",
 
-    "nav.onestop": "一站式流程",
+    "nav.oneStop": "一站式",
     "nav.services": "服务",
+    "nav.projects": "项目",
     "nav.management": "管理",
     "nav.faq": "常见问题",
+    "nav.quotation": "报价",
 
     "cta.quote": "获取报价",
     "cta.whatsapp": "WhatsApp",
     "cta.whatsappNow": "立即 WhatsApp",
     "cta.seeFlow": "查看流程",
     "cta.quoteMyUnit": "为我的单位报价",
-    "cta.askManagement": "咨询管理服务",
-    "cta.whatsappPlan": "WhatsApp 获取方案",
-    "cta.whatsappQuotation": "WhatsApp 获取报价",
 
-    "hero.tag1": "轻松持有，交给团队处理出租运营",
-    "hero.tag2": "新项目 → 装修 → 出租 → 管理",
-    "hero.title1": "打造稳定租金收入",
+    "hero.tagline1": "轻松持有出租房",
+    "hero.tagline2": "新项目 → 装修 → 出租 → 管理",
+    "hero.title1": "打造租金收入",
     "hero.title2": "让 KAEN 帮你运营单位",
-    "hero.desc":
-      "KAEN Properties 是面向投资者与业主的一站式团队——协助你选对方向、以投资逻辑做装修、通过内部团队出租，并处理日常营运管理。",
+    "hero.desc": "我们协助投资者选对房产、完成出租设置、找到租客，并管理单位——全部由一个团队处理。",
+    "hero.card1.title": "省心持有",
+    "hero.card1.desc": "我们帮你运营单位",
+    "hero.card2.title": "出租能力优先",
+    "hero.card2.desc": "设计以吸引租客为目标",
+    "hero.card3.title": "租赁需求区域",
+    "hero.card3.desc": "聚焦真实出租需求",
 
-    "hero.card1.title": "适合想省心的投资者",
-    "hero.card1.desc": "单位交给我们运营，你不用亲自处理",
-    "hero.card2.title": "以出租能力为先的设计",
-    "hero.card2.desc": "重点不是只做得好看，而是更容易租得出去。",
-    "hero.card3.title": "以真实租赁需求为导向",
-    "hero.card3.desc": "聚焦租赁需求持续稳定的区域",
-
-    "flow.title": "一站式 A–Z（投资者流程）",
-    "flow.desc":
-      "一个团队负责到底，责任更清楚。从策略到稳定出租，不只是“做装修”。",
-    "flow.step1": "步骤 1",
-    "flow.step1.title": "新项目 / 策略规划",
-    "flow.step1.desc": "根据需求、出租能力与实际持有计划进行筛选。",
-    "flow.step1.out": "产出：项目清单 + 出租策略（整租 / 分租）",
-    "flow.step2": "步骤 2",
-    "flow.step2.title": "装修（投资型概念）",
-    "flow.step2.desc":
-      "做租客真正想要的格局与配置，选择实用且耐用的方案。",
-    "flow.step2.out": "产出：可直接上市出租的单位",
-    "flow.step3": "步骤 3",
-    "flow.step3.title": "出租（内部团队）",
-    "flow.step3.desc": "营销、带看、筛选、签约，全程以更快出租为目标。",
-    "flow.step3.out": "产出：成功找到租客",
-    "flow.step4": "步骤 4",
-    "flow.step4.title": "管理（省心持有）",
-    "flow.step4.desc": "租金跟进、维修协调、租客问题处理与后续跟进。",
-    "flow.step4.out": "产出：稳定运营",
+    "flow.title": "一站式投资者流程",
+    "flow.desc": "一个团队，一个方向。从规划到出租运营。",
+    "flow.step1.label": "步骤 1",
+    "flow.step1.title": "项目策略",
+    "flow.step1.desc": "根据出租需求、格局实用性与持有目标来选择。",
+    "flow.step1.output": "产出：投资方向",
+    "flow.step2.label": "步骤 2",
+    "flow.step2.title": "出租装修",
+    "flow.step2.desc": "以租客需求、耐用性与更快出租为重点的实用设置。",
+    "flow.step2.output": "产出：可出租单位",
+    "flow.step3.label": "步骤 3",
+    "flow.step3.title": "出租执行",
+    "flow.step3.desc": "包括营销、带看、租客筛选与合约处理。",
+    "flow.step3.output": "产出：成功找到租客",
+    "flow.step4.label": "步骤 4",
+    "flow.step4.title": "单位管理",
+    "flow.step4.desc": "租金收取、维修协调与租客跟进。",
+    "flow.step4.output": "产出：稳定运营",
 
     "services.title": "服务",
-    "services.desc":
-      "你不需要再自己协调 3–4 个不同团队。我们像运营者一样把单位跑起来。",
+    "services.desc": "一个团队处理规划、装修、出租与管理。",
+    "services.card1.imgAlt": "新项目",
     "services.card1.title": "新项目",
-    "services.card1.desc": "给想要实用筛选建议的投资者，而不是只听销售话术。",
-    "services.card1.li1": "项目与户型筛选",
-    "services.card1.li2": "匹配策略：整租 / 分租",
-    "services.card1.li3": "从买入到出租的时间规划",
+    "services.card1.desc": "根据出租逻辑做实用项目筛选。",
+    "services.card1.point1": "项目与单位筛选",
+    "services.card1.point2": "整租 / 分租策略",
+    "services.card1.point3": "从购买到出租的规划",
+    "services.card2.imgAlt": "装修",
     "services.card2.title": "投资型装修",
-    "services.card2.desc":
-      "以出租能力为核心的装修：耐用、实用，也适合营销展示。",
-    "services.card2.li1": "格局与家具配置策略",
-    "services.card2.li2": "预算清晰、工期可控",
-    "services.card2.li3": "QC 验收 + 交付准备",
+    "services.card2.desc": "装修以出租能力为目标，而不是不必要的美观堆砌。",
+    "services.card2.point1": "格局与家具规划",
+    "services.card2.point2": "预算与工期控制",
+    "services.card2.point3": "QC 与交付协调",
+    "services.card3.imgAlt": "出租管理",
     "services.card3.title": "出租 + 管理",
-    "services.card3.desc":
-      "由内部团队负责出租，再由管理团队维持单位稳定运作。",
-    "services.card3.li1": "营销、带看、租客筛选",
-    "services.card3.li2": "合约与入住协调",
-    "services.card3.li3": "租金跟进与维修协调",
-    "services.auction.title": "拍卖房产",
-    "services.auction.desc":
-      "针对想布局拍卖机会的投资者，我们可提供更实际的流程协助与风险提醒。",
-    "services.subsale.title": "转售 / 二手市场",
-    "services.subsale.desc":
-      "若你是想出售或重整投资组合的业主，我们也可提供建议与执行协助。",
+    "services.card3.desc": "内部出租执行，加上持续管理支持。",
+    "services.card3.point1": "营销与租客筛选",
+    "services.card3.point2": "合约与入住处理",
+    "services.card3.point3": "收租与维修协调",
+    "services.extra1.title": "拍卖房产",
+    "services.extra1.desc": "为想了解拍卖机会与风险的投资者提供实用指导。",
+    "services.extra2.title": "二手市场",
+    "services.extra2.desc": "支持业主出售、重组或重新定位单位。",
 
-    "nav.projects": "项目案例",
+    "projects.planMyUnit": "规划我的单位",
 
-    /* =========================
-      PROJECT SECTION TITLES / CTA
-    ========================= */
+    "projects.ongoing.title": "进行中项目",
+    "projects.ongoing.desc": "目前正在进行装修与出租设置的单位。",
+    "projects.ongoing.kensho.title": "Kensho Residence",
+    "projects.ongoing.era.title": "The Era",
+    "projects.ongoing.nexus.title": "Nexus Taman Pertama",
+    "projects.ongoing.2rio.title": "2Rio",
+    "projects.ongoing.bhp.title": "Bangsar Hill Park",
+    "projects.ongoing.skyline.title": "Skyline Pudu",
+    "projects.ongoing.dclover.title": "D' Clover",
+    "projects.ongoing.artessa.title": "Sunway Artessa",
 
-    "projectsOngoing.title": "进行中项目",
-    "projectsOngoing.desc": "这些单位正在执行中，围绕出租结果进行格局、家具配置与实用装修决策。",
-    "projectsOngoing.ctaTop": "规划我的单位",
+
+
 
     "projectsUpcoming.title": "即将启动项目",
-    "projectsUpcoming.desc": "这些项目处于规划与前期准备阶段，重点放在租赁需求、格局逻辑与市场呈现。",
+    "projectsUpcoming.desc": "围绕出租需求与实用设置规划中的项目。",
     "projectsUpcoming.ctaTop": "规划我的单位",
 
+
+
+    /* =========================
+      COMPLETED PROJECTS (ZH)
+    ========================= */
+
     "projectsCompleted.title": "已完成项目",
-    "projectsCompleted.desc": "这些已完成单位展示了 KAEN 以出租为导向的装修思路、实际执行能力与市场化呈现。",
+    "projectsCompleted.desc": "围绕实用出租设置与市场需求完成的单位。",
     "projectsCompleted.ctaTop": "规划我的单位",
 
-    "projectsCompleted.bottomTitle": "想把你的单位也规划成这样？",
-    "projectsCompleted.bottomDesc": "把你的单位资料和目标发给我们，我们会根据你的物业情况建议更实际的装修 + 出租方向。",
+
+    "projectsCompleted.bottomTitle": "想把你的单位也这样规划？",
+    "projectsCompleted.bottomDesc": "发送你的单位资料与出租目标，我们会建议实用出租方案。",
     "projectsCompleted.ctaBottom": "规划我的单位",
 
-    // Ongoing projects
+    "management.title": "省心管理",
+    "management.desc": "我们处理租客协调、收租与日常运营，让业主保持省心。",
+    "management.cta.askAboutManagement": "咨询管理服务",
+    "management.card1.title": "租客处理",
+    "management.card1.point1": "租客筛选",
+    "management.card1.point2": "合约协调",
+    "management.card1.point3": "入住 / 退租支持",
+    "management.card2.title": "租金收取",
+    "management.card2.point1": "租金提醒",
+    "management.card2.point2": "收款追踪",
+    "management.card2.point3": "续租协调",
+    "management.card3.title": "运营支持",
+    "management.card3.point1": "维修协调",
+    "management.card3.point2": "水电协调",
+    "management.card3.point3": "租客问题处理",
+    "management.bottomCta.title": "想要完全省心的设置？",
+    "management.bottomCta.desc": "分享你的单位资料和出租目标，KAEN 会建议最实际的设置与管理路线。",
+    "management.bottomCta.whatsapp": "WhatsApp 获取方案",
 
-    "projectsOngoing.kensho.desc": "当前执行以空间利用率与租客使用体验为重点。",
-    "projectsOngoing.kensho.meta1": "进行中 • 装修执行",
-    "projectsOngoing.kensho.meta2": "小户型优化",
+    "testimonials.title": "业主反馈",
+    "testimonials.desc": "实际执行，让业主持有体验更顺畅。",
+    "testimonials.card1.title": "“很系统，也很有效率。”",
+    "testimonials.card1.desc": "装修按时完成，单位也比预期更快出租。",
+    "testimonials.card1.owner": "— 吉隆坡业主",
+    "testimonials.card2.title": "“我终于可以省心持有。”",
+    "testimonials.card2.desc": "KAEN 顺利处理租客协调、跟进与维修问题。",
+    "testimonials.card2.owner": "— 投资者",
+    "testimonials.card3.title": "“清楚、实际。”",
+    "testimonials.card3.desc": "比起自己分别协调多个承包商和中介，更简单。",
+    "testimonials.card3.owner": "— 房产业主",
 
-    "projectsOngoing.theEra.desc": "控制成本的同时，确保出租实用性与稳定性。",
-    "projectsOngoing.theEra.meta1": "进行中 • 执行阶段",
-    "projectsOngoing.theEra.meta2": "成本与出租平衡",
+    "faq.label": "投资者常见问题",
+    "faq.title": "投资者常问问题",
+    "faq.desc": "直接回答，不讲多余销售话术。",
+    "faq.card1.question": "出租前一定要装修吗？",
+    "faq.card1.answer": "不一定。重点是做实用设置，提高出租能力并减少后续问题。",
+    "faq.card2.question": "整租还是分租？",
+    "faq.card2.answer": "取决于需求、目标租客与运营偏好。KAEN 会建议最实际的路线。",
+    "faq.card3.question": "单位多久可以租出去？",
+    "faq.card3.answer": "取决于定价、家具准备度与市场需求。我们的重点是减少空置时间。",
+    "faq.card4.question": "KAEN 可以处理租客问题吗？",
+    "faq.card4.answer": "可以。我们协调维修、跟进与日常租客沟通。",
 
-    "projectsOngoing.nexus.desc": "围绕分租模式进行优化，提高出租效率。",
-    "projectsOngoing.nexus.meta1": "进行中 • 装修执行",
-    "projectsOngoing.nexus.meta2": "交通带动需求",
+    "quote.label": "开始咨询",
+    "quote.title": "获取实用出租方案",
+    "quote.desc": "分享你的单位资料和出租目标，KAEN 会建议实际的装修与出租方向。",
+    "quote.info.title": "请发送这些资料",
+    "quote.info.property.label": "房产",
+    "quote.info.property.desc": "项目名称 + 单位面积",
+    "quote.info.target.label": "出租目标",
+    "quote.info.target.desc": "整租 / 分租",
+    "quote.info.timeline.label": "时间线",
+    "quote.info.timeline.desc": "预计出租时间",
+    "quote.info.management.label": "管理",
+    "quote.info.management.desc": "是否需要管理服务",
+    "quote.button": "WhatsApp 获取报价",
+    "quote.note": "重点放在出租能力、实用设置与更顺畅的业主持有体验。",
 
-    "projectsOngoing.twoRio.desc": "执行方向以市场接受度与出租效率为核心。",
-    "projectsOngoing.twoRio.meta1": "进行中 • 执行阶段",
-    "projectsOngoing.twoRio.meta2": "出租导向",
+    "contact.label": "联系",
+    "contact.title": "联系 KAEN",
+    "contact.phone.label": "WhatsApp / 热线",
+    "contact.email.label": "电邮",
+    "contact.office.label": "办公室",
+    "contact.office.address": "NO 27-4, Jalan Perdana 10/12,<br>Pandan Perdana, 55300 Kuala Lumpur",
+    "contact.company": "KAEN PROPERTIES SDN BHD (1466670-H)<br>KAEN PROPERTIES MANAGEMENT SDN BHD (1610050-V)",
 
-    "projectsOngoing.bhp.desc": "针对城市租客需求进行布局与呈现优化。",
-    "projectsOngoing.bhp.meta1": "进行中 • 装修执行",
-    "projectsOngoing.bhp.meta2": "城市租客需求",
+    "proof.label": "执行证明",
+    "proof.title": "实际执行，比华丽展示更重要。",
+    "proof.desc": "KAEN 专注帮助投资者高效设置可出租单位——包括实用装修、更顺畅运营与更快执行。",
+    "proof.point1.label": "重点",
+    "proof.point1.desc": "可出租执行",
+    "proof.point2.label": "方向",
+    "proof.point2.desc": "实用且可复制的设置",
+    "proof.note": "具备建筑相关行业配合与执行导向认可支持。",
+    "proof.rightTitle": "认可与行业配合",
 
-    "projectsOngoing.skylinePudu.desc": "以市区便利性为基础，提升出租吸引力。",
-    "projectsOngoing.skylinePudu.meta1": "进行中 • 执行阶段",
-    "projectsOngoing.skylinePudu.meta2": "市区需求",
-
-    "projectsOngoing.dClover.desc": "注重耐用性与日常使用便利性。",
-    "projectsOngoing.dClover.meta1": "进行中 • 装修执行",
-    "projectsOngoing.dClover.meta2": "实用导向",
-
-    "projectsOngoing.sunwayArtessa.desc": "以出租表现为目标进行整体执行。",
-    "projectsOngoing.sunwayArtessa.meta1": "进行中 • 执行阶段",
-    "projectsOngoing.sunwayArtessa.meta2": "出租导向",
-
-    //upcoming projects
-
-    "projectsUpcoming.sunwayDhill.desc": "前期规划围绕出租需求，优先考虑实用格局与租客接受度。",
-    "projectsUpcoming.sunwayDhill.meta1": "规划中 • 出租策略阶段",
-    "projectsUpcoming.sunwayDhill.meta2": "以投资为导向",
-
-    "projectsUpcoming.sunwayJernih.desc": "以实际出租为出发点进行家具与空间配置规划。",
-    "projectsUpcoming.sunwayJernih.meta1": "规划中 • 前期阶段",
-    "projectsUpcoming.sunwayJernih.meta2": "以出租为核心",
-
-    "projectsUpcoming.maximRisen.desc": "早期规划阶段，重点在格局实用性与市场匹配度。",
-    "projectsUpcoming.maximRisen.meta1": "规划中 • 策略阶段",
-    "projectsUpcoming.maximRisen.meta2": "市场导向",
-
-    "projectsUpcoming.dterra.desc": "提前规划出租路径，确保交付后更容易进入市场。",
-    "projectsUpcoming.dterra.meta1": "规划中 • 出租准备",
-    "projectsUpcoming.dterra.meta2": "实操导向",
-
-    "projectsUpcoming.astoriaAmpang.desc": "从投资角度规划格局与配置，减少后期调整成本。",
-    "projectsUpcoming.astoriaAmpang.meta1": "规划中 • 前期执行准备",
-    "projectsUpcoming.astoriaAmpang.meta2": "投资导向",
-
-    "projectsUpcoming.edelweiss.desc": "以出租结果为目标，而不是单纯设计美观。",
-    "projectsUpcoming.edelweiss.meta1": "规划中 • 出租策略阶段",
-    "projectsUpcoming.edelweiss.meta2": "回报意识",
-
-    "projectsUpcoming.mAstra.desc": "规划重点在实用布局与出租执行效率。",
-    "projectsUpcoming.mAstra.meta1": "规划中 • 准备阶段",
-    "projectsUpcoming.mAstra.meta2": "出租导向",
-
-    "projectsUpcoming.asterHill.desc": "以市场接受度为前提进行空间与呈现规划。",
-    "projectsUpcoming.asterHill.meta1": "规划中 • 前期阶段",
-    "projectsUpcoming.asterHill.meta2": "需求导向",
-
-    "projectsUpcoming.nestree.desc": "围绕出租流程与日常管理便利性进行规划。",
-    "projectsUpcoming.nestree.meta1": "规划中 • 执行准备",
-    "projectsUpcoming.nestree.meta2": "运营思维",
-
-    //completed projects
-
-    "projectsCompleted.sunwayVelocityTwo.desc": "围绕高人流区域进行配置，提升出租转化率。",
-    "projectsCompleted.sunwayVelocityTwo.meta1": "已完成 • Cheras",
-    "projectsCompleted.sunwayVelocityTwo.meta2": "商场 + MRT 需求",
-
-    "projectsCompleted.sunwayBelfield.desc": "市中心项目，以交通便利性带动稳定租客来源。",
-    "projectsCompleted.sunwayBelfield.meta1": "已完成 • KL 市中心",
-    "projectsCompleted.sunwayBelfield.meta2": "交通驱动需求",
-
-    "projectsCompleted.pv9.desc": "在成本与出租表现之间取得平衡的执行方案。",
-    "projectsCompleted.pv9.meta1": "已完成 • KL",
-    "projectsCompleted.pv9.meta2": "大众租赁市场",
-
-    "projectsCompleted.ucsiResidence2.desc": "以学生与年轻租客为核心设计方向。",
-    "projectsCompleted.ucsiResidence2.meta1": "已完成 • Cheras",
-    "projectsCompleted.ucsiResidence2.meta2": "学生需求",
-
-    "projectsCompleted.theBirch.desc": "提升整体呈现与出租实用性。",
-    "projectsCompleted.theBirch.meta1": "已完成 • KL",
-    "projectsCompleted.theBirch.meta2": "实用出租配置",
-
-    "projectsCompleted.mVertica.desc": "围绕城市上班族需求进行空间与配置优化。",
-    "projectsCompleted.mVertica.meta1": "已完成 • Cheras",
-    "projectsCompleted.mVertica.meta2": "上班族需求",
-
-    "projectsCompleted.mOscar.desc": "以成本控制为前提，同时保证出租可行性。",
-    "projectsCompleted.mOscar.meta1": "已完成 • KL",
-    "projectsCompleted.mOscar.meta2": "成本导向",
-
-    "projectsCompleted.ava.desc": "提升市场展示效果，缩短出租周期。",
-    "projectsCompleted.ava.meta1": "已完成 • KL",
-    "projectsCompleted.ava.meta2": "展示驱动出租",
-
-    "projectsCompleted.kuchaiSentral.desc": "成熟区域项目，强调实用性与稳定出租。",
-    "projectsCompleted.kuchaiSentral.meta1": "已完成 • Kuchai",
-    "projectsCompleted.kuchaiSentral.meta2": "成熟租赁区",
-
-    "projectsCompleted.nadayu801.desc": "以稳定出租与日常管理效率为核心。",
-    "projectsCompleted.nadayu801.meta1": "已完成 • KL",
-    "projectsCompleted.nadayu801.meta2": "稳定出租",
-
-    "projects.bottomTitle": "想把你的单位也规划成这样？",
-    "projects.bottomDesc":
-    "把你的单位资料和目标发给我们，我们会根据你的物业情况建议更实际的装修 + 出租方向。",
-    "projects.ctaBottom": "规划我的单位",
-
-    "footer.projects": "项目案例",
-
-    "management.title": "管理（省心持有）",
-    "management.desc":
-      "适合不想亲自处理租客问题的投资者。日常营运与协调由我们处理。",
-    "management.card1.title": "租客与合约",
-    "management.card1.li1": "租客筛选协助",
-    "management.card1.li2": "合约协调",
-    "management.card1.li3": "入住 / 退租检查思维",
-    "management.card2.title": "收租与跟进",
-    "management.card2.li1": "租金提醒与跟进",
-    "management.card2.li2": "收款追踪",
-    "management.card2.li3": "续租协调",
-    "management.card3.title": "维修与营运",
-    "management.card3.li1": "维修协调",
-    "management.card3.li2": "水电与日常营运协调",
-    "management.card3.li3": "处理租客日常问题",
-    "management.ctaTitle": "想要更省心的持有方案？",
-    "management.ctaDesc":
-      "告诉我们你的单位与目标，我们会建议更适合的路线与准备事项。",
-
-    "testimonials.title": "业主怎么说",
-    "testimonials.desc": "后续可替换成真实 WhatsApp 截图或业主反馈。",
-    "testimonials.1.title": "“流程很系统，少了很多 headache。”",
-    "testimonials.1.desc": "装修按时完成，而且出租速度比预期更快。",
-    "testimonials.1.name": "— 业主（吉隆坡）",
-    "testimonials.2.title": "“终于可以很省心地持有了。”",
-    "testimonials.2.desc": "租客问题、跟进、维修，KAEN 都帮我处理好了。",
-    "testimonials.2.name": "— 投资者",
-    "testimonials.3.title": "“清楚、实际。”",
-    "testimonials.3.desc":
-      "不用再自己比较一堆 contractor，选好路线后直接执行。",
-    "testimonials.3.name": "— 房东",
-
-    "faq.title": "FAQ（投资者常问问题）",
-    "faq.desc": "答案清楚，信任更容易建立。",
-    "faq.q1": "想出租，一定要先装修吗？",
-    "faq.a1":
-      "不一定。但做对的投资型装修，通常能提高出租能力，也能减少后续问题。",
-    "faq.q2": "整租还是分租，该怎么选？",
-    "faq.a2":
-      "要看当地需求、你的风险接受度，以及你对营运复杂度的偏好。我们会根据你的单位与时间线建议路线。",
-    "faq.q3": "多久可以租出去？",
-    "faq.a3":
-      "取决于定价、配置完成度和市场需求。我们的重点是加快出租流程，减少空置期。",
-    "faq.q4": "你们会处理租客问题和维修吗？",
-    "faq.a4":
-      "会。我们会协调维修并处理日常租客沟通，让业主更省心。",
-
-    "quote.title": "获取报价",
-    "quote.desc":
-      "把你的单位资料发给我们，我们会建议更实际的路线（整租 / 分租）与执行方案。",
-    "quote.boxTitle": "请提供这 4 项资料",
-    "quote.li1": "项目名称 + 单位面积",
-    "quote.li2": "目标：整租 / 分租 / Airbnb",
-    "quote.li3": "你的时间线（希望何时出租）",
-    "quote.li4": "是否需要包含管理服务",
-    "quote.note": "我们的重点是出租能力与营运清晰度，让业主更省心。",
-
-    "contact.title": "联系方式",
-    "contact.hotline": "WhatsApp / 热线",
-    "contact.email": "电邮",
-    "contact.office": "办公室",
-
-    "trust.label": "执行证明",
-    "trust.title": "执行，比设计更重要。",
-    "trust.desc": "KAEN 注重高效率地把单位准备到可出租状态，而不只是让单位看起来漂亮。我们的重点是出租速度、实用配置和可重复执行的流程。",
-    "trust.note": "具备执行速度相关认可，并以建筑相关标准加强业主信任。",
-    "trust.logoLabel": "行业认可与资质支持",
-
-    "footer.copy": "版权所有。",
-    "footer.onestop": "一站式流程",
-    "footer.services": "服务",
-    "footer.management": "管理",
-    "footer.faq": "常见问题",
-    "footer.quotation": "报价",
-  },
+    "footer.rights": "版权所有。"
+  }
 };
 
 const whatsappMessages = {
@@ -705,7 +533,7 @@ function applyLanguage(lang) {
     if (attr) {
       el.setAttribute(attr, dict[key]);
     } else {
-      el.textContent = dict[key];
+      el.innerHTML = dict[key];
     }
   });
 
