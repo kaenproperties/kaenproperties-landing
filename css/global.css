@@ -1,0 +1,738 @@
+/* =========================================================
+   ROOT VARIABLES
+========================================================= */
+
+:root {
+  --kaen-gold: #d5b873;
+  --kaen-bg: #0d1117;
+  --kaen-text: #ffffff;
+  --kaen-muted: #9ca3af;
+  --kaen-card: rgba(26, 31, 58, 0.55);
+  --kaen-border: #2d3748;
+}
+
+/* =========================================================
+   BASE
+========================================================= */
+
+html,
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--kaen-bg);
+  color: var(--kaen-text);
+}
+
+html,
+body,
+section {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+h1 {
+  line-height: 1.05;
+}
+
+h2 {
+  line-height: 1.12;
+}
+
+p {
+  line-height: 1.75;
+}
+
+/* =========================================================
+   CONTAINERS
+========================================================= */
+
+.kaen-container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.topbar {
+  height: 54px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.08);
+
+  background:
+    rgba(8,12,20,0.92);
+
+  backdrop-filter: blur(12px);
+}
+
+.topbar-inner {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-left,
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.topbar-text {
+  color: var(--kaen-muted);
+  font-size: 14px;
+}
+
+.topbar-social {
+  height: 40px;
+
+  padding-inline: 16px;
+
+  border-radius: 999px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  background:
+    rgba(255,255,255,0.03);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.topbar-social:hover {
+  transform: translateY(-1px);
+
+  border-color:
+    rgba(213,184,115,0.4);
+
+  background:
+    rgba(255,255,255,0.05);
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+
+  height: 76px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(16px);
+
+  background:
+    rgba(13,17,23,0.84);
+
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar-inner {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  color: var(--kaen-muted);
+
+  font-size: 15px;
+  font-weight: 500;
+
+  transition:
+    color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--kaen-gold);
+}
+
+/* =========================================================
+   NAV LINK
+========================================================= */
+
+.nav-link {
+
+  position: relative;
+
+  color: var(--kaen-muted);
+
+  transition:
+    color 0.28s ease;
+}
+
+.nav-link:hover {
+
+  color:
+    var(--kaen-gold);
+}
+
+/* UNDERLINE */
+
+.nav-link::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -10px;
+
+  width: 0%;
+
+  height: 2px;
+
+  border-radius: 999px;
+
+  background:
+    var(--kaen-gold);
+
+  transition:
+    width 0.28s ease;
+}
+
+.nav-link:hover::after {
+
+  width: 100%;
+}
+
+/* =========================================================
+   DROPDOWN
+========================================================= */
+
+.nav-dropdown {
+
+  position: relative;
+}
+
+.nav-dropdown-btn {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  background: transparent;
+
+  border: none;
+
+  cursor: pointer;
+
+  font: inherit;
+}
+
+.nav-arrow {
+
+  font-size: 10px;
+
+  opacity: 0.7;
+
+  transition:
+    transform 0.28s ease;
+}
+
+.nav-dropdown:hover .nav-arrow {
+
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+
+  position: absolute;
+
+  top: calc(100% + 18px);
+
+  left: 0;
+
+  min-width: 260px;
+
+  padding: 14px;
+
+  border-radius: 20px;
+
+  background:
+    rgba(15,20,30,0.98);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.45);
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transform: translateY(8px);
+
+  transition:
+    opacity 0.28s ease,
+    transform 0.28s ease,
+    visibility 0.28s ease;
+
+  z-index: 100;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+
+  opacity: 1;
+
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+
+  padding:
+    14px 16px;
+
+  border-radius:
+    14px;
+
+  color:
+    white;
+
+  font-size:
+    14px;
+
+  font-weight:
+    500;
+
+  transition:
+    background 0.28s ease,
+    color 0.28s ease;
+}
+
+.dropdown-menu a:hover {
+
+  background:
+    rgba(255,255,255,0.05);
+
+  color:
+    var(--kaen-gold);
+}
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.mobile-menu-btn {
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 12px;
+
+  background:
+    rgba(255,255,255,0.05);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  color: white;
+
+  font-size: 20px;
+
+  transition:
+    background 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.mobile-menu-btn:hover {
+
+  background:
+    rgba(255,255,255,0.08);
+
+  border-color:
+    rgba(213,184,115,0.4);
+}
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+.mobile-menu {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+
+  padding:
+    14px 20px 20px;
+
+  background:
+    rgba(10,14,20,0.98);
+
+  border-top:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.mobile-menu a {
+
+  padding:
+    14px 0;
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.05);
+
+  color:
+    white;
+
+  font-size:
+    15px;
+
+  font-weight:
+    500;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .nav-links {
+    display: none !important;
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+}
+
+/* =========================================================
+   UTILITIES
+========================================================= */
+
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.iconbtn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.mini svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+#langToggle {
+  min-width: 88px;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn-gold,
+.btn-gold-outline {
+  font-weight: 800;
+
+  transition:
+    background 0.28s ease,
+    color 0.28s ease,
+    border-color 0.28s ease,
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+.btn-gold {
+  background: var(--kaen-gold);
+  color: #0d1117;
+
+  border:
+    2px dashed rgba(213,184,115,0.95);
+
+  box-shadow:
+    0 10px 26px rgba(0,0,0,0.35);
+}
+
+.btn-gold:hover {
+
+  background: #e2c57f;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 0 0 1px rgba(213,184,115,0.45),
+    0 18px 50px rgba(0,0,0,0.55);
+}
+
+.btn-gold-outline {
+  background: transparent;
+
+  color: var(--kaen-gold);
+
+  border:
+    2px dashed rgba(213,184,115,0.95);
+}
+
+.btn-gold-outline:hover {
+
+  background:
+    rgba(213,184,115,0.08);
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 0 0 1px rgba(213,184,115,0.28),
+    0 14px 40px rgba(0,0,0,0.45);
+}
+
+/* =========================================================
+   CARD SYSTEM
+========================================================= */
+
+.kaen-card {
+
+  background: var(--kaen-card);
+
+  border:
+    1px solid var(--kaen-border);
+
+  transition:
+    border-color 0.28s ease,
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+.kaen-card:hover {
+
+  border-color:
+    rgba(213,184,115,0.82);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 0 1px rgba(213,184,115,0.18),
+    0 18px 50px rgba(0,0,0,0.55);
+}
+
+/* =========================================================
+   CUSTOM BULLETS
+========================================================= */
+
+.sec-bullet::before {
+  content: "●";
+
+  color: var(--kaen-gold);
+
+  margin-right: 10px;
+
+  font-size: 12px;
+
+  position: relative;
+  top: -1px;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+  border-top:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.footer-heading {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a,
+.footer-text {
+
+  color: var(--kaen-muted);
+
+  line-height: 1.8;
+
+  transition:
+    color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--kaen-gold);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .kaen-container,
+  .max-w-6xl,
+  .max-w-7xl {
+    padding-inline: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .kaen-container,
+  .max-w-6xl,
+  .max-w-7xl {
+    padding-inline: 18px;
+  }
+
+  section .py-14 {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+
+  h1 {
+    font-size: 32px !important;
+    line-height: 1.05 !important;
+  }
+
+  h2 {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
+
+  p {
+    line-height: 1.7;
+    word-break: break-word;
+  }
+
+  html[lang="zh"] p,
+  html[lang="zh"] div,
+  html[lang="zh"] span {
+    line-height: 1.65;
+  }
+
+  html[lang="zh"] h1 .text-kaen-gold {
+    margin-top: -12px !important;
+  }
+
+  .topbar {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .iconbtn {
+    width: 42px;
+    height: 42px;
+
+    padding: 0 !important;
+
+    justify-content: center;
+  }
+
+  .iconbtn span.hidden.sm\:inline {
+    display: none !important;
+  }
+
+  footer .max-w-6xl {
+    align-items: center !important;
+    text-align: center;
+    gap: 20px;
+  }
+
+  footer .flex.items-center.gap-3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer img {
+    height: 26px;
+  }
+
+  footer .text-sm {
+    text-align: center;
+    line-height: 1.7;
+  }
+
+  footer .flex-wrap {
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 18px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 30px !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+
+  .btn-gold,
+  .btn-gold-outline {
+    width: 100%;
+  }
+
+}
