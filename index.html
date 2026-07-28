@@ -152,6 +152,32 @@
       };
     </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".reveal-on-scroll");
+
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+          } else {
+            entry.target.classList.remove("is-visible");
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+        rootMargin: "0px 0px -60px 0px"
+      }
+    );
+
+    sections.forEach(function (section) {
+      observer.observe(section);
+    });
+  });
+</script>
+
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
@@ -169,16 +195,53 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const trigger = document.getElementById("headerTrigger");
+      const header = document.getElementById("mainHeader");
+      const placeholder = document.getElementById("headerPlaceholder");
+
+      if (!trigger || !header || !placeholder) {
+        console.error("Fixed header elements were not found.");
+        return;
+      }
+
+      function updateHeader() {
+        const triggerPosition = trigger.getBoundingClientRect().top;
+        const headerHeight = header.offsetHeight;
+
+        if (triggerPosition <= 0) {
+          header.classList.add("is-fixed");
+          placeholder.style.height = headerHeight + "px";
+        } else {
+          header.classList.remove("is-fixed");
+          placeholder.style.height = "0px";
+        }
+      }
+
+      window.addEventListener("scroll", updateHeader, {
+        passive: true
+      });
+
+      window.addEventListener("resize", updateHeader);
+
+      updateHeader();
+    });
+  </script>
+
+
   <body class="bg-kaen-bg text-kaen-ink">
 
     <!-- FLOATING WHATSAPP -->
     <!-- KEEP EXACTLY AS IS -->
 
     <!-- TOP STRIP -->
-    <div class="w-full border-b border-kaen-line bg-kaen-bg/75 backdrop-blur">
-      <div
-        class="mx-auto max-w-6xl px-4 py-2 flex items-center justify-between gap-3"
-      >
+<div class="w-full border-b border-kaen-line bg-kaen-bg/75 backdrop-blur">
+  <div
+    class="mx-auto flex h-14 w-full max-w-[1500px]
+           items-center justify-between gap-3
+           px-4 sm:px-6 xl:px-8"
+  >
 
         <!-- LEFT -->
         <div
@@ -224,7 +287,7 @@
         </div>
         <div class="flex items-center gap-2 shrink-0 flex-nowrap">
           <a
-            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-white/5 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-white/10"
+            class="iconbtn inline-flex h-8 items-center gap-1.5 rounded-lg border border-kaen-line bg-white/5 px-2.5 text-xs font-semibold text-kaen-ink transition hover:bg-white/10"
             href="https://xhslink.com/m/4HRKfUToTKR"
             target="_blank"
             rel="noreferrer"
@@ -244,7 +307,7 @@
           </a>
 
           <a
-            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-white/5 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-white/10"
+            class="iconbtn inline-flex h-8 items-center gap-1.5 rounded-lg border border-kaen-line bg-white/5 px-2.5 text-xs font-semibold text-kaen-ink transition hover:bg-white/10"
             href="https://www.instagram.com/kaenproperties?igsh=MWEwaGtvZzdoZnloMA=="
             target="_blank"
             rel="noreferrer"
@@ -281,7 +344,7 @@
           </a>
 
           <a
-            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-white/5 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-white/10"
+            class="iconbtn inline-flex h-8 items-center gap-1.5 rounded-lg border border-kaen-line bg-white/5 px-2.5 text-xs font-semibold text-kaen-ink transition hover:bg-white/10"
             href="https://www.facebook.com/share/1FS6VBrKAe/"
             target="_blank"
             rel="noreferrer"
@@ -301,7 +364,7 @@
           </a>
 
           <a
-            class="iconbtn inline-flex items-center gap-2 rounded-full border border-kaen-line bg-white/5 px-3 py-1.5 text-sm font-semibold text-kaen-ink hover:bg-white/10"
+            class="iconbtn inline-flex h-8 items-center gap-1.5 rounded-lg border border-kaen-line bg-white/5 px-2.5 text-xs font-semibold text-kaen-ink transition hover:bg-white/10"
             href="https://www.tiktok.com/@kaenproperties_official?_r=1&_t=ZS-92i3yxv6OoP"
             target="_blank"
             rel="noreferrer"
@@ -327,10 +390,13 @@
       </div>
     </div>
 
+    <!-- Header becomes fixed after this point leaves the screen -->
+    <div id="headerTrigger"></div>
     
     <!-- HEADER + NAV + MOBILE MENU -->
-    <header class="mx-auto max-w-7xl px-4 py-4 sm:py-5">
-
+    <header id="mainHeader" class="main-header">
+      <div class="mx-auto w-full max-w-[1500px] px-4 py-2.5 sm:px-6 xl:px-8">
+    
       <!-- MOBILE HEADER -->
       <div class="flex lg:hidden items-center justify-between gap-3">
         <a href="#" class="flex items-center gap-3 min-w-0">
@@ -426,188 +492,512 @@
               中文
             </button>
 
-            <a
-              class="inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline min-w-[170px]"
-              href="#quote"
-              data-i18n="cta.quote"
-            >
-              Get Quote
-            </a>
 
-            <a
-              class="inline-flex items-center justify-center h-11 rounded-xl px-5 text-sm font-extrabold text-white shadow-soft hover:opacity-95 min-w-[145px]"
-              style="background: #25d366"
-              href="https://wa.me/601136111763"
-              target="_blank"
-              data-i18n="cta.whatsapp"
-            >
-              WhatsApp
-            </a>
           </div>
         </div>
       </div>
+     </div>
     </header>
 
-    <!-- HERO -->
-    <section class="relative overflow-hidden hero-bg">
-      <div class="mx-auto max-w-6xl px-4 pb-12 pt-4 sm:pt-6 md:pt-10 md:pb-16">
-        <div class="grid gap-8 md:grid-cols-2 md:items-center">
+  <!-- Maintains the original space when the header becomes fixed -->
+    <div id="headerPlaceholder"></div>
 
-          <!-- LEFT -->
-          <div class="max-w-xl">
+  <!-- HERO -->
+  <section class="relative overflow-hidden hero-bg">
+    <div class="mx-auto max-w-6xl px-4 pb-12 pt-6 md:pb-16 md:pt-10">
 
-            <!-- TAG -->
-            <div class="inline-flex flex-wrap items-center gap-x-3 gap-y-1 rounded-full border border-kaen-line bg-white/5 px-4 sm:px-6 py-2 text-xs font-semibold text-kaen-muted">
-              <span data-i18n="hero.tagline1">Hands-off rental ownership</span>
+    <!-- TOP HERO CONTENT -->
+      <div
+        class="grid gap-10 md:grid-cols-2 md:items-stretch lg:gap-14"
+  >
 
-              <span class="h-1 w-1 rounded-full hidden sm:inline" style="background:#d5b873"></span>
+  <!-- LEFT -->
+  <div
+    class="flex h-full flex-col
+           md:min-h-[410px] lg:min-h-[440px]"
+  >
 
-              <span data-i18n="hero.tagline2">
-                New Project → Renovation → Rental → Management
-              </span>
-            </div>
+ <!-- TAG -->
+          <div
+            class="inline-flex w-fit max-w-full flex-wrap items-center
+                   gap-x-3 gap-y-1 rounded-xl
+                   border border-kaen-line bg-white/[0.05]
+                   px-4 py-2 text-[11px] font-semibold
+                   text-kaen-muted backdrop-blur-sm
+                   sm:px-5 sm:text-xs"
+          >
 
-            <!-- TITLE -->
-            <h1 class="mt-4 text-[30px] sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+            <span data-i18n="hero.tagline1">
+              Hands-off rental ownership
+            </span>
 
-              <span
-                class="block leading-[1.05]"
-                data-i18n="hero.title1"
-              >
-                Build rental income
-              </span>
+            <span
+              class="hidden h-1 w-1 shrink-0 rounded-full sm:inline-block"
+              style="background:#d5b873"
+            ></span>
 
-              <span
-                class="block text-kaen-gold leading-[1.05]"
-                data-i18n="hero.title2"
-              >
-                Let KAEN run the unit
-              </span>
+            <span data-i18n="hero.tagline2">
+              New Project → Renovation → Rental → Management
+            </span>
 
-            </h1>
-
-            <!-- DESC -->
-            <p
-              class="mt-4 text-base md:text-lg text-kaen-muted leading-relaxed"
-              data-i18n="hero.desc"
-            >
-              We help investors choose the right property, set up for rental, secure tenants, and manage the unit — all in one place.
-            </p>
-
-            <!-- CTA -->
-            <div class="mt-6 grid grid-cols-1 sm:flex sm:flex-wrap items-stretch gap-3">
-              <a
-                class="inline-flex items-center justify-center h-12 rounded-xl px-5 text-sm btn-gold w-full sm:w-auto"
-                href="#quote"
-                data-i18n="cta.quote"
-              >
-                Get Quote
-              </a>
-
-              <a
-                class="inline-flex items-center justify-center gap-2 h-12 rounded-xl px-5 text-sm font-extrabold text-white shadow-soft w-full sm:w-auto"
-                style="background:#25d366"
-                href="https://wa.me/601136111763"
-                target="_blank"
-                data-i18n="cta.whatsappNow"
-              >
-                WhatsApp Now
-              </a>
-
-              <a
-                class="inline-flex items-center justify-center h-12 rounded-xl px-5 text-sm btn-gold-outline w-full sm:w-auto"
-                href="#one-stop"
-                data-i18n="cta.seeFlow"
-              >
-                See Flow
-              </a>
-            </div>
-
-            <!-- CARDS -->
-            <div class="mt-8 grid gap-3 sm:grid-cols-3">
-
-              <div class="rounded-2xl kaen-card p-4 shadow-soft">
-                <div
-                  class="text-sm font-extrabold"
-                  data-i18n="hero.card1.title"
-                >
-                  Hands-off
-                </div>
-
-                <div
-                  class="text-xs text-kaen-muted mt-1"
-                  data-i18n="hero.card1.desc"
-                >
-                  We run the unit for you
-                </div>
-              </div>
-
-              <div class="rounded-2xl kaen-card p-4 shadow-soft">
-                <div
-                  class="text-sm font-extrabold"
-                  data-i18n="hero.card2.title"
-                >
-                  Rentability First
-                </div>
-
-                <div
-                  class="text-xs text-kaen-muted mt-1"
-                  data-i18n="hero.card2.desc"
-                >
-                  Designed to attract tenants
-                </div>
-              </div>
-
-              <div class="rounded-2xl kaen-card p-4 shadow-soft">
-                <div
-                  class="text-sm font-extrabold"
-                  data-i18n="hero.card3.title"
-                >
-                  Demand Areas
-                </div>
-
-                <div
-                  class="text-xs text-kaen-muted mt-1"
-                  data-i18n="hero.card3.desc"
-                >
-                  Focused on rental demand
-                </div>
-              </div>
-
-            </div>
           </div>
 
-          <!-- RIGHT IMAGE -->
-          <div class="relative mt-2 md:mt-10">
-            <div class="grid grid-cols-6 gap-3">
-              <div class="col-span-6 rounded-3xl overflow-hidden border border-kaen-line shadow-lift bg-white/5">
-                <img
-                  src="public/group_photo.jpg"
-                  class="h-76 sm:h-84 w-full object-cover opacity-[0.92]"
-                />
-              </div>
-            </div>
+    <!-- TITLE + DESCRIPTION -->
+    <div>
 
-            <div class="absolute -top-10 -right-10 h-28 w-28 rounded-full blur-2xl" style="background: rgba(213,184,115,0.14)"></div>
+      <!-- TITLE -->
+      <h1
+        class="mt-6 max-w-xl text-[34px] font-extrabold
+               tracking-[-0.03em] text-white
+               sm:text-[42px]
+               md:text-[44px]
+               lg:text-[52px]"
+      >
+        <span
+          class="block leading-[1.05]"
+          data-i18n="hero.title1"
+        >
+          Build rental income
+        </span>
 
-            <div class="absolute -bottom-10 -left-10 h-28 w-28 rounded-full blur-2xl" style="background: rgba(37,99,235,0.12)"></div>
+        <span
+          class="mt-2 block leading-[1.05] text-kaen-gold"
+          data-i18n="hero.title2"
+        >
+          Let KAEN run the unit
+        </span>
+      </h1>
 
-            <img
-              src="public/kaen-logo.png"
-              class="pointer-events-none absolute -right-24 -bottom-24 w-72 opacity-[0.06] hidden md:block"
-            />
-          </div>
+      <!-- DESCRIPTION -->
+      <p
+        class="mt-5 max-w-lg text-base leading-7
+               text-kaen-muted md:text-lg md:leading-8"
+        data-i18n="hero.desc"
+      >
+        We help investors choose the right property, set up for rental,
+        secure tenants, and manage the unit — all in one place.
+      </p>
 
-        </div>
+    </div>
+
+    <!-- CTA -->
+    <!-- md:mt-auto pushes the buttons to the bottom -->
+    <div
+      class="mt-8 grid grid-cols-1 items-stretch gap-3
+             sm:flex sm:flex-wrap
+             md:mt-auto md:pt-10"
+    >
+
+      <!-- GET QUOTE -->
+      <a
+        class="btn-gold inline-flex h-12 w-full
+               items-center justify-center rounded-xl
+               px-7 text-sm font-extrabold
+               transition duration-300
+               hover:-translate-y-0.5
+               sm:w-auto"
+        href="#quote"
+        data-i18n="cta.quote"
+      >
+        Get Quote
+      </a>
+
+      <!-- WHATSAPP BUTTON -->
+     
+      <a
+        class="inline-flex h-12 w-full items-center justify-center gap-2.5
+              rounded-xl bg-[#25D366] px-7
+              text-sm font-extrabold text-white
+              shadow-[0_10px_24px_rgba(37,211,102,0.28)]
+              transition duration-300
+              hover:-translate-y-0.5
+              hover:bg-[#1EBE5D]
+              hover:shadow-[0_14px_30px_rgba(37,211,102,0.38)]
+              focus:outline-none
+              focus:ring-2 focus:ring-[#25D366]/50
+              focus:ring-offset-2 focus:ring-offset-[#101722]
+              sm:w-auto"
+        href="https://wa.me/601136111763"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <!-- WHATSAPP ICON -->
+        <svg
+          class="h-5 w-5 shrink-0 text-white"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path d="M12.04 2a9.84 9.84 0 0 0-8.4 14.96L2.3 22l5.17-1.35A9.97 9.97 0 1 0 12.04 2Zm0 17.95a8.03 8.03 0 0 1-4.1-1.12l-.3-.18-3.07.8.82-2.99-.2-.31a7.91 7.91 0 1 1 6.85 3.8Zm4.4-5.93c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.1.16 1.52.1.46-.07 1.43-.59 1.63-1.15.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/>
+        </svg>
+
+        <span data-i18n="cta.whatsappNow">
+          WhatsApp Now
+        </span>
+
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- RIGHT IMAGE -->
+  <div
+    class="relative h-full w-full self-stretch
+           md:min-h-[410px] lg:min-h-[440px]"
+  >
+
+    <!-- IMAGE CARD -->
+    <div
+      class="group relative h-full w-full overflow-hidden
+             rounded-[28px] border border-kaen-line
+             bg-white/5 p-2 shadow-lift"
+    >
+
+      <!-- IMAGE WRAPPER -->
+      <div
+        class="relative h-72 w-full overflow-hidden
+               rounded-[22px]
+               sm:h-[350px]
+               md:h-full"
+      >
+
+        <img
+          src="public/group_photo.jpg"
+          alt="KAEN Properties team"
+          class="absolute inset-0 h-full w-full
+                 object-cover object-center
+                 opacity-[0.94]
+                 transition duration-700
+                 group-hover:scale-[1.02]"
+        />
+
+        <!-- IMAGE GRADIENT -->
+        <div
+          class="pointer-events-none absolute inset-0
+                 bg-gradient-to-t
+                 from-[#101722]/35
+                 via-transparent
+                 to-transparent"
+        ></div>
+
+        <!-- INNER BORDER -->
+        <div
+          class="pointer-events-none absolute inset-0
+                 rounded-[22px]
+                 ring-1 ring-inset ring-white/[0.05]"
+        ></div>
+
       </div>
-    </section>
+
+    </div>
+
+    <!-- GOLD GLOW -->
+    <div
+      class="pointer-events-none absolute
+             -right-10 -top-10 -z-10
+             h-32 w-32 rounded-full blur-3xl"
+      style="background:rgba(213,184,115,0.15)"
+    ></div>
+
+    <!-- BLUE GLOW -->
+    <div
+      class="pointer-events-none absolute
+             -bottom-10 -left-10 -z-10
+             h-32 w-32 rounded-full blur-3xl"
+      style="background:rgba(37,99,235,0.12)"
+    ></div>
+
+    <!-- BACKGROUND LOGO -->
+    <img
+      src="public/kaen-logo.png"
+      alt=""
+      class="pointer-events-none absolute
+             -bottom-20 -right-20
+             hidden w-64 opacity-[0.05]
+             md:block"
+    />
+
+  </div>
+</div>
+
+
+
+
+<!-- INVESTMENT PROCESS CARDS -->
+<div
+  class="mt-8 md:mt-12 grid overflow-hidden rounded-2xl border border-kaen-line bg-white/[0.035] shadow-lift
+         sm:grid-cols-2 lg:grid-cols-4"
+>
+
+  <!-- 01 CHOOSE RIGHT -->
+  <div
+    class="group relative flex min-h-[150px] items-center gap-4 p-5 transition duration-300
+           hover:bg-white/[0.06]
+           sm:border-r sm:border-kaen-line
+           lg:p-6"
+  >
+
+    <!-- ICON -->
+    <div
+      class="flex h-[76px] w-[76px] shrink-0 items-center justify-center rounded-full
+             border border-kaen-gold/60 bg-kaen-gold/[0.06] text-kaen-gold
+             transition duration-300 group-hover:bg-kaen-gold/[0.12]"
+    >
+      <svg
+        class="h-9 w-9"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <circle cx="11" cy="11" r="7"></circle>
+        <path d="m20 20-4-4"></path>
+      </svg>
+    </div>
+
+    <!-- CONTENT -->
+    <div>
+      <div class="text-xl font-extrabold leading-none text-kaen-gold">
+        01
+      </div>
+
+      <h3
+        class="mt-2 text-base font-extrabold leading-tight text-white"
+        data-i18n="process.card1.title"
+      >
+        Choose Right
+      </h3>
+
+      <p
+        class="mt-1.5 text-xs leading-relaxed text-kaen-muted"
+        data-i18n="process.card1.desc"
+      >
+        We help you select properties that fit your investment goals and real rental demand.
+      </p>
+    </div>
+
+    <!-- ARROW -->
+    <svg
+      class="absolute -right-[11px] top-1/2 z-20 hidden h-7 w-7
+             -translate-y-1/2 text-kaen-gold lg:block"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      aria-hidden="true"
+    >
+      <path d="m8 4 8 8-8 8"></path>
+    </svg>
+
+  </div>
+
+  <!-- 02 RENOVATE SMART -->
+  <div
+    class="group relative flex min-h-[150px] items-center gap-4 border-t border-kaen-line p-5
+           transition duration-300 hover:bg-white/[0.06]
+           sm:border-t-0
+           lg:border-r lg:border-kaen-line lg:p-6"
+  >
+
+    <!-- ICON -->
+    <div
+      class="flex h-[76px] w-[76px] shrink-0 items-center justify-center rounded-full
+             border border-kaen-gold/60 bg-kaen-gold/[0.06] text-kaen-gold
+             transition duration-300 group-hover:bg-kaen-gold/[0.12]"
+    >
+      <svg
+        class="h-9 w-9"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="m14.7 6.3 3 3"></path>
+        <path d="m3 21 3.5-1 11-11a2.1 2.1 0 0 0-3-3l-11 11L3 21Z"></path>
+        <path d="m13 5 6 6"></path>
+        <path d="M9 3 3 9"></path>
+        <path d="m15 15 6 6"></path>
+        <path d="m5 7 2 2"></path>
+        <path d="m17 17 2 2"></path>
+      </svg>
+    </div>
+
+    <!-- CONTENT -->
+    <div>
+      <div class="text-xl font-extrabold leading-none text-kaen-gold">
+        02
+      </div>
+
+      <h3
+        class="mt-2 text-base font-extrabold leading-tight text-white"
+        data-i18n="process.card2.title"
+      >
+        Renovate Smart
+      </h3>
+
+      <p
+        class="mt-1.5 text-xs leading-relaxed text-kaen-muted"
+        data-i18n="process.card2.desc"
+      >
+        Strategic design and renovation to attract quality tenants.
+      </p>
+    </div>
+
+    <!-- ARROW -->
+    <svg
+      class="absolute -right-[11px] top-1/2 z-20 hidden h-7 w-7
+             -translate-y-1/2 text-kaen-gold lg:block"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      aria-hidden="true"
+    >
+      <path d="m8 4 8 8-8 8"></path>
+    </svg>
+
+  </div>
+
+  <!-- 03 RENT OUT EFFECTIVELY -->
+  <div
+    class="group relative flex min-h-[150px] items-center gap-4 border-t border-kaen-line p-5
+           transition duration-300 hover:bg-white/[0.06]
+           sm:border-r sm:border-kaen-line
+           lg:border-t-0 lg:p-6"
+  >
+
+    <!-- ICON -->
+    <div
+      class="flex h-[76px] w-[76px] shrink-0 items-center justify-center rounded-full
+             border border-kaen-gold/60 bg-kaen-gold/[0.06] text-kaen-gold
+             transition duration-300 group-hover:bg-kaen-gold/[0.12]"
+    >
+      <svg
+        class="h-9 w-9"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+        <circle cx="9" cy="7" r="4"></circle>
+        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+      </svg>
+    </div>
+
+    <!-- CONTENT -->
+    <div>
+      <div class="text-xl font-extrabold leading-none text-kaen-gold">
+        03
+      </div>
+
+      <h3
+        class="mt-2 text-base font-extrabold leading-tight text-white"
+        data-i18n="process.card3.title"
+      >
+        Rent Out Effectively
+      </h3>
+
+      <p
+        class="mt-1.5 text-xs leading-relaxed text-kaen-muted"
+        data-i18n="process.card3.desc"
+      >
+        Targeted marketing to secure reliable, long-term tenants.
+      </p>
+    </div>
+
+    <!-- ARROW -->
+    <svg
+      class="absolute -right-[11px] top-1/2 z-20 hidden h-7 w-7
+             -translate-y-1/2 text-kaen-gold lg:block"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      aria-hidden="true"
+    >
+      <path d="m8 4 8 8-8 8"></path>
+    </svg>
+
+  </div>
+
+  <!-- 04 MANAGE WITH LESS HASSLE -->
+  <div
+    class="group relative flex min-h-[150px] items-center gap-4 border-t border-kaen-line p-5
+           transition duration-300 hover:bg-white/[0.06]
+           sm:border-t-0
+           lg:p-6"
+  >
+
+    <!-- ICON -->
+    <div
+      class="flex h-[76px] w-[76px] shrink-0 items-center justify-center rounded-full
+             border border-kaen-gold/60 bg-kaen-gold/[0.06] text-kaen-gold
+             transition duration-300 group-hover:bg-kaen-gold/[0.12]"
+    >
+      <svg
+        class="h-9 w-9"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M3 21h18"></path>
+        <path d="M5 21V9l7-5 7 5v12"></path>
+        <path d="M9 21v-6h6v6"></path>
+        <path d="M2 17c3-2 5-2 8 0"></path>
+      </svg>
+    </div>
+
+    <!-- CONTENT -->
+    <div>
+      <div class="text-xl font-extrabold leading-none text-kaen-gold">
+        04
+      </div>
+
+      <h3
+        class="mt-2 text-base font-extrabold leading-tight text-white"
+        data-i18n="process.card4.title"
+      >
+        Manage With Less Hassle
+      </h3>
+
+      <p
+        class="mt-1.5 text-xs leading-relaxed text-kaen-muted"
+        data-i18n="process.card4.desc"
+      >
+        We handle day-to-day property and tenant matters with less owner burden.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+  </div>
+</section>
 
     <!-- ONE-STOP FLOW -->
     <section
-      id="one-stop"
-      class="border-y border-kaen-line"
-      style="background: rgba(26, 31, 58, 0.18)"
-    >
+  id="one-stop"
+  class="reveal-on-scroll border-y border-kaen-line"
+  style="background: rgba(26, 31, 58, 0.18)"
+>
       <div class="mx-auto max-w-6xl px-4 py-14">
 
         <!-- SECTION HEADER -->
@@ -773,7 +1163,10 @@
     </section>
 
     <!-- SERVICES -->
-    <section id="services" class="bg-kaen-bg">
+    <section
+      id="services"
+      class="reveal-on-scroll bg-kaen-bg"
+    >
       <div class="mx-auto max-w-6xl px-4 py-14">
 
         <!-- SECTION HEADER -->
@@ -952,7 +1345,7 @@
     <!-- PROJECTS HUB -->
     <section
       id="projects"
-      class="border-y border-kaen-line"
+      class="reveal-on-scroll border-y border-kaen-line"
       style="background: rgba(26, 31, 58, 0.18)"
     >
       <div class="mx-auto max-w-6xl px-4 py-14">
@@ -975,13 +1368,7 @@
             </p>
           </div>
 
-          <a
-            class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline min-w-[140px]"
-            href="#quote"
-            data-i18n="projects.planMyUnit"
-          >
-            Plan My Unit
-          </a>
+      
         </div>
 
         <div class="relative mt-8">
@@ -1129,14 +1516,6 @@
                   Projects planned with rental demand and practical setup in mind.
                 </p>
               </div>
-
-              <a
-                class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline min-w-[140px]"
-                href="#quote"
-                data-i18n="projectsUpcoming.ctaTop"
-              >
-                Plan My Unit
-              </a>
             </div>
 
             <div class="relative mt-8">
@@ -1255,14 +1634,6 @@
                 Completed units built around practical rental setup and market demand.
               </p>
             </div>
-
-            <a
-              class="hidden sm:inline-flex items-center justify-center h-11 rounded-xl px-4 text-sm btn-gold-outline min-w-[140px]"
-              href="#quote"
-              data-i18n="projectsCompleted.ctaTop"
-            >
-              Plan My Unit
-            </a>
           </div>
 
           <div class="relative mt-8">
@@ -1402,7 +1773,7 @@
     <!-- MANAGEMENT -->
     <section
       id="management"
-      class="border-y border-kaen-line"
+      class="reveal-on-scroll border-y border-kaen-line"
       style="background: rgba(26, 31, 58, 0.18)"
     >
       <div class="mx-auto max-w-6xl px-4 py-14">
@@ -1517,7 +1888,7 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section class="bg-kaen-bg border-b border-kaen-line">
+    <section class="reveal-on-scroll bg-kaen-bg border-b border-kaen-line">
       <div class="mx-auto max-w-6xl px-4 py-14">
 
         <!-- HEADER -->
@@ -1632,7 +2003,7 @@
     <!-- FAQ -->
     <section
       id="faq"
-      class="border-y border-kaen-line"
+      class="reveal-on-scroll border-y border-kaen-line"
       style="background: rgba(26, 31, 58, 0.18)"
     >
       <div class="mx-auto max-w-6xl px-4 py-14">
@@ -1738,7 +2109,7 @@
     </section>
 
     <!-- QUOTE + CONTACT -->
-    <section id="quote" class="bg-kaen-bg">
+    <section id="quote" class="reveal-on-scroll bg-kaen-bg">
       <div class="mx-auto max-w-6xl px-4 py-14">
 
         <div
@@ -1968,7 +2339,7 @@
 
 
     <!-- TRACK RECORD / PROOF -->
-    <section class="border-t border-kaen-line bg-kaen-bg">
+    <section class="reveal-on-scroll border-t border-kaen-line bg-kaen-bg">
       <div class="mx-auto max-w-6xl px-4 py-14">
 
         <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">

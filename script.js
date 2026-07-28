@@ -40,6 +40,15 @@ const i18n = {
     "hero.card3.title": "Demand Areas",
     "hero.card3.desc": "Focused on rental demand",
 
+    "process.card1.title": "Choose Right",
+    "process.card1.desc": "We help you select properties that fit your investment goals and real rental demand.",
+    "process.card2.title": "Renovate Smart",
+    "process.card2.desc": "Strategic design and renovation to attract quality tenants.",
+    "process.card3.title": "Rent Out Effectively",
+    "process.card3.desc": "Practical marketing and tenant sourcing to improve rental execution.",
+    "process.card4.title": "Manage With Less Hassle",
+    "process.card4.desc": "We handle day-to-day property and tenant matters with less owner burden.",
+
     "flow.title": "One-Stop Investor Flow",
     "flow.desc": "One team. One direction. From planning to rental operations.",
     "flow.step1.label": "STEP 1",
@@ -325,6 +334,16 @@ const i18n = {
     "cta.whatsappNow": "立即 WhatsApp",
     "cta.seeFlow": "查看流程",
     "cta.quoteMyUnit": "为我的单位报价",
+
+    "process.card1.title": "选对房产",
+    "process.card1.desc": "根据投资目标与真实出租需求，协助你筛选更合适的房产。",
+    "process.card2.title": "策略装修",
+    "process.card2.desc": "通过实用的设计与装修，吸引更合适的租客。",
+    "process.card3.title": "有效出租",
+    "process.card3.desc": "通过实际市场定位、推广与租客筛选，提高出租执行效率。",
+    "process.card4.title": "省心管理",
+    "process.card4.desc": "由我们处理日常单位与租客事务，减少业主跟进负担。",
+
 
     "hero.tagline1": "轻松持有出租房",
     "hero.tagline2": "新项目 → 装修 → 出租 → 管理",
